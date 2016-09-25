@@ -19,13 +19,21 @@
     ~/.bash_logout: bash/bash_logout
     ~/.bash_profile: bash/bash_profile
     ~/.bashrc: bash/bashrc
-    ~/.config/compton.conf: compton/config
+    ~/.config/compton.conf:
+        force: true
+        path: compton/config
     ~/.config/conky: conky/
     ~/.config/gtk-2.0: gtk-2.0/
     ~/.config/gtk-3.0: gtk-3.0/
-    ~/.config/i3: i3/
-    ~/.config/sublime-text-3: sublime-text-3/
-    ~/.config/terminator: terminator/
+    ~/.config/i3:
+        force: true
+        path: i3/
+    ~/.config/sublime-text-3:
+        force: true
+        path: sublime-text-3/
+    ~/.config/terminator:
+        force: true
+        path: terminator/
     ~/.config/transmission: transmission/
     ~/.config/vlc: vlc/
     ~/.Xresources: x/Xresources/
