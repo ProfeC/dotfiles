@@ -12,6 +12,7 @@
 ]
 
 - link: {
+  ~/.dotfiles: ''
   ~/.config/compton.conf: compton/config
   ~/.config/conky: conky/
   ~/.config/gtk-2.0: gtk-2.0/
@@ -20,6 +21,6 @@
   ~/.config/sublime-text-3: sublime-text-3/
   ~/.config/terminator: terminator/
   ~/.config/transmission: transmission/
-  ~/.dotfiles: ''
+  ~/.config/vlc: vlc/
   ~/bin: bin/
 }
