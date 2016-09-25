@@ -37,11 +37,11 @@
     ~/.config/transmission: transmission/
     ~/.config/vlc: vlc/
     ~/.fonts.conf: font/fonts.conf
-    ~/.font: font/fonts/
+    ~/.fonts: font/fonts/
     ~/.gemrc: ruby/gemrc
     ~/.gitconfig: git/gitconfig
-    ~/.Xresources: x/Xresources/
-    ~/.xinitrc: x/xinitrc
+    ~/.Xresources: x/resources/
+    ~/.xinitrc: x/initrc
     ~/.zshrc:
         force: true
         path: zsh/zshrc
