@@ -1,0 +1,12 @@
+
+Xcursor.theme:		Oxygen_Black
+
+Xft*dpi:			96
+Xft*antialias:		true
+Xft*hinting:		1
+Xft*autohint:		0
+Xft*lcdfilter:		lcddefault
+Xft*hintstyle:		full
+Xft*rgba:			rgb
+Xft*faceName:		Driod Sans Mono Slashed for Powerline
+Xft*faceSize:		13

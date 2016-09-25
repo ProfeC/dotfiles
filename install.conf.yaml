@@ -25,5 +25,6 @@
   ~/.config/terminator: terminator/
   ~/.config/transmission: transmission/
   ~/.config/vlc: vlc/
+  ~/.Xresources: x/Xresources/
   ~/bin: bin/
 }
