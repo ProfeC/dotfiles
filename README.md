@@ -12,12 +12,7 @@ $ git clone https://github.com/Tunous/dotfiles.git ~/.dotfiles
 $ ~/.dotfiles/install
 ```
 
-## Programs Used
-
-* `compton`
-* `feh`
-* `git`
-* `zsh`
+----
 
 ### Thanks to
 

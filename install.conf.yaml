@@ -3,7 +3,7 @@
         create: true
         relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - shell:
     - [git pull, Updating dotfiles]
@@ -36,11 +36,17 @@
         path: terminator/
     ~/.config/transmission: transmission/
     ~/.config/vlc: vlc/
+    ~/.fonts.conf: font/fonts.conf
+    ~/.font: font/fonts/
+    ~/.gemrc: ruby/gemrc
+    ~/.gitconfig: git/gitconfig
     ~/.Xresources: x/Xresources/
+    ~/.xinitrc: x/xinitrc
     ~/.zshrc:
         force: true
         path: zsh/zshrc
     ~/bin: bin/
+    # /etc/lightdm: lightdm/
 
 #- shell:
     #git update-submodules # after linking ~/.gitconfig

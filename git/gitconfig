@@ -1,0 +1,11 @@
+[user]
+	name = ProfeC
+	email = gclark2@gmail.com
+[branch]
+	autosetuprebase = never
+[gc]
+	autoDetach = false
+[pull]
+	rebase = false
+[credential]
+	helper = cache
