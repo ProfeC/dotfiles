@@ -5,6 +5,7 @@
 - clean: ['~']
 - link: {
   ~/.dotfiles: ''
+  ~/.config/i3: i3
 }
 - shell: [
   #- git update-submodules # after linking ~/.gitconfig
