@@ -37,6 +37,9 @@
     ~/.config/transmission: transmission/
     ~/.config/vlc: vlc/
     ~/.Xresources: x/Xresources/
+    ~/.zshrc:
+        force: true
+        path: zsh/zshrc
     ~/bin: bin/
 
 #- shell:
