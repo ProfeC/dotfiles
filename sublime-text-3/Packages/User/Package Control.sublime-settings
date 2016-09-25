@@ -1,0 +1,14 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Material Theme",
+		"Material Theme - Appbar",
+		"Package Control"
+	]
+}

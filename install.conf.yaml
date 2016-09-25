@@ -12,9 +12,10 @@
 ]
 
 - link: {
-  ~/.dotfiles: ''
-  ~/.config/i3: i3/
-  ~/bin: bin/
-  ~/.config/terminator: terminator/
   ~/.config/conky: conky/
+  ~/.config/i3: i3/
+  ~/.config/sublime-text-3: sublime-text-3/
+  ~/.config/terminator: terminator/
+  ~/.dotfiles: ''
+  ~/bin: bin/
 }
