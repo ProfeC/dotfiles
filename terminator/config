@@ -1,0 +1,90 @@
+[global_config]
+  always_split_with_profile = True
+  dbus = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  focus = mouse
+  handle_size = 0
+  title_hide_sizetext = True
+  title_transmit_bg_color = "#285577"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = Solarized
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[3pane]]
+    [[[child0]]]
+      order = 0
+      parent = ""
+      position = 0:22
+      size = 956, 1032
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 478
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 516
+      type = VPaned
+    [[[terminal2]]]
+      command = ""
+      order = 0
+      parent = child1
+      profile = Solarized
+      type = Terminal
+    [[[terminal4]]]
+      command = top -i
+      order = 0
+      parent = child3
+      profile = Solarized - No Title
+      type = Terminal
+    [[[terminal5]]]
+      command = alsamixer
+      order = 1
+      parent = child3
+      profile = Solarized - No Title
+      type = Terminal
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+  [[Solarized]]
+    background_color = "#002b36"
+    background_darkness = 0.7
+    background_image = None
+    background_type = transparent
+    cursor_shape = ibeam
+    font = Droid Sans Mono Slashed for Powerline 13
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_lines = 5000
+    scrollbar_position = hidden
+    use_system_font = False
+  [[Solarized - No Title]]
+    background_color = "#002b36"
+    background_darkness = 0.7
+    background_image = None
+    background_type = transparent
+    cursor_shape = ibeam
+    font = Droid Sans Mono Slashed for Powerline 13
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[Transparent]]
+    background_color = "#002b36"
+    background_darkness = 0.0
+    background_image = None
+    background_type = transparent
+    font = Droid Sans Mono Slashed for Powerline 13
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False

@@ -1,5 +1,6 @@
 - defaults:
   link:
+    create: true
     relink: true
 
 - clean: ['~']
@@ -12,8 +13,7 @@
 
 - link: {
   ~/.dotfiles: ''
-  ~/.config/i3: i3
-  ~/bin:
-      path: bin/
-      create: true
+  ~/.config/i3: i3/
+  ~/bin: bin/
+  ~/.config/terminator: terminator/
 }
