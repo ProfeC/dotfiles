@@ -5,31 +5,29 @@
 
 - clean: ['~']
 
-- shell: [
-  [mkdir -p ~/.config, Creating config folder.]
-  [mkdir -p ~/projects, Creating project folder.]
-  [mkdir -p ~/downloads/{books, movies, tmp, tv, music}, Creating download folders.]
-]
+- shell:
+    - [git pull && git submodule update --init --recursive, Installing submodules.]
+    - [mkdir -p ~/.config, Creating config folder.]
+    - [mkdir -p ~/projects, Creating project folder.]
+    - [mkdir -p ~/downloads/{books, movies, tmp, tv, music}, Creating download folders.]
 
-- link: {
-  ~/.dotfiles: ''
-  ~/.antigen: antigen
-  ~/.bash_logout: bash/bash_logout
-  ~/.bash_profile: bash/bash_profile
-  ~/.bashrc: bash/bashrc
-  ~/.config/compton.conf: compton/config
-  ~/.config/conky: conky/
-  ~/.config/gtk-2.0: gtk-2.0/
-  ~/.config/gtk-3.0: gtk-3.0/
-  ~/.config/i3: i3/
-  ~/.config/sublime-text-3: sublime-text-3/
-  ~/.config/terminator: terminator/
-  ~/.config/transmission: transmission/
-  ~/.config/vlc: vlc/
-  ~/.Xresources: x/Xresources/
-  ~/bin: bin/
-}
+- link:
+    ~/.dotfiles: ''
+    ~/.antigen: antigen
+    ~/.bash_logout: bash/bash_logout
+    ~/.bash_profile: bash/bash_profile
+    ~/.bashrc: bash/bashrc
+    ~/.config/compton.conf: compton/config
+    ~/.config/conky: conky/
+    ~/.config/gtk-2.0: gtk-2.0/
+    ~/.config/gtk-3.0: gtk-3.0/
+    ~/.config/i3: i3/
+    ~/.config/sublime-text-3: sublime-text-3/
+    ~/.config/terminator: terminator/
+    ~/.config/transmission: transmission/
+    ~/.config/vlc: vlc/
+    ~/.Xresources: x/Xresources/
+    ~/bin: bin/
 
-- shell: [
-  #git update-submodules # after linking ~/.gitconfig
-  [git submodule update --init --recursive, Installing submodules.]
+#- shell:
+    #git update-submodules # after linking ~/.gitconfig
