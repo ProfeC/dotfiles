@@ -6,9 +6,9 @@
 - clean: ['~']
 
 - shell: [
-  #- git update-submodules # after linking ~/.gitconfig
-  - [git submodule update --init --recursive, 'Installing submodules.']
-  - [mkdir -p ~/.config, 'Creating config folder.']
+  - [mkdir -p ~/.config, Creating config folder.]
+  - [mkdir -p ~/projects, Creating project folder.]
+  - [mkdir -p ~/downloads/{books, movies, tmp, tv, music}, Creating download folders.]
 ]
 
 - link: {
@@ -29,3 +29,7 @@
   ~/.Xresources: x/Xresources/
   ~/bin: bin/
 }
+
+- shell: [
+  #- git update-submodules # after linking ~/.gitconfig
+  - [git submodule update --init --recursive, Installing submodules.]
