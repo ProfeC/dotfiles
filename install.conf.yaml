@@ -3,11 +3,17 @@
     relink: true
 
 - clean: ['~']
+
+- shell: [
+  #- git update-submodules # after linking ~/.gitconfig
+  - [git submodule update --init --recursive, 'Installing submodules.']
+  - [mkdir -p ~/.config, 'Creating config folder.']
+]
+
 - link: {
   ~/.dotfiles: ''
   ~/.config/i3: i3
+  ~/bin:
+      path: bin/
+      create: true
 }
-- shell: [
-  #- git update-submodules # after linking ~/.gitconfig
-  - [git submodule update --init --recursive, Installing submodules]
-]
