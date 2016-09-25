@@ -14,6 +14,8 @@
 - link: {
   ~/.config/compton.conf: compton/config
   ~/.config/conky: conky/
+  ~/.config/gtk-2.0: gtk-2.0/
+  ~/.config/gtk-3.0: gtk-3.0/
   ~/.config/i3: i3/
   ~/.config/sublime-text-3: sublime-text-3/
   ~/.config/terminator: terminator/
