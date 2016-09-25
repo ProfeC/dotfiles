@@ -1,0 +1,40 @@
+use_xft yes
+xftfont Ubuntu:size=10
+xftalpha 0.85
+
+alignment top_right
+cpu_avg_samples 2
+default_color white
+default_outline_color grey
+default_shade_color a7938e
+double_buffer yes
+#draw_borders no
+#draw_graph_borders no
+#draw_outline yes
+draw_shades yes
+format_human_readable yes
+gap_x 100
+gap_y 45
+maximum_width 500
+minimum_size 350 5
+no_buffers yes
+override_utf8_locale yes
+own_window yes
+own_window_argb_value 0
+own_window_argb_visual yes
+own_window_colour 000000
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+own_window_type normal
+total_run_times 0
+update_interval 1
+uppercase no
+use_spacer yes
+
+TEXT
+${color b32400}RAM ${offset 9}$color$mem / $memmax ${offset 20}${color b32400}SWAP ${offset 9}$color$swap / $swapmax
+
+${color b32400}CPU0 ${offset 9}$color${cpubar cpu0 5,300}
+${color b32400}CPU1 ${offset 9}$color${cpubar cpu1 5,300}
+${color b32400}CPU2 ${offset 9}$color${cpubar cpu2 5,300}
+${color b32400}CPU3 ${offset 9}$color${cpubar cpu3 5,300}

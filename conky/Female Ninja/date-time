@@ -1,0 +1,34 @@
+use_xft yes
+xftfont 123:size=8
+xftalpha 0.1
+
+alignment bottom_right
+cpu_avg_samples 2
+default_color white
+#default_outline_color green
+default_shade_color a7938e
+double_buffer yes
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades yes
+gap_x 80
+gap_y 325
+maximum_width 630
+minimum_size 185 150
+no_buffers yes
+override_utf8_locale yes
+own_window yes
+own_window_argb_value 0
+own_window_argb_visual yes
+own_window_colour 000000
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+own_window_type normal
+total_run_times 0
+update_interval 1
+uppercase no
+use_spacer yes
+
+TEXT
+${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color b32400}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -148}${time %A}${font}

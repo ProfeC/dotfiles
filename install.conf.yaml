@@ -16,4 +16,5 @@
   ~/.config/i3: i3/
   ~/bin: bin/
   ~/.config/terminator: terminator/
+  ~/.config/conky: conky/
 }
