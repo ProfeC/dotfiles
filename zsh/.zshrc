@@ -1,0 +1,81 @@
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+export TERM="xterm-256color"
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1300
+SAVEHIST=1300
+setopt appendhistory autocd beep nomatch
+unsetopt extendedglob notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/lee/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
+
+zstyle ':completion:*' menu select
+
+setopt COMPLETE_ALIASES
+setopt HIST_IGNORE_DUPS
+
+autoload -Uz run-help
+autoload -Uz run-help-git
+autoload -Uz run-help-svn
+autoload -Uz run-help-svk
+
+unalias run-help
+alias help=run-help
+
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+
+for f in ~/.dotfiles/zsh/*.zsh; do
+    source $f
+done
+
+source ~/.antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundles <<EOBUNDLES
+debian
+common-aliases
+heroku
+pip
+lein
+command-not-found
+compleat
+npm
+web-search
+z
+zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
+git
+git-extras
+git-flow
+zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+# Load the theme.
+#antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train # https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
+export BULLETTRAIN_TIME_12HR=false
+
+# Tell antigen that you're done.
+antigen apply
