@@ -1,0 +1,61 @@
+# Shortcuts
+alias d="cd ~/Dropbox"
+alias ggl="cd ~/Google\ Drive"
+alias lm="ls -alhFG | more"
+alias lp="ls -pFG"
+alias h="history | more"
+alias hg="history | grep"
+alias gi="grep -i"
+
+# file find:
+alias ff="find . -type f -name "
+
+# the "qp" alias ("que pasa"), in honor of tony p.
+alias qp="ps auxwww"
+
+# View Wired HTTP traffic
+alias sniffWired="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdumpWired="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+#-----#
+# X11 #
+#-----#
+export DISPLAY=:0.0
+PATH=${PATH}:/usr/X11R6/bin
+
+#Amazon Web Services
+export AWS_ACCT_ID=7503-8525-3179
+export AWS_ACCESS_KEY=1MF1B6WJVZF7WW3PRMG2
+export AWS_ACCESS_SECRET= # TODO: Add Access Secret
+export AWS_HOME=~/Dropbox/AWS
+export EC2_HOME=$AWS_HOME/api-tools-latest
+export EC2_AMITOOL_HOME=$AWS_HOME/ami-tools-latest
+export EC2_PRIVATE_KEY=$AWS_HOME/pk-W476LDYATKJFMU3HN6P4N4LNOBYBGJRY.pem
+export EC2_CERT=$AWS_HOME/cert-W476LDYATKJFMU3HN6P4N4LNOBYBGJRY.pem
+export AWS_RDS_HOME=$AWS_HOME/rds-tools-latest
+PATH=$PATH:$AWS_HOME:$EC2_HOME/bin:$EC2_AMITOOL_HOME/bin:$AWS_RDS_HOME/bin
+
+#Homebrew PHP
+# Swapping from PHP53 to PHP54
+# export PATH="$(brew --prefix josegonzalez/php/php53)/bin:$PATH"
+# export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+
+#Path Updating
+#PATH=${PATH}:/usr/local/sbin
+
+# Add `~/bin` to the `$PATH`
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
+
+# Add MySQL to the path
+export PATH=/usr/local/mysql/bin:${PATH}
+
+# Git credentials
+# Not in the repository, to prevent people from accidentally committing under my name
+GIT_AUTHOR_NAME="G. Lee Clark, II"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="gclark2@gmail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+#eof
