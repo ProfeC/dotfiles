@@ -1,0 +1,52 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~', '~/.config']
+
+- shell:
+    - [git pull, Updating dotfiles]
+    - [git submodule update --init --recursive, Installing submodules.]
+    - [mkdir -p ~/.config, Creating config folder.]
+    - [mkdir -p ~/projects, Creating project folder.]
+    # - [mkdir -p ~/downloads/{books, movies, tmp, tv, music}, Creating download folders.]
+    # - [mkdir -p ~/downloads, Creating download folders.]
+
+- link:
+    ~/.dotfiles: ''
+    ~/.antigen: antigen
+    ~/.bash_logout: bash/bash_logout
+    ~/.bash_profile: bash/bash_profile
+    ~/.bashrc: bash/bashrc
+    # ~/.config/compton.conf:
+    #     force: true
+    #     path: compton/config
+    # ~/.config/conky: conky/
+    # ~/.config/gtk-2.0: gtk-2.0/
+    # ~/.config/gtk-3.0: gtk-3.0/
+    # ~/.config/i3:
+    #     force: true
+    #     path: i3/
+    ~/.config/sublime-text-3:
+        force: true
+        path: sublime-text-3/
+    # ~/.config/terminator:
+    #     force: true
+    #     path: terminator/
+    ~/.config/transmission: transmission/
+    ~/.config/vlc: vlc/
+    ~/.fonts.conf: font/fonts.conf
+    ~/.fonts: font/fonts/
+    ~/.gemrc: ruby/gemrc
+    ~/.gitconfig: git/gitconfig
+    # ~/.Xresources: x/resources/
+    # ~/.xinitrc: x/initrc
+    ~/.zshrc:
+        force: true
+        path: zsh/zshrc
+    ~/bin: bin/
+    # /etc/lightdm: lightdm/
+
+#- shell:
+    #git update-submodules # after linking ~/.gitconfig
