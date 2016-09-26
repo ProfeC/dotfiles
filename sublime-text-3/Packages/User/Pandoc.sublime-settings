@@ -1,0 +1,24 @@
+{
+  "user": {
+
+    // path to the pandoc binary. Default locations per platform:
+    // -  mac
+    //    "pandoc-path": "/usr/local/bin/pandoc",
+    // -  windows
+    //    "pandoc-path": "C:/Users/[username]/AppData/Local/Pandoc/pandoc.exe",
+    "pandoc-path": "/usr/local/bin/pandoc",
+    "HTML 5": {
+      "new-buffer": 1,
+      "scope": {
+        "text.html.markdown": "markdown"
+      },
+      "syntax_file": "Packages/HTML/HTML.tmLanguage",
+      "pandoc-arguments": [
+        "--to=html5",
+        "--no-highlight",
+        "-A /Users/Lee/Documents/shu-documentation/markdown/templates/article-end.html",
+        "-B /Users/Lee/Documents/shu-documentation/markdown/templates/article-start.html"
+      ]
+    },
+  }
+}

@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<!--
+Title: ${1:Some file title}
+Summary: ${2:Some file description}
+Author: ${3:$TM_FULLNAME}
+Date: ${4:May 21, 2015 10:13 PM}
+Filename: ${5:$TM_FILENAME}
+-->
+
+# $1
+
+{Start adding content here...}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mdhdr</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
+  <description>Markdown - Generic file header</description>
+</snippet>
+

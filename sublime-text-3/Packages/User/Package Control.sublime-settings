@@ -5,10 +5,29 @@
 	],
 	"installed_packages":
 	[
+		"AngularJS",
+		"CodeFormatter",
+		"ColdFusion Docs Launcher",
+		"DashDoc",
+		"EditorConfig",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"JavaScript & NodeJS Snippets",
+		"Jekyll",
+		"LoremIpsum",
 		"Markdown Preview",
 		"MarkdownEditing",
-		"Material Theme",
-		"Material Theme - Appbar",
-		"Package Control"
+		"Package Control",
+		"Pandoc",
+		"Sass",
+		"SublimeLinter",
+		"Theme - Spacegray",
+		"TypeScript"
+	],
+	"repositories":
+	[
+		"https://github.com/gepd/Stino/tree/new-stino"
 	]
 }

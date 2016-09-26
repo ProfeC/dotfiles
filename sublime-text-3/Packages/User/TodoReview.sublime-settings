@@ -1,0 +1,13 @@
+{
+  "exclude_folders": [
+    "*.git*",
+    "*node_modules*",
+    "*src/vendor*",
+    "*.svn*"
+  ],
+  "exclude_files": [
+    // "*.sublime-workspace",
+    // "*.sublime-project"
+  ],
+  "case_sensitive": true
+}

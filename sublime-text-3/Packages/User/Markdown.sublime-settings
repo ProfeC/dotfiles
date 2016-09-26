@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
+	"extensions":
+	[
+		"md",
+		"mdown",
+		"txt"
+	],
+	"highlight_line": true,
+	"line_numbers": true,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"spell_check": true
+}

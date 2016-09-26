@@ -1,0 +1,16 @@
+/*
+    Markdown Preview user settings
+*/
+{
+  "build_action": "browser",
+  // "css": "/Users/Lee/Documents/shu-documentation/markdowntemplates/flatly/template.min.css",
+  "enable_highlight": true,
+  "enable_highlight": true,
+  // "enabled_parsers": ["markdown"],
+  // "extensions": ["extra", "definition_lists"],
+  "github_inject_header_ids": true,
+  // "html_template": "/Users/Lee/Documents/shu-documentation/markdown/templates/flatly/template.html",
+  "image_path_conversion": "base64",
+  // "parser": "markdown",
+  "strip_yaml_front_matter": true
+}

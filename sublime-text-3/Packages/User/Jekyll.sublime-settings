@@ -1,0 +1,7 @@
+{
+	// If you have multiple Jekyll blogs, but don't use Sublime Projects,
+	// you can optionally have sublime-jekyll look for the `_posts` or `_drafts`
+	// or `uploads` folders open in your sidebar. This should have a value of
+	// true or false.
+	"automatically_find_paths": true,
+}
