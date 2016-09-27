@@ -14,6 +14,6 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
 	# echo "Applying settings for ${conf}..."
-	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -v -d "${BASEDIR}" -c "${conf}${CONFIG_SUFFIX} -v"
+	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -v -d "${BASEDIR}" -c "${conf}${CONFIG_SUFFIX} "
 	# echo "Done."
 done
