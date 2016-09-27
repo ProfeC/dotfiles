@@ -3,7 +3,7 @@
         create: true
         relink: true
 
-- clean: ['~', '~/.config', '~/Library/Application\ Support']
+- clean: ['~', '~/.config', '~/Library/Application Support/Sublime Text 3']
 
 - link:
     ~/Library/Application Support/Sublime Text 3/Packages/User:
