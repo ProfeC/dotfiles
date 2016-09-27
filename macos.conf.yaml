@@ -28,7 +28,7 @@
     # ~/.config/i3:
     #     force: true
     #     path: i3/
-    ~/.config/sublime-text-3:
+    ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User:
         force: true
         path: sublime-text-3/
     # ~/.config/terminator:
