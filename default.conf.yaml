@@ -11,7 +11,7 @@
     - [mkdir -p ~/.config, Creating config folder.]
     - [mkdir -p ~/projects, Creating project folder.]
     # - [mkdir -p ~/downloads/{books, movies, tmp, tv, music}, Creating download folders.]
-    - [mkdir -p ~/Pictures/wallpaper/favs, Creating download folders.]
+    - [mkdir -p ~/Pictures/wallpaper, Creating favorite wallpaper  directory.]
 
 - link:
     ~/.dotfiles: ''

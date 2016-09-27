@@ -6,8 +6,8 @@
 - clean: ['~', '~/.config', '~/Library/Application\ Support']
 
 - link:
-    ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User:
+    ~/Library/Application Support/Sublime Text\ 3/Packages/User:
         force: true
-        path: sublime-text-3/
+        path: sublime-text-3/Packages/User/
     ~/.config/transmission: transmission/
     ~/.config/vlc: vlc/
