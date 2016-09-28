@@ -1,0 +1,9 @@
+// This file is used to run shell scripts for a new MacOS install. It should be run AFTER your dotfiles are symlinked.
+
+[
+	{
+		"shell": [
+
+		]
+	}
+]
