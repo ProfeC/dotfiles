@@ -2,6 +2,7 @@
 
 A repository for diligently handcrafted (_or blatantly copied, in the spirit of open-source_) config files and nifty scripts for my systems.
 
+**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove what you don’t want or need. Don’t blindly use my settings unless you want to have EXACTLY what I do. _Use at your own risk!_
 
 ## Installation
 
@@ -21,12 +22,17 @@ Dotbot "stuff" to help other people discover Dotbot.
 * [fork](https://github.com/anishathalye/dotfiles_template/fork)
 * [anishathalye_dotfiles](https://github.com/anishathalye/dotfiles)
 
-### Thanks to
+### Acknowledgments and Thanks to
 
 * _**ALL** of the people with dotfiles out there that I've looked at to configure my system(s)._
-* [Anish Athalye](https://github.com/anishathalye) and his [dotfiles repository](https://github.com/anishathalye/dotfiles)
-* [Mathias Bynens](https://github.com/mathiasbynens) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
-* [Samuel Walladge](https://github.com/swalladge) and his [dotfiles repository](https://github.com/swalladge/dotfiles) as well as parts of his README.
+* [Anish Athalye](https://github.com/anishathalye) and his:
+  *  [dotfiles repository](https://github.com/anishathalye/dotfiles)
+* [Mathias Bynens](https://github.com/mathiasbynens) and his:
+  * [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
+  * [Sensible MacOS Defaults](https://github.com/mathiasbynens/dotfiles#sensible-macos-defaults)
+* [Samuel Walladge](https://github.com/swalladge) and his:
+  *  [dotfiles repository](https://github.com/swalladge/dotfiles) 
+  *  parts of his README.
 
 ----
 
