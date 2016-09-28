@@ -2,8 +2,23 @@
 
 [
 	{
-		"shell": [
-
+		"brew": [
+			"python",
+			"ruby",
+			"node",
+			"coreutils",
+			"git"
+		]
+	},
+	{
+		"cask": [
+			"google-chrome",
+			"iterm2",
+			"dropbox",
+			// "vlc",
+			"tower",
+			"cornerstone",
+			"sublime-text3"
 		]
 	}
 ]

@@ -1,0 +1,23 @@
+[
+	{
+		"defaults": {
+			"link": {
+				"create": true,
+				"relink": true
+			}
+		}
+	}, {
+		"clean": ["~", "~/.config", "~/Library/Application Support/Sublime Text 3"]
+	}, {
+		"link": {
+			"~/Library/Application Support/Sublime Text 3/Packages/User": {
+				"force": true,
+				"path": "sublime-text-3/Packages/User/"
+			},
+			"~/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package": "sublime-text-3/Packages/Package Control.sublime-package",
+			"~/.config/transmission": "transmission/",
+			"~/.config/vlc": "vlc/",
+			"/Library/Desktop Pictures/Favorites": "assets/wallpapers"
+		}
+	}
+]
