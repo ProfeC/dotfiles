@@ -32,7 +32,7 @@ Dotbot "stuff" to help other people discover Dotbot.
   * [Sensible MacOS Defaults](https://github.com/mathiasbynens/dotfiles#sensible-macos-defaults)
 * [Samuel Walladge](https://github.com/swalladge) and his:
   *  [dotfiles repository](https://github.com/swalladge/dotfiles) 
-  *  parts of his README.
+  *  parts of his README.) 
 
 ----
 
