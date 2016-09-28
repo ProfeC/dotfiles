@@ -12,3 +12,5 @@
     ~/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package: sublime-text-3/Packages/Package Control.sublime-package
     ~/.config/transmission: transmission/
     ~/.config/vlc: vlc/
+    /Library/Desktop Pictures/Favorites: assets/wallpapers
+
