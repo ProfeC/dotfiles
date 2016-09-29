@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+	<CheckUpdate>
+		<Auto value="1"/>
+		<Beta value="0"/>
+		<ShownNews value="MjAxNTA4MjQx"/>
+	</CheckUpdate>
+	<Company value=""/>
+	<CrashReporter>
+		<SendRegInfo value="1"/>
+	</CrashReporter>
+	<Diagrams>
+		<LastDB>
+			<Path value="ruby-getting-started_development"/>
+			<Target value="PostgreSQL Server"/>
+			<URL value="127.0.0.1"/>
+		</LastDB>
+		<StartPage value="1"/>
+	</Diagrams>
+	<Dialogs>
+		<NewDiagram>
+			<LastDB>
+				<Path value="somerset_songs_development"/>
+				<Target value="MySQL Server"/>
+				<URL value="127.0.0.1"/>
+			</LastDB>
+			<ShowToolbar value="0"/>
+		</NewDiagram>
+	</Dialogs>
+	<Email value="gclark2@gmail.com"/>
+	<FirstName value="G. L."/>
+	<GUI>
+		<Connect>
+			<LastFactory value="PostgreSQL Server"/>
+		</Connect>
+		<ConnectState>
+			<MySQL_Server>
+				<dsn value=""/>
+				<opts value=""/>
+				<port value="3306"/>
+				<socket value="/tmp/mysql.sock"/>
+				<ssh value="0"/>
+				<sshHost value=""/>
+				<sshPort value="22"/>
+				<sshUser value=""/>
+				<ssh_Auth value="Password"/>
+				<ssl value="0"/>
+				<stats value="1"/>
+				<url value="127.0.0.1"/>
+				<user value="somerset_songs"/>
+			</MySQL_Server>
+			<PostgreSQL_Server>
+				<dsn value=""/>
+				<opts value="d7dbnruhk0f645"/>
+				<port value="5432"/>
+				<socket value="/tmp"/>
+				<ssh value="0"/>
+				<sshHost value=""/>
+				<sshPort value="22"/>
+				<sshUser value=""/>
+				<ssh_Auth value="Password"/>
+				<ssl value="1"/>
+				<stats value="1"/>
+				<url value="ec2-54-83-205-164.compute-1.amazonaws.com"/>
+				<user value="mecmqzndhldrgr"/>
+			</PostgreSQL_Server>
+			<Valentina_Server>
+				<dsn value=""/>
+				<opts value=""/>
+				<port value="15432"/>
+				<socket value=""/>
+				<ssh value="0"/>
+				<sshHost value=""/>
+				<sshPort value="22"/>
+				<sshUser value=""/>
+				<ssh_Auth value="Password"/>
+				<ssl value="0"/>
+				<stats value="1"/>
+				<url value="127.0.0.1"/>
+				<user value="somerset_songs"/>
+			</Valentina_Server>
+		</ConnectState>
+	</GUI>
+	<LT>
+		<MULTICHOICE>
+			<Select_Fields6>
+				<h value="467"/>
+				<w value="320"/>
+				<x value="800"/>
+				<y value="361"/>
+			</Select_Fields6>
+			<Select_databaseOsP>
+				<h value="467"/>
+				<w value="320"/>
+				<x value="800"/>
+				<y value="361"/>
+			</Select_databaseOsP>
+		</MULTICHOICE>
+		<WidgetsState>
+			<Add_Bookmark15vsConnectDialog>
+				<h value="344"/>
+				<w value="564"/>
+				<x value="678"/>
+				<y value="422"/>
+			</Add_Bookmark15vsConnectDialog>
+			<Add_Bookmark15vsConnectDialogN2LT12LCheckButtonE_39 value="0"/>
+			<Connect_to_Database_Server15vsConnectDialog>
+				<h value="344"/>
+				<w value="564"/>
+				<x value="678"/>
+				<y value="422"/>
+			</Connect_to_Database_Server15vsConnectDialog>
+			<Connect_to_Database_Server15vsConnectDialogN2LT12LCheckButtonE_39 value="0"/>
+			<Create_Diagram18vsNewDiagramDialog>
+				<h value="400"/>
+				<w value="300"/>
+				<x value="810"/>
+				<y value="394"/>
+			</Create_Diagram18vsNewDiagramDialog>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_23 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_27 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_28 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_29 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_30 value="1"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_32 value="1"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_33 value="1"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_34 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_35 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_37 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_38 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_39 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_40 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_41 value="1"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LCheckButtonE_42 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_14 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_15 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_16 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_17 value="1"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_18 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_20 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_21 value="0"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT12LRadioButtonE_22 value="1"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT7LChoiceE_48 value="UTF-8"/>
+			<Create_dump_of_tables_from_IpublicIUIsomerset_songs_developmentI20vsPostgre_DumpWizardN2LT7LChoiceE_50 value="5"/>
+			<Edit_Bookmark15vsConnectDialog>
+				<h value="344"/>
+				<w value="414"/>
+				<x value="753"/>
+				<y value="422"/>
+			</Edit_Bookmark15vsConnectDialog>
+			<Edit_Bookmark15vsConnectDialogN2LT12LCheckButtonE_39 value="0"/>
+			<Text_EditorN2LT11LTextEditorE>
+				<h value="500"/>
+				<w value="650"/>
+				<x value="635"/>
+				<y value="344"/>
+			</Text_EditorN2LT11LTextEditorE>
+			<Text_ViewerN2LT11LTextEditorE>
+				<h value="500"/>
+				<w value="650"/>
+				<x value="637"/>
+				<y value="361"/>
+			</Text_ViewerN2LT11LTextEditorE>
+			<Valentina_Studio7vsFrameN2LT12LCheckButtonE_200 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LCheckButtonE_280 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LCheckButtonE_332 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LCheckButtonE_385 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_262 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_264 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_268 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_270 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_295 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_298 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_314 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_316 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_320 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_322 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_347 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_350 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_367 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_369 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_373 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_375 value="0"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_400 value="1"/>
+			<Valentina_Studio7vsFrameN2LT12LRadioButtonE_403 value="0"/>
+			<Valentina_Studio7vsFrameN2LT13LThemedChoiceE_233 value="0.5 seconds"/>
+			<Valentina_Studio7vsFrameN2LT13LThemedChoiceE_238 value="0.5 seconds"/>
+			<Valentina_Studio7vsFrameN2LT13LThemedChoiceE_241 value="0.5 seconds"/>
+			<Valentina_Studio7vsFrameN2LT13LThemedChoiceE_242 value="0.5 seconds"/>
+			<Valentina_Studio7vsFrameN2LT13LThemedChoiceE_247 value="0.5 seconds"/>
+			<Valentina_Studio7vsFrameN2LT13LThemedChoiceE_370 value="0.5 seconds"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_263 value="COMMA"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_269 value="MSDOS"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_274 value="System"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_315 value="COMMA"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_321 value="MSDOS"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_326 value="System"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_368 value="COMMA"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_374 value="UNIX"/>
+			<Valentina_Studio7vsFrameN2LT7LChoiceE_379 value="System"/>
+			<Valentina_Studio7vsFrameN2LT9LTextCtrlE_265 value=";"/>
+			<Valentina_Studio7vsFrameN2LT9LTextCtrlE_271 value="*"/>
+			<Valentina_Studio7vsFrameN2LT9LTextCtrlE_317 value=";"/>
+			<Valentina_Studio7vsFrameN2LT9LTextCtrlE_323 value="*"/>
+			<Valentina_Studio7vsFrameN2LT9LTextCtrlE_370 value=";"/>
+			<Valentina_Studio7vsFrameN2LT9LTextCtrlE_376 value="*"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT12LCheckButtonE_38 value="0"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT12LRadioButtonE_25 value="1"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT12LRadioButtonE_27 value="0"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT12LRadioButtonE_31 value="1"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT12LRadioButtonE_33 value="0"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT7LChoiceE_26 value="COMMA"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT7LChoiceE_32 value="UNIX"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT7LChoiceE_37 value="UTF8"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT9LTextCtrlE_28 value=";"/>
+			<Valentina_Studio_Export_WizardN2LT13LThemedDialogEN2LT9LTextCtrlE_34 value="*"/>
+		</WidgetsState>
+		<wToolkit>
+			<maskDir>
+				<Database_Files9QUdb7QUsqlite7QUvdb9All_Files9QUQ value="/Users/Lee/Desktop"/>
+				<QUQ value="/Users/Lee/Sites/somerset-app"/>
+				<SQL_Files9QUsql9All_Files9QUQ value="/Users/Lee/Sites/somerset-app"/>
+				<Text_files_OQUtxt7QUcsvP9QUtxt7QUcsv9All_files_OQUQP9QUQ value="/Users/Lee/Sites/somerset-app"/>
+			</maskDir>
+		</wToolkit>
+	</LT>
+	<LastName value="Clark, II"/>
+	<MainWindow>
+		<height value="953"/>
+		<maximized value="0"/>
+		<width value="1425"/>
+		<x value="167"/>
+		<y value="23"/>
+	</MainWindow>
+	<NavTreeSize value="288"/>
+	<Recents>
+		<Bookmarks_Infos value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHByb3BlcnRpZXM+Cgk8Y29ubl9tZXRob2QgdmFsdWU9IlN0YW5kYXJkIChUQ1AvSVApIi8+Cgk8bW9uaXRvciB2YWx1ZT0iMSIvPgoJPG9wdHMgdmFsdWU9ImQ3ZGJucnVoazBmNjQ1Ii8+Cgk8cGFzcyB2YWx1ZT0iYlRsUTBvYUVVVG9jYzExaVd6SWVkcXJfV0ciLz4KCTxwb3J0IHZhbHVlPSI1NDMyIi8+Cgk8c29ja2V0IHZhbHVlPSIvdG1wIi8+Cgk8c3NsIHZhbHVlPSIxIi8+Cgk8c3RhdHMgdmFsdWU9IjEiLz4KCTx0YXJnZXQgdmFsdWU9IlBvc3RncmVTUUwgU2VydmVyIi8+Cgk8dXJsIHZhbHVlPSJlYzItNTQtODMtMjA1LTE2NC5jb21wdXRlLTEuYW1hem9uYXdzLmNvbSIvPgoJPHVzZXIgdmFsdWU9Im1lY21xem5kaGxkcmdyIi8+CjwvcHJvcGVydGllcz4KCg== PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHByb3BlcnRpZXM+Cgk8Y29ubl9tZXRob2QgdmFsdWU9IlN0YW5kYXJkIChUQ1AvSVApIi8+Cgk8bW9uaXRvciB2YWx1ZT0iMSIvPgoJPG9wdHMgdmFsdWU9IiIvPgoJPHBhc3MgdmFsdWU9IiIvPgoJPHBvcnQgdmFsdWU9IjU0MzIiLz4KCTxzb2NrZXQgdmFsdWU9Ii90bXAiLz4KCTxzc2wgdmFsdWU9IjAiLz4KCTxzdGF0cyB2YWx1ZT0iMSIvPgoJPHRhcmdldCB2YWx1ZT0iUG9zdGdyZVNRTCBTZXJ2ZXIiLz4KCTx1cmwgdmFsdWU9IjEyNy4wLjAuMSIvPgoJPHVzZXIgdmFsdWU9IkxlZSIvPgo8L3Byb3BlcnRpZXM+Cgo="/>
+		<Bookmarks_Labels value="c3dpbW1pbmctcHVycG9zZWZ1bGx5LTYyNzc= TG9jYWwgUG9zdGdyZVNRTA=="/>
+		<Bookmarks_Props value="UTI5dWJtVmpkR2x2YmlCR1lXTjBiM0o1IFVHOXpkR2R5WlZOUlRDQlRaWEoyWlhJPQpTRzl6ZEE9PSBaV015TFRVMExUZ3pMVEl3TlMweE5qUXVZMjl0Y0hWMFpTMHhMbUZ0WVhwdmJtRjNjeTVqYjIwPQpVRzl5ZEE9PSBOVFF6TWc9PQpWWE5sY2c9PSBiV1ZqYlhGNmJtUm9iR1J5WjNJPQo= UTI5dWJtVmpkR2x2YmlCR1lXTjBiM0o1IFVHOXpkR2R5WlZOUlRDQlRaWEoyWlhJPQpTRzl6ZEE9PSBNVEkzTGpBdU1DNHgKVUc5eWRBPT0gTlRRek1nPT0KVlhObGNnPT0gVEdWbAo="/>
+		<Bookmarks_Tips value="ZWMyLTU0LTgzLTIwNS0xNjQuY29tcHV0ZS0xLmFtYXpvbmF3cy5jb206NTQzMiAobWVjbXF6bmRobGRyZ3Ip MTI3LjAuMC4xOjU0MzIgKExlZSk="/>
+		<Connection_Infos value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHByb3BlcnRpZXM+Cgk8b3B0cyB2YWx1ZT0iZDdkYm5ydWhrMGY2NDUiLz4KCTxwb3J0IHZhbHVlPSI1NDMyIi8+Cgk8c2F2ZXBhc3MgdmFsdWU9IjAiLz4KCTxzc2hfYXV0aCB2YWx1ZT0ia2V5ZmlsZSIvPgoJPHNzaF9ob3N0IHZhbHVlPSIiLz4KCTxzc2hfa2V5IHZhbHVlPSIiLz4KCTxzc2hfcG9ydCB2YWx1ZT0iMCIvPgoJPHNzaF91c2VyIHZhbHVlPSIiLz4KCTxzc2wgdmFsdWU9IjEiLz4KCTx0YXJnZXQgdmFsdWU9IlBvc3RncmVTUUwgU2VydmVyIi8+Cgk8dXJsIHZhbHVlPSJlYzItNTQtODMtMjA1LTE2NC5jb21wdXRlLTEuYW1hem9uYXdzLmNvbSIvPgoJPHVzZXIgdmFsdWU9Im1lY21xem5kaGxkcmdyIi8+CjwvcHJvcGVydGllcz4KCg== PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHByb3BlcnRpZXM+Cgk8b3B0cyB2YWx1ZT0iIi8+Cgk8cG9ydCB2YWx1ZT0iMzMwNiIvPgoJPHNhdmVwYXNzIHZhbHVlPSIwIi8+Cgk8c3NoX2F1dGggdmFsdWU9ImtleWZpbGUiLz4KCTxzc2hfaG9zdCB2YWx1ZT0iIi8+Cgk8c3NoX2tleSB2YWx1ZT0iIi8+Cgk8c3NoX3BvcnQgdmFsdWU9IjAiLz4KCTxzc2hfdXNlciB2YWx1ZT0iIi8+Cgk8c3NsIHZhbHVlPSIwIi8+Cgk8dGFyZ2V0IHZhbHVlPSJNeVNRTCBTZXJ2ZXIiLz4KCTx1cmwgdmFsdWU9IjEyNy4wLjAuMSIvPgoJPHVzZXIgdmFsdWU9InNvbWVyc2V0X3NvbmdzIi8+CjwvcHJvcGVydGllcz4KCg=="/>
+		<Connection_Labels value="ZWMyLTU0LTgzLTIwNS0xNjQuY29tcHV0ZS0xLmFtYXpvbmF3cy5jb20gKFNTTCkgKG1lY21xem5kaGxkcmdyKQ== MTI3LjAuMC4xIChzb21lcnNldF9zb25ncyk="/>
+		<Connection_Props value="UTI5dWJtVmpkR2x2YmlCR1lXTjBiM0o1IFVHOXpkR2R5WlZOUlRDQlRaWEoyWlhJPQpTRzl6ZEE9PSBaV015TFRVMExUZ3pMVEl3TlMweE5qUXVZMjl0Y0hWMFpTMHhMbUZ0WVhwdmJtRjNjeTVqYjIwPQpVRzl5ZEE9PSBOVFF6TWc9PQpWWE5sY2c9PSBiV1ZqYlhGNmJtUm9iR1J5WjNJPQo= UTI5dWJtVmpkR2x2YmlCR1lXTjBiM0o1IFRYbFRVVXdnVTJWeWRtVnkKU0c5emRBPT0gTVRJM0xqQXVNQzR4ClVHOXlkQT09IE16TXdOZz09ClZYTmxjZz09IGMyOXRaWEp6WlhSZmMyOXVaM009Cg=="/>
+		<Connection_Tips value="ZWMyLTU0LTgzLTIwNS0xNjQuY29tcHV0ZS0xLmFtYXpvbmF3cy5jb206NTQzMiAobWVjbXF6bmRobGRyZ3Ip MTI3LjAuMC4xOjMzMDYgKHNvbWVyc2V0X3NvbmdzKQ=="/>
+		<DB_Infos value="L1VzZXJzL0xlZS9EZXNrdG9wL2JlZXRzLWxpYnJhcnkuYmxi"/>
+		<DB_Labels value="YmVldHMtbGlicmFyeSBhdCAvVXNlcnMvTGVlL0Rlc2t0b3A="/>
+		<DB_Props value="UTI5dWJtVmpkR2x2YmlCR1lXTjBiM0o1IFUzRnNhWFJsSUVSaGRHRmlZWE5sSUVacGJHVnoKVUdGMGFBPT0gTDFWelpYSnpMMHhsWlM5RVpYTnJkRzl3TDJKbFpYUnpMV3hwWW5KaGNua3VZbXhpCg=="/>
+		<DB_Tips value="!"/>
+		<Diagram_Infos value=""/>
+		<Diagram_Labels value=""/>
+		<Diagram_Props value=""/>
+		<Diagram_Tips value=""/>
+		<Queries_Infos value="LS0gc2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkLCBjb3VudHJ5LCBhcnRpc3QgZnJvbSBpdGVtcyAtLSB3aGVyZSBhbGJ1bSBsaWtlICcldGhlIHdhbGwlJwoKc2VsZWN0IHRyYWNrLCB0aXRsZSwgYXJ0aXN0X2NyZWRpdCwgbHlyaWNzIGZyb20gaXRlbXMgb3JkZXIgYnkgYXJ0aXN0LCB0cmFjaw== LS0gc2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkLCBjb3VudHJ5LCBhcnRpc3QgZnJvbSBpdGVtcyAtLSB3aGVyZSBhbGJ1bSBsaWtlICcldGhlIHdhbGwlJwoKc2VsZWN0IHRyYWNrLCB0aXRsZSwgYXJ0aXN0X2NyZWRpdCwgbHlyaWNzIGZyb20gaXRlbXMgb3JkZXIgYnkgYXJ0aXN0LCB0aXRsZQ== LS0gc2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkLCBjb3VudHJ5LCBhcnRpc3QgZnJvbSBpdGVtcyAtLSB3aGVyZSBhbGJ1bSBsaWtlICcldGhlIHdhbGwlJwoKc2VsZWN0IHRyYWNrLCB0aXRsZSwgYXJ0aXN0X2NyZWRpdCwgbHlyaWNzIGZyb20gaXRlbXM= LS0gc2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkLCBjb3VudHJ5LCBhcnRpc3QgZnJvbSBpdGVtcyAtLSB3aGVyZSBhbGJ1bSBsaWtlICcldGhlIHdhbGwlJwoKc2VsZWN0IGx5cmljcywgdGl0bGUsIHRyYWNrLCBhcnRpc3RfY3JlZGl0IGZyb20gaXRlbXM= c2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkLCBjb3VudHJ5LCBhcnRpc3QgZnJvbSBpdGVtcyAtLSB3aGVyZSBhbGJ1bSBsaWtlICcldGhlIHdhbGwlJw== c2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkIGZyb20gaXRlbXMgd2hlcmUgYWxidW0gbGlrZSAnJXRoZSB3YWxsJSc= c2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkIGZyb20gaXRlbXMgd2hlcmUgYWxidW0gbGlrZSAndGhlIHdhbGwn c2VsZWN0IGRpc3RpbmN0IGFsYnVtLCBtYl9hbGJ1bWlkIGZyb20gaXRlbXMgd2hlcmUgY291bnRyeSBpcyAnQ0En c2VsZWN0IGRpc3RpbmN0IGFydGlzdCwgbWJfYWxidW1pZCBmcm9tIGl0ZW1zIHdoZXJlIGNvdW50cnkgaXMgJ0NBJw== c2VsZWN0IGRpc3RpbmN0IGFydGlzdCBmcm9tIGl0ZW1zIHdoZXJlIGNvdW50cnkgaXMgJ0NBJw== c2VsZWN0IGFydGlzdCBmcm9tIGl0ZW1zIHdoZXJlIGNvdW50cnkgaXMgJ0NBJw== U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAiZ2VucmVzX3NvbmdzIiBPTiAiZ2VucmVzX3NvbmdzIi4ic29uZ19pZCIgPSAic29uZ3MiLiJpZCIgSU5ORVIgSk9JTiAiZ2VucmVzIiBPTiAiZ2VucmVzIi4iaWQiID0gImdlbnJlc19zb25ncyIuImdlbnJlX2lkIiBXSEVSRSAoZ2VucmVfaWQgSU4gKCczJykp U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAibW9vZHNfc29uZ3MiIE9OICJtb29kc19zb25ncyIuInNvbmdfaWQiID0gInNvbmdzIi4iaWQiIElOTkVSIEpPSU4gIm1vb2RzIiBPTiAibW9vZHMiLiJpZCIgPSAibW9vZHNfc29uZ3MiLiJtb29kX2lkIiBXSEVSRSAobW9vZF9pZCBJTiAoJzE2Jykp U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAibW9vZHNfc29uZ3MiIE9OICJtb29kc19zb25ncyIuInNvbmdfaWQiID0gInNvbmdzIi4iaWQiIElOTkVSIEpPSU4gIm1vb2RzIiBPTiAibW9vZHMiLiJpZCIgPSAibW9vZHNfc29uZ3MiLiJtb29kX2lkIiBXSEVSRSBtb29kX2lkIElOICgxLDIp U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAibW9vZHNfc29uZ3MiIE9OICJtb29kc19zb25ncyIuInNvbmdfaWQiID0gInNvbmdzIi4iaWQiIElOTkVSIEpPSU4gIm1vb2RzIiBPTiAibW9vZHMiLiJpZCIgPSAibW9vZHNfc29uZ3MiLiJtb29kX2lkIiBXSEVSRSAobW9vZF9pZCBJTiAoMSwyKSk= U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAibW9vZHNfc29uZ3MiIE9OICJtb29kc19zb25ncyIuInNvbmdfaWQiID0gInNvbmdzIi4iaWQiIElOTkVSIEpPSU4gIm1vb2RzIiBPTiAibW9vZHMiLiJpZCIgPSAibW9vZHNfc29uZ3MiLiJtb29kX2lkIiBXSEVSRSAobW9vZF9pZCBJTiAoJzEnLCcyJykp U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAibW9vZHNfc29uZ3MiIE9OICJtb29kc19zb25ncyIuInNvbmdfaWQiID0gInNvbmdzIi4iaWQiIElOTkVSIEpPSU4gIm1vb2RzIiBPTiAibW9vZHMiLiJpZCIgPSAibW9vZHNfc29uZ3MiLiJtb29kX2lkIiBXSEVSRSAibW9vZF9pZCIgaW4gKDE2KQ== U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAibW9vZHNfc29uZ3MiIE9OICJtb29kc19zb25ncyIuInNvbmdfaWQiID0gInNvbmdzIi4iaWQiIElOTkVSIEpPSU4gIm1vb2RzIiBPTiAibW9vZHMiLiJpZCIgPSAibW9vZHNfc29uZ3MiLiJtb29kX2lkIiBXSEVSRSAibW9vZF9pZCIgPSAxNg== U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgSU5ORVIgSk9JTiAibW9vZHNfc29uZ3MiIE9OICJtb29kc19zb25ncyIuInNvbmdfaWQiID0gInNvbmdzIi4iaWQiIElOTkVSIEpPSU4gIm1vb2RzIiBPTiAibW9vZHMiLiJpZCIgPSAibW9vZHNfc29uZ3MiLiJtb29kX2lkIg== LS1TRUxFQ1QgICJhcnRpc3RzIi4qIEZST00gImFydGlzdHMiIFdIRVJFICJhcnRpc3RzIi4ibmFtZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJhbGJ1bXMiLiogRlJPTSAiYWxidW1zIiBXSEVSRSAiYWxidW1zIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAiZ2VucmVzIi4qIEZST00gImdlbnJlcyIgV0hFUkUgImdlbnJlcyIuInRpdGxlIiA9ICdsb3ZlJyBMSU1JVCAxOw0tLVNFTEVDVCAgInRoZW1lcyIuKiBGUk9NICJ0aGVtZXMiIFdIRVJFICJ0aGVtZXMiLiJ0aXRsZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJtb29kcyIuKiBGUk9NICJtb29kcyIgV0hFUkUgKHRpdGxlIElMSUtFICdsb3ZlJykgIE9SREVSIEJZICJtb29kcyIuImlkIiBBU0MgTElNSVQgMTsNU0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgV0hFUkUgKHRpdGxlIElMSUtFICclbG92ZSUnKTsNLS1TRUxFQ1QgInNvbmdzIi4qIEZST00gInNvbmdzIiBJTk5FUiBKT0lOICJtb29kc19zb25ncyIgT04gIm1vb2RzX3NvbmdzIi4ic29uZ19pZCIgPSAic29uZ3MiLiJpZCIgSU5ORVIgSk9JTiAibW9vZHMiIE9OICJtb29kcyIuImlkIiA9ICJtb29kc19zb25ncyIuIm1vb2RfaWQiIFdIRVJFICJtb29kcyIuImlkIiA9ICdsb3ZlJzs= LS1TRUxFQ1QgICJhcnRpc3RzIi4qIEZST00gImFydGlzdHMiIFdIRVJFICJhcnRpc3RzIi4ibmFtZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJhbGJ1bXMiLiogRlJPTSAiYWxidW1zIiBXSEVSRSAiYWxidW1zIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAiZ2VucmVzIi4qIEZST00gImdlbnJlcyIgV0hFUkUgImdlbnJlcyIuInRpdGxlIiA9ICdsb3ZlJyBMSU1JVCAxOw0tLVNFTEVDVCAgInRoZW1lcyIuKiBGUk9NICJ0aGVtZXMiIFdIRVJFICJ0aGVtZXMiLiJ0aXRsZSIgPSAnbG92ZScgTElNSVQgMTsNU0VMRUNUICAibW9vZHMiLiogRlJPTSAibW9vZHMiIFdIRVJFICh0aXRsZSBJTElLRSAnbG92ZScpICBPUkRFUiBCWSAibW9vZHMiLiJpZCIgQVNDIExJTUlUIDE7DS0tU0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgV0hFUkUgKHRpdGxlIElMSUtFICclbG92ZSUnKTsNLS1TRUxFQ1QgInNvbmdzIi4qIEZST00gInNvbmdzIiBJTk5FUiBKT0lOICJtb29kc19zb25ncyIgT04gIm1vb2RzX3NvbmdzIi4ic29uZ19pZCIgPSAic29uZ3MiLiJpZCIgSU5ORVIgSk9JTiAibW9vZHMiIE9OICJtb29kcyIuImlkIiA9ICJtb29kc19zb25ncyIuIm1vb2RfaWQiIFdIRVJFICJtb29kcyIuImlkIiA9ICdsb3ZlJzs= LS1TRUxFQ1QgICJhcnRpc3RzIi4qIEZST00gImFydGlzdHMiIFdIRVJFICJhcnRpc3RzIi4ibmFtZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJhbGJ1bXMiLiogRlJPTSAiYWxidW1zIiBXSEVSRSAiYWxidW1zIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAiZ2VucmVzIi4qIEZST00gImdlbnJlcyIgV0hFUkUgImdlbnJlcyIuInRpdGxlIiA9ICdsb3ZlJyBMSU1JVCAxOw1TRUxFQ1QgICJ0aGVtZXMiLiogRlJPTSAidGhlbWVzIiBXSEVSRSAidGhlbWVzIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAibW9vZHMiLiogRlJPTSAibW9vZHMiIFdIRVJFICh0aXRsZSBJTElLRSAnbG92ZScpICBPUkRFUiBCWSAibW9vZHMiLiJpZCIgQVNDIExJTUlUIDE7DS0tU0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgV0hFUkUgKHRpdGxlIElMSUtFICclbG92ZSUnKTsNLS1TRUxFQ1QgInNvbmdzIi4qIEZST00gInNvbmdzIiBJTk5FUiBKT0lOICJtb29kc19zb25ncyIgT04gIm1vb2RzX3NvbmdzIi4ic29uZ19pZCIgPSAic29uZ3MiLiJpZCIgSU5ORVIgSk9JTiAibW9vZHMiIE9OICJtb29kcyIuImlkIiA9ICJtb29kc19zb25ncyIuIm1vb2RfaWQiIFdIRVJFICJtb29kcyIuImlkIiA9ICdsb3ZlJzs= LS1TRUxFQ1QgICJhcnRpc3RzIi4qIEZST00gImFydGlzdHMiIFdIRVJFICJhcnRpc3RzIi4ibmFtZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJhbGJ1bXMiLiogRlJPTSAiYWxidW1zIiBXSEVSRSAiYWxidW1zIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DVNFTEVDVCAgImdlbnJlcyIuKiBGUk9NICJnZW5yZXMiIFdIRVJFICJnZW5yZXMiLiJ0aXRsZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJ0aGVtZXMiLiogRlJPTSAidGhlbWVzIiBXSEVSRSAidGhlbWVzIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAibW9vZHMiLiogRlJPTSAibW9vZHMiIFdIRVJFICh0aXRsZSBJTElLRSAnbG92ZScpICBPUkRFUiBCWSAibW9vZHMiLiJpZCIgQVNDIExJTUlUIDE7DS0tU0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgV0hFUkUgKHRpdGxlIElMSUtFICclbG92ZSUnKTsNLS1TRUxFQ1QgInNvbmdzIi4qIEZST00gInNvbmdzIiBJTk5FUiBKT0lOICJtb29kc19zb25ncyIgT04gIm1vb2RzX3NvbmdzIi4ic29uZ19pZCIgPSAic29uZ3MiLiJpZCIgSU5ORVIgSk9JTiAibW9vZHMiIE9OICJtb29kcyIuImlkIiA9ICJtb29kc19zb25ncyIuIm1vb2RfaWQiIFdIRVJFICJtb29kcyIuImlkIiA9ICdsb3ZlJzs= LS1TRUxFQ1QgICJhcnRpc3RzIi4qIEZST00gImFydGlzdHMiIFdIRVJFICJhcnRpc3RzIi4ibmFtZSIgPSAnbG92ZScgTElNSVQgMTsNU0VMRUNUICAiYWxidW1zIi4qIEZST00gImFsYnVtcyIgV0hFUkUgImFsYnVtcyIuInRpdGxlIiA9ICdsb3ZlJyBMSU1JVCAxOw0tLVNFTEVDVCAgImdlbnJlcyIuKiBGUk9NICJnZW5yZXMiIFdIRVJFICJnZW5yZXMiLiJ0aXRsZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJ0aGVtZXMiLiogRlJPTSAidGhlbWVzIiBXSEVSRSAidGhlbWVzIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAibW9vZHMiLiogRlJPTSAibW9vZHMiIFdIRVJFICh0aXRsZSBJTElLRSAnbG92ZScpICBPUkRFUiBCWSAibW9vZHMiLiJpZCIgQVNDIExJTUlUIDE7DS0tU0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgV0hFUkUgKHRpdGxlIElMSUtFICclbG92ZSUnKTsNLS1TRUxFQ1QgInNvbmdzIi4qIEZST00gInNvbmdzIiBJTk5FUiBKT0lOICJtb29kc19zb25ncyIgT04gIm1vb2RzX3NvbmdzIi4ic29uZ19pZCIgPSAic29uZ3MiLiJpZCIgSU5ORVIgSk9JTiAibW9vZHMiIE9OICJtb29kcyIuImlkIiA9ICJtb29kc19zb25ncyIuIm1vb2RfaWQiIFdIRVJFICJtb29kcyIuImlkIiA9ICdsb3ZlJzs= U0VMRUNUICAiYXJ0aXN0cyIuKiBGUk9NICJhcnRpc3RzIiBXSEVSRSAiYXJ0aXN0cyIuIm5hbWUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAiYWxidW1zIi4qIEZST00gImFsYnVtcyIgV0hFUkUgImFsYnVtcyIuInRpdGxlIiA9ICdsb3ZlJyBMSU1JVCAxOw0tLVNFTEVDVCAgImdlbnJlcyIuKiBGUk9NICJnZW5yZXMiIFdIRVJFICJnZW5yZXMiLiJ0aXRsZSIgPSAnbG92ZScgTElNSVQgMTsNLS1TRUxFQ1QgICJ0aGVtZXMiLiogRlJPTSAidGhlbWVzIiBXSEVSRSAidGhlbWVzIi4idGl0bGUiID0gJ2xvdmUnIExJTUlUIDE7DS0tU0VMRUNUICAibW9vZHMiLiogRlJPTSAibW9vZHMiIFdIRVJFICh0aXRsZSBJTElLRSAnbG92ZScpICBPUkRFUiBCWSAibW9vZHMiLiJpZCIgQVNDIExJTUlUIDE7DS0tU0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgV0hFUkUgKHRpdGxlIElMSUtFICclbG92ZSUnKTsNLS1TRUxFQ1QgInNvbmdzIi4qIEZST00gInNvbmdzIiBJTk5FUiBKT0lOICJtb29kc19zb25ncyIgT04gIm1vb2RzX3NvbmdzIi4ic29uZ19pZCIgPSAic29uZ3MiLiJpZCIgSU5ORVIgSk9JTiAibW9vZHMiIE9OICJtb29kcyIuImlkIiA9ICJtb29kc19zb25ncyIuIm1vb2RfaWQiIFdIRVJFICJtb29kcyIuImlkIiA9ICdsb3ZlJzs= U0VMRUNUICJnZW5yZXMiLiogRlJPTSAiZ2VucmVzIiBJTk5FUiBKT0lOICJnZW5yZXNfc29uZ3MiIE9OICJnZW5yZXNfc29uZ3MiLiJnZW5yZV9pZCIgPSAiZ2VucmVzIi4iaWQiIElOTkVSIEpPSU4gInNvbmdzIiBPTiAic29uZ3MiLiJpZCIgPSAiZ2VucmVzX3NvbmdzIi4ic29uZ19pZCIgV0hFUkUgInNvbmdzIi4iaWQiID0gMTQ= U0VMRUNUICJnZW5yZXMiLiogRlJPTSAiZ2VucmVzIiBJTk5FUiBKT0lOICJnZW5yZXNfc29uZ3MiIE9OICJnZW5yZXNfc29uZ3MiLiJnZW5yZV9pZCIgPSAiZ2VucmVzIi4iaWQiIElOTkVSIEpPSU4gInNvbmdzIiBPTiAic29uZ3MiLiJpZCIgPSAiZ2VucmVzX3NvbmdzIi4ic29uZ19pZCIgV0hFUkUgInNvbmdzIi4iaWQiID0gMQ== U0VMRUNUICJnZW5yZXMiLiogRlJPTSAiZ2VucmVzIiBJTk5FUiBKT0lOICJnZW5yZXNfc29uZ3MiIE9OICJnZW5yZXNfc29uZ3MiLiJnZW5yZV9pZCIgPSAiZ2VucmVzIi4iaWQiIElOTkVSIEpPSU4gInNvbmdzIiBPTiAic29uZ3MiLiJpZCIgPSAiZ2VucmVzX3NvbmdzIi4ic29uZ19pZCIgV0hFUkUgImdlbnJlc19zb25ncyIuInNvbmdfaWQiID0gMTQ= U0VMRUNUICJnZW5yZXMiLiogRlJPTSAiZ2VucmVzIiBJTk5FUiBKT0lOICJnZW5yZXNfc29uZ3MiIE9OICJnZW5yZXNfc29uZ3MiLiJnZW5yZV9pZCIgPSAiZ2VucmVzIi4iaWQiIElOTkVSIEpPSU4gInNvbmdzIiBPTiAic29uZ3MiLiJpZCIgPSAiZ2VucmVzX3NvbmdzIi4ic29uZ19pZCIgd2hlcmUgc29uZ19pZCA9IDE0 U0VMRUNUICJnZW5yZXMiLiogRlJPTSAiZ2VucmVzIiBJTk5FUiBKT0lOICJnZW5yZXNfc29uZ3MiIE9OICJnZW5yZXNfc29uZ3MiLiJnZW5yZV9pZCIgPSAiZ2VucmVzIi4iaWQiIElOTkVSIEpPSU4gInNvbmdzIiBPTiAic29uZ3MiLiJpZCIgPSAiZ2VucmVzX3NvbmdzIi4ic29uZ19pZCI= U0VMRUNUICJzb25ncyIuKiBGUk9NICJzb25ncyIgV0hFUkUgInNvbmdzIi4iYWxidW1faWQiID0gMQ=="/>
+		<Queries_Labels value="bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== bG9jYWxob3N0CS9Vc2Vycy9MZWUvRGVza3RvcC9iZWV0cy1saWJyYXJ5LmJsYg== MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50 MTI3LjAuMC4xCXNvbWVyc2V0X3NvbmdzX2RldmVsb3BtZW50"/>
+		<Queries_Props value="! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !"/>
+		<Queries_Tips value="! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !"/>
+	</Recents>
+	<RegistrationCompleted value="1"/>
+	<SQLEditor>
+		<ConsoleIndex value="1"/>
+	</SQLEditor>
+	<SchemaEditor>
+		<BonjourState value="1"/>
+		<BookmarksState value="1"/>
+		<Columns>
+			<C1 value="180"/>
+			<C2 value="180"/>
+			<C3 value="180"/>
+			<C4 value="180"/>
+			<C5 value="180"/>
+			<C6 value="180"/>
+			<C7 value="180"/>
+			<C8 value="1364"/>
+		</Columns>
+		<ConnectionsState value="1"/>
+		<LastMode value="2"/>
+		<NavEditorSize value="415"/>
+		<RecentConnectionsState value="1"/>
+		<RecentDBState value="1"/>
+		<ShowPI value="1"/>
+	</SchemaEditor>
+	<SendSystemProfile value="1"/>
+	<Serial value="VS-M-5WGKUCA18NR31HA6-6SKM9D9Y8NPLRTZ8-UHFEHP7USZHXAQGG-UZLEHNGK4NGLMYJ3"/>
+	<SerialExpirationShown value="1471393311"/>
+	<ServerAdmin>
+		<Address value="1"/>
+		<Database value="1"/>
+		<FilterConnKind value="1"/>
+		<LastQuery value="1"/>
+		<LastSelection value="Local PostgreSQL"/>
+		<Login value="1"/>
+		<LoginTime value="1"/>
+	</ServerAdmin>
+	<SqlEditor>
+		<Favorites value="Qm9va21hcmtz"/>
+		<Location value="1"/>
+		<RecentDB value="1"/>
+		<ShowConsole value="1"/>
+		<Wrap value="1"/>
+	</SqlEditor>
+	<Valentina>
+		<SqlQuery>
+			<Outputs value="1"/>
+			<Tunes value="1"/>
+			<Warnings value="1"/>
+		</SqlQuery>
+	</Valentina>
+</properties>
+

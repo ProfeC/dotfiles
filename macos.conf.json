@@ -18,6 +18,7 @@
 			"~/.config/transmission": "transmission/",
 			"~/.config/vlc": "vlc/",
 			"/Library/Desktop Pictures/Favorites": "assets/wallpapers"
+			"~/Library/Preferences/Valentina Studio": "macos/valentina-studio/",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "macos/virtualbox/org.virtualbox.app.VirtualBox.plist",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "macos/virtualbox/org.virtualbox.app.VirtualBoxVM.plist",
 		}
