@@ -21,6 +21,8 @@
 			"~/Library/Preferences/Valentina Studio": "macos/valentina-studio/",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "macos/virtualbox/org.virtualbox.app.VirtualBox.plist",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "macos/virtualbox/org.virtualbox.app.VirtualBoxVM.plist",
+			"~/Library/Preferences/org.videolan.vlc": "macos/vlc/org.videolan.vlc/",
+			"~/Library/Preferences/org.videolan.vlc.plist": "macos/vlc/org.videolan.plist",
 		}
 	},
 	// {
