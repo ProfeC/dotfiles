@@ -19,5 +19,10 @@
 			"~/.config/vlc": "vlc/",
 			"/Library/Desktop Pictures/Favorites": "assets/wallpapers"
 		}
-	}
+	},
+	// {
+	// 	"shell": [
+	// 		["git submodule update --init --recursive", "Installing submodules"]
+	// 	]
+	// }
 ]

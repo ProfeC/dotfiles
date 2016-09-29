@@ -2,23 +2,43 @@
 
 [
 	{
+		"shell":
+	},
+	{
 		"brew": [
+			"coreutils",
+			"git",
+			"git-lfs",
+			"node",
+			"openssh",
 			"python",
 			"ruby",
-			"node",
-			"coreutils",
-			"git"
+			"s3cmd",
+			"zsh",
+			"zsh-autosuggestions",
+			"zsh-completions",
+			"zsh-git-prompt",
+			"zsh-syntax-highlighting"
 		]
 	},
 	{
 		"cask": [
-			"google-chrome",
-			"iterm2",
-			"dropbox",
-			// "vlc",
-			"tower",
+			"boinc",
 			"cornerstone",
-			"sublime-text3"
+			"dropbox",
+			"forklift",
+			"garmin-express",
+			"google-chrome",
+			"handbrake",
+			"iterm2",
+			"steam",
+			"sublime-text3",
+			"tower",
+			"transmission",
+			"valentina-studio",
+			"vlc",
+			"virtualbox",
+			"xld"
 		]
 	}
 ]
