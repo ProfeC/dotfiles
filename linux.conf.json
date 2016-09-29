@@ -1,0 +1,43 @@
+[
+	{
+		"defaults": {
+			"link": {
+				"create": true,
+				"relink": true
+			}
+		}
+	},
+	{
+		"clean": [
+			"~",
+			"~/.config"
+		]
+	},
+	{
+		"link": {
+			"~/.config/compton.conf": {
+				"force": true,
+				"path": "compton/config"
+			},
+			"~/.config/conky": "conky/",
+			"~/.config/gtk-2.0": "gtk-2.0/",
+			"~/.config/gtk-3.0": "gtk-3.0/",
+			"~/.config/i3": {
+				"force": true,
+				"path": "i3/"
+			},
+			"~/.config/sublime-text-3": {
+				"force": true,
+				"path": "sublime-text-3/"
+			},
+			"~/.config/terminator": {
+				"force": true,
+				"path": "terminator/"
+			},
+			"~/.config/transmission": "transmission/",
+			"~/.config/vlc": "vlc/",
+			"~/.Xresources": "x/resources/",
+			"~/.xinitrc": "x/initrc"
+		}
+	}
+]
