@@ -17,7 +17,7 @@
 			"~/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package": "sublime-text-3/Packages/Package Control.sublime-package",
 			"~/.config/transmission": "transmission/",
 			"~/.config/vlc": "vlc/",
-			"/Library/Desktop Pictures/Favorites": "assets/wallpapers"
+			"/Library/Desktop Pictures/Favorites": "assets/wallpapers",
 			"~/Library/Preferences/Valentina Studio": "macos/valentina-studio/",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "macos/virtualbox/org.virtualbox.app.VirtualBox.plist",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "macos/virtualbox/org.virtualbox.app.VirtualBoxVM.plist",
@@ -27,7 +27,7 @@
 	},
 	// {
 	// 	"shell": [
-	// 		["git submodule update --init --recursive", "Installing submodules"]
+	//
 	// 	]
 	// }
 ]
