@@ -24,10 +24,5 @@
 			"~/Library/Preferences/org.videolan.vlc": "macos/vlc/org.videolan.vlc/",
 			"~/Library/Preferences/org.videolan.vlc.plist": "macos/vlc/org.videolan.plist",
 		}
-	},
-	// {
-	// 	"shell": [
-	//
-	// 	]
-	// }
+	}
 ]

@@ -2,11 +2,6 @@
 
 [
 	{
-		"shell":[
-			// ["setprefs.sh", "Setting MacOS Preferences"]
-		]
-	},
-	{
 		"brew": [
 			"coreutils",
 			"git",

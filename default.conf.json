@@ -55,8 +55,5 @@
 			},
 			"~/bin": "bin/"
 		}
-	},
-	{
-		// "shell": "git update-submodules"
 	}
 ]
