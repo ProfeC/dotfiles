@@ -34,7 +34,7 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"material_theme_tree_headings": true, // Show sidebar headings
+	"material_theme_tree_headings": true,
 	"material_theme_appbar_red": true,
 	"material_theme_accent_tomato": true,
 	"material_theme_bold_tab": true,
