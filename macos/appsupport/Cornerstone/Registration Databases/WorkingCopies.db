@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>FB0614CA-D9B9-44EC-BC66-39FE7BC10230</UUID>
+        <nextObjectID>204</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>ModelVersion</key>
+                    <integer>1</integer>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>640</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>Registration</key>
+                        <data>
+		aTRXO64OAd+3/zEKdN+RSGcynizXWHjvJbXBfsMRt0g=
+		</data>
+                        <key>RegistryFolder</key>
+                        <data>
+		Ujkr82wcM/U1wkh1vRQ+ey2t2AkxtNP4iimqpaHaM8w=
+		</data>
+                        <key>RegistryNode</key>
+                        <data>
+		FgtAzNcUxdPivNZKQiAslrDu795IlsYdkgu8iRW5f1Q=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="REGISTRYFOLDER" id="z102">
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGFhdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKMH
+CA9VJG51bGzTCQoLDA0OV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OgoIAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJsZURpY3Rpb25hcnmjEhQVXE5TRGljdGlvbmFyeVhOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEYGVRyb290gAEIERojLTI3O0FIUFtiY2Rma3Z/lZmmr8HEyQAAAAAAAAEBAAAAAAAAABoAAAAAAAAAAAAAAAAAAADL
+</attribute>
+        <attribute name="name" type="string">/</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER"></relationship>
+        <relationship name="children" type="0/0" destination="REGISTRYNODE" idrefs="z203"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z203">
+        <attribute name="path" type="string">/Users/Lee/Projects/SHU Gateway 2014</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGRUZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8Q
+FwcIJygpKissLS4vMDEyMzQ1Njk/QEFCVSRudWxs0wkKCwwZJldOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzrA0ODxAREhMUFRYXGIACgAOABIAFgAaAB4AIgAmACoALgAyADawaGxwbHh8gHyAfICWADoAPgBCAD4ARgBOAFIATgBSAE4AUgBWAFl5UcmFuc2NyaXB0UGF0aF8QE1J1blBvc3RDb21taXRTY3JpcHRfEBtWNEZTRXZlbnRNb25pdG9yTGFzdEV2ZW50SWRfEBJSdW5QcmVDb21taXRTY3JpcHRfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXxAYQ29tcGFyZUFnYWluc3RSZXBvc2l0b3J5XxAUTGFzdExvY2FsQ2hhbmdlQ291bnRfEBdSZWxlYXNlTG9ja3NBZnRlckNvbW1pdF8QFFBvc3RDb21taXRTY3JpcHRUeXBlXxAQU2hvd0lnbm9yZWRGaWxlc18QE1ByZUNvbW1pdFNjcmlwdFR5cGVeTGFzdExvZ01lc3NhZ2VfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy82REEzN0VBOS02NkU5LTRBNDMtQjdBMS02Q0JENTAzRTM2QjcudHJhbnNjcmlwdAgSABsaw9IKCzc4oIAS0jo7PD1aJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0FycmF5ojw+WE5TT2JqZWN0CRAAXxC5TG9nZ2luZyBBUEk6IFVuaXQgRm9vdGVyCgogLSBDaGVja3MgdG8gc2VlIGlmIHByZSAmIHN1ZmZpeCBhcmUgZGVmaW5lZCBwcmlvciB0byBjb25jYXRlbmF0aW5nIHRoZW0uCiAtIE1lcmdlcyBhbmQgZGVwbG95cyBjaGFuZ2VzIGZyb20gZGV2ZWxvcG1lbnQgdG8gcHJvZHVjdGlvbi4KClsgZGVwbG95OiBwcm9kdWN0aW9uIF3SOjtDRFxOU0RpY3Rpb25hcnmiQz5fEA9OU0tleWVkQXJjaGl2ZXLRR0hUcm9vdIABAAgAEQAaACMALQAyADcAUQBXAF4AZgBxAHgAhQCHAIkAiwCNAI8AkQCTAJUAlwCZAJsAnQCqAKwArgCwALIAtAC2ALgAugC8AL4AwADCAMQA0wDpAQcBHAEyAU0BZAF+AZUBqAG+Ac0CPgI/AkQCSQJKAkwCUQJcAmUCbQJwAnkCegJ8AzgDPQNKA00DXwNiA2cAAAAAAAACAQAAAAAAAABJAAAAAAAAAAAAAAAAAAADaQ==
+</attribute>
+        <attribute name="name" type="string">SHU Gateway 2014</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+</database>

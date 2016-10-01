@@ -15,13 +15,23 @@
 				"path": "sublime-text-3/Packages/User/"
 			},
 			"~/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package": "sublime-text-3/Packages/Package Control.sublime-package",
-			"~/Library/Preferences/net.freemacsoft.AppCleaner.plist": "macos/net.freemacsoft.AppCleaner.plist",
-			"~/Library/Preferences/org.m0k.transmission.plist": "transmission/macos/org.m0k.transmission.plist",
-			"~/Library/Preferences/org.videolan.vlc": "vlc/macos/org.videolan.vlc/",
-			"~/Library/Preferences/org.videolan.vlc.plist": "vlc/macos/org.videolan.plist",
-			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "virtualbox/macos/org.virtualbox.app.VirtualBox.plist",
-			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "virtualbox/macos/org.virtualbox.app.VirtualBoxVM.plist",
-			"~/Library/Preferences/Valentina Studio": "macos/valentina-studio/"
+			"~/Library/Preferences/com.apple.Terminal.plist": "macos/preferences/com.apple.Terminal.plist",
+			"~/Library/Application Support/Spectacle": "macos/appsupport/Spectacle/",
+			"~/Library/Preferences/com.divisiblebyzero.Spectacle.plist": "macos/preferences/com.divisiblebyzero.Spectacle.plist",
+			"~/Library/Application Support/com.fournova.Tower2": "macos/appsupport/com.fournova.Tower2/",
+			"~/Library/Preferences/com.fournova.Tower2.plist": "macos/preferences/com.fournova.Tower2.plist",
+			"~/Library/Preferences/com.googlecode.iterm2.plist": "macos/preferences/com.googlecode.iterm2.plist",
+			"~/Library/Preferences/com.zennaware.Cornerstone.plist": "macos/preferences/com.zennaware.Cornerstone.plist",
+			"~/Library/Preferences/fr.handbrake.HandBrake.plist": "handbrake/macos/preferences/fr.handbrake.HandBrake.plist",
+			"~/Library/Application Support/HandBrake/UserPresets.plist": "handbrake/macos/appsupport/UserPresets.plist",
+			"~/Library/Preferences/jp.tmkk.XLD.plist": "macos/preferences/jp.tmkk.XLD.plist",
+			"~/Library/Preferences/net.freemacsoft.AppCleaner.plist": "macos/preferences/net.freemacsoft.AppCleaner.plist",
+			"~/Library/Preferences/org.m0k.transmission.plist": "transmission/macos/preferences/org.m0k.transmission.plist",
+			"~/Library/Preferences/org.videolan.vlc": "vlc/macos/preferences/org.videolan.vlc/",
+			"~/Library/Preferences/org.videolan.vlc.plist": "vlc/macos/preferences/org.videolan.plist",
+			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBox.plist",
+			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBoxVM.plist",
+			"~/Library/Preferences/Valentina Studio": "valentina-studio/macos/preferences/"
 		}
 	}
 ]

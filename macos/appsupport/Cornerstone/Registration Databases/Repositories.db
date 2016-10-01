@@ -1,0 +1,145 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>D56DFE87-43A7-4CC1-AFF1-F4398B566407</UUID>
+        <nextObjectID>118</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>ModelVersion</key>
+                    <integer>1</integer>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>640</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>Registration</key>
+                        <data>
+		aTRXO64OAd+3/zEKdN+RSGcynizXWHjvJbXBfsMRt0g=
+		</data>
+                        <key>RegistryFolder</key>
+                        <data>
+		Ujkr82wcM/U1wkh1vRQ+ey2t2AkxtNP4iimqpaHaM8w=
+		</data>
+                        <key>RegistryNode</key>
+                        <data>
+		FgtAzNcUxdPivNZKQiAslrDu795IlsYdkgu8iRW5f1Q=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="REGISTRYFOLDER" id="z102">
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGFhdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKMH
+CA9VJG51bGzTCQoLDA0OV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OgoIAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJsZURpY3Rpb25hcnmjEhQVXE5TRGljdGlvbmFyeVhOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEYGVRyb290gAEIERojLTI3O0FIUFtiY2Rma3Z/lZmmr8HEyQAAAAAAAAEBAAAAAAAAABoAAAAAAAAAAAAAAAAAAADL
+</attribute>
+        <attribute name="name" type="string">/</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER"></relationship>
+        <relationship name="children" type="0/0" destination="REGISTRYNODE" idrefs="z116 z104 z113 z105 z118 z107 z114 z115 z103 z117 z106 z110"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z103">
+        <attribute name="path" type="string">http://community.paperthin.com/svn/ADF</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy9FOTlGRUNGQi1FRjg1LTQ4N0YtQTM4Ny01MkQ5NjY3NTMzMTIudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">ADF (community.paperthin.com)</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z104">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/hogshead</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy8zRjIxQjQ4RS0wRDA1LTRCMkQtQkUwMC1BMTY4NUIzQzBBMkEudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">Hogshead</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z105">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/cs-gateway</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy9GMEFDMDE5Ny1GRENCLTQxNTktQTU5NS04QUVEMjg4QTIxMTEudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">SHU Gateway (CommonSpot)</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z106">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/cs-wsou</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGHh9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKYH
+CBESFRtVJG51bGzTCQoLDA0PViRjbGFzc1dOUy5rZXlzWk5TLm9iamVjdHOABaEOgAKhEIADXxATU2VsZWN0ZWRGaWx0ZXJJdGVtc9IJCxMUgASg0hYXGBlaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0FycmF5ohgaWE5TT2JqZWN00hYXHB1cTlNEaWN0aW9uYXJ5ohwaXxAPTlNLZXllZEFyY2hpdmVy0SAhVHJvb3SAAQgRGiMtMjc+REtSWmVnaWttb4WKjI2Snaausbq/zM/h5OkAAAAAAAABAQAAAAAAAAAiAAAAAAAAAAAAAAAAAAAA6w==
+</attribute>
+        <attribute name="name" type="string">SHU WSOU (CommonSpot)</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z107">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/cs-landings</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy9EREJFMUVCQS1DODc4LTRFRTQtQjY3RC1BMzE2ODEzODE2QTEudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">SHU Landings (CommonSpot)</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z110">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/cs-crisis</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy83QTA5MTEwNy1DNDZBLTQzREUtQUI4My0zREQyNUFEQjU0RDkudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">SHU Crisis (CommonSpot)</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z113">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/portal-related</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy85QTk3MzhDMC0zNEM3LTQ0REYtOTMwQi1DRjA5MUVCQjc0NDIudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">SHU Portal Related</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z114">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/ghostwriter</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy80OUVFNzg0Ri04OTYyLTRFNUMtODk1NS04RTI5MEEwOUY2REQudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">ghostwriter</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z115">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/cs-admissions</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy80ODJERDZGNS1GRDlBLTQ2ODQtOEY1NS1EODFBMkVERTEzOEQudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">SHU UG Admissions</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z116">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/cs-online-learning</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy9EQzU3NTY5Mi1CN0Q0LTQyRDctQTk3Ny0yNjkwMzREMzMzQjcudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">SHU Online Learning</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z117">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/commonspot-gateway-2014</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy9CNjBDRThDMi02Qjc1LTQ1REQtQkQ3MC0yMkMxMENEMTc0ODcudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">SHU Gateway - 2014 (CommonSpot)</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+    <object type="REGISTRATION" id="z118">
+        <attribute name="path" type="string">https://clarkgar@shu-web-development.svn.beanstalkapp.com/cs-wsou</attribute>
+        <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgH
+CBMUFRgeH1UkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAGgAdfEBNTZWxlY3RlZEZpbHRlckl0ZW1zXlRyYW5zY3JpcHRQYXRo0goLFheggAXSGRobHFokY2xhc3NuYW1lWCRjbGFzc2VzV05TQXJyYXmiGx1YTlNPYmplY3RfEG4vVXNlcnMvTGVlL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9Db3JuZXJzdG9uZS9UcmFuc2NyaXB0cy9ENDIzMzAyRS01OUQ3LTRBNDYtQTI0MS0wMUE1NzgyMTI3QUEudHJhbnNjcmlwdNIZGiAhXE5TRGljdGlvbmFyeaIgHV8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290gAEACAARABoAIwAtADIANwBAAEYATQBVAGAAZwBqAGwAbgBxAHMAdQB3AI0AnAChAKIApACpALQAvQDFAMgA0QFCAUcBVAFXAWkBbAFxAAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAXM=
+</attribute>
+        <attribute name="name" type="string">cs-wsou</attribute>
+        <relationship name="parent" type="1/1" destination="REGISTRYFOLDER" idrefs="z102"></relationship>
+    </object>
+</database>
