@@ -15,14 +15,13 @@
 				"path": "sublime-text-3/Packages/User/"
 			},
 			"~/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package": "sublime-text-3/Packages/Package Control.sublime-package",
-			"~/.config/transmission": "transmission/",
-			"~/.config/vlc": "vlc/",
-			"/Library/Desktop Pictures/Favorites": "assets/wallpapers",
-			"~/Library/Preferences/Valentina Studio": "macos/valentina-studio/",
-			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "macos/virtualbox/org.virtualbox.app.VirtualBox.plist",
-			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "macos/virtualbox/org.virtualbox.app.VirtualBoxVM.plist",
-			"~/Library/Preferences/org.videolan.vlc": "macos/vlc/org.videolan.vlc/",
-			"~/Library/Preferences/org.videolan.vlc.plist": "macos/vlc/org.videolan.plist",
+			"~/Library/Preferences/net.freemacsoft.AppCleaner.plist": "macos/net.freemacsoft.AppCleaner.plist",
+			"~/Library/Preferences/org.m0k.transmission.plist": "transmission/macos/org.m0k.transmission.plist",
+			"~/Library/Preferences/org.videolan.vlc": "vlc/macos/org.videolan.vlc/",
+			"~/Library/Preferences/org.videolan.vlc.plist": "vlc/macos/org.videolan.plist",
+			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "virtualbox/macos/org.virtualbox.app.VirtualBox.plist",
+			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "virtualbox/macos/org.virtualbox.app.VirtualBoxVM.plist",
+			"~/Library/Preferences/Valentina Studio": "macos/valentina-studio/"
 		}
 	}
 ]

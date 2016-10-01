@@ -34,8 +34,8 @@
 				"force": true,
 				"path": "terminator/"
 			},
-			"~/.config/transmission": "transmission/",
-			"~/.config/vlc": "vlc/",
+			"~/.config/transmission": "transmission/linux/",
+			"~/.config/vlc": "vlc/linux/",
 			"~/.Xresources": "x/resources/",
 			"~/.xinitrc": "x/initrc"
 		}
