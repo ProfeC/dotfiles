@@ -2,8 +2,8 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 [submodule "antigen"]
-	path = antigen
+	path = vendor/antigen
 	url = https://github.com/zsh-users/antigen.git
 [submodule "dotbot-brew"]
-	path = dotbot-brew
+	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
