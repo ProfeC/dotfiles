@@ -15,7 +15,10 @@
 				"path": "sublime-text-3/Packages/User/"
 			},
 			"~/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package": "sublime-text-3/Packages/Package Control.sublime-package",
-			"~/Library/Preferences/com.apple.Terminal.plist": "macos/preferences/com.apple.Terminal.plist",
+			"~/Library/Preferences/com.apple.Terminal.plist": {
+				"force": true,
+				"path": "macos/preferences/com.apple.Terminal.plist"
+			},
 			"~/Library/Application Support/Spectacle": "macos/appsupport/Spectacle/",
 			"~/Library/Preferences/com.divisiblebyzero.Spectacle.plist": "macos/preferences/com.divisiblebyzero.Spectacle.plist",
 			"~/Library/Application Support/com.fournova.Tower2": "macos/appsupport/com.fournova.Tower2/",
