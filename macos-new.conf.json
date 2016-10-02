@@ -9,7 +9,7 @@
 			"python",
 			"ruby",
 			"s3cmd",
-			"terminator"
+			"terminator",
 			"zsh",
 			"zsh-autosuggestions",
 			"zsh-completions",
