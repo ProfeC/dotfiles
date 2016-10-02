@@ -41,7 +41,7 @@
 		"link": {
 			"~/.dotfiles": "",
 			"~/Pictures/wallpaper/favs": "assets/wallpapers",
-			"~/.antigen": "antigen",
+			"~/.antigen": "vendor/antigen",
 			"~/.bash_logout": "bash/bash_logout",
 			"~/.bash_profile": "bash/bash_profile",
 			"~/.bashrc": "bash/bashrc",
