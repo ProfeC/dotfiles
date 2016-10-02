@@ -31,7 +31,7 @@
 			"~/Library/Preferences/net.freemacsoft.AppCleaner.plist": "macos/preferences/net.freemacsoft.AppCleaner.plist",
 			"~/Library/Preferences/org.m0k.transmission.plist": "transmission/macos/preferences/org.m0k.transmission.plist",
 			"~/Library/Preferences/org.videolan.vlc": "vlc/macos/preferences/org.videolan.vlc/",
-			"~/Library/Preferences/org.videolan.vlc.plist": "vlc/macos/preferences/org.videolan.plist",
+			"~/Library/Preferences/org.videolan.vlc.plist": "vlc/macos/preferences/org.videolan.vlc.plist",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBox.plist",
 			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBoxVM.plist",
 			"~/Library/Preferences/Valentina Studio": "valentina-studio/macos/preferences/"
