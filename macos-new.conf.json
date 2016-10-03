@@ -10,7 +10,6 @@
 		"cask": [
 			"appcleaner",
 			"boinc",
-			"cornerstone",
 			"dropbox",
 			"forklift",
 			"garmin-express",
@@ -20,6 +19,7 @@
 			"iterm2",
 			"spectacle",
 			"steam",
+			"svn",
 			"sublime-text",
 			"tower",
 			"transmission",
