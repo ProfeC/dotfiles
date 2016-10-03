@@ -1,20 +1,9 @@
 [
 	{
-		"brew": [
-			"coreutils",
-			"git",
-			"git-lfs",
-			"node",
-			"openssh",
-			"python",
-			"ruby",
-			"s3cmd",
-			"terminator",
-			"zsh",
-			"zsh-autosuggestions",
-			"zsh-completions",
-			"zsh-git-prompt",
-			"zsh-syntax-highlighting"
+		"shell": [
+			["brew tap homebrew/gui", "Adding Homebrew GUI"],
+			["brew tap homebrew/dupes", "Adding Homebrew Dupes"],
+			["brew tap homebrew/x11", "Adding Homebrew X11"]
 		]
 	},
 	{
@@ -29,6 +18,7 @@
 			"google-drive",
 			"handbrake",
 			"iterm2",
+			"spectacle",
 			"steam",
 			"sublime-text",
 			"tower",
@@ -36,7 +26,31 @@
 			"valentina-studio",
 			"vlc",
 			"virtualbox",
-			"xld"
+			"xld",
+			"xquartz"
+		]
+	},
+	{
+		"brew": [
+			"coreutils",
+			"git",
+			"git-lfs",
+			"htop",
+			"node",
+			"openssh",
+			"python",
+			"ruby",
+			"s3cmd",
+			"zsh",
+			"zsh-autosuggestions",
+			"zsh-completions",
+			"zsh-git-prompt",
+			"zsh-syntax-highlighting"
+		]
+	},
+	{
+		"shell": [
+			["setprefs.sh", "Updating System Preferences..."]
 		]
 	}
 ]
