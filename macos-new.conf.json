@@ -50,7 +50,7 @@
 	},
 	{
 		"shell": [
-			["setprefs.sh", "Updating System Preferences..."]
+			["macos/setprefs.sh", "Updating System Preferences..."]
 		]
 	}
 ]
