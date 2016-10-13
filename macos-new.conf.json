@@ -41,7 +41,9 @@
 			"node",
 			"openssh",
 			"python",
-			"ruby",
+			"rbenv",
+			"rbenv-gem-rehash",
+			"ruby-build",
 			"s3cmd",
 			"zsh",
 			"zsh-autosuggestions",
@@ -52,7 +54,8 @@
 	},
 	{
 		"shell": [
-			["./macos/setprefs.sh", "Updating System Preferences..."]
+			["./macos/setprefs.sh", "Updating System Preferences..."],
+			["rbenv install 2.3.1", "Installing Ruby 2.3.1..."]
 		]
 	}
 ]
