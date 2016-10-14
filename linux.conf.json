@@ -9,35 +9,36 @@
 	},
 	{
 		"clean": [
-			"~",
-			"~/.config"
+			"$HOME",
+			"$HOME/.config"
 		]
 	},
 	{
 		"link": {
-			"~/.config/compton.conf": {
+			"$HOME/.config/compton.conf": {
 				"force": true,
 				"path": "compton/config"
 			},
-			"~/.config/conky": "conky/",
-			"~/.config/gtk-2.0": "gtk-2.0/",
-			"~/.config/gtk-3.0": "gtk-3.0/",
-			"~/.config/i3": {
+			"$HOME/.config/conky": "conky/",
+			"$HOME/.config/gtk-2.0": "gtk-2.0/",
+			"$HOME/.config/gtk-3.0": "gtk-3.0/",
+			"$HOME/.config/i3": {
 				"force": true,
 				"path": "i3/"
 			},
-			"~/.config/sublime-text-3": {
+			"$HOME/.config/sublime-text-3": {
 				"force": true,
 				"path": "sublime-text-3/"
 			},
-			"~/.config/terminator": {
+			"$HOME/.config/terminator": {
 				"force": true,
 				"path": "terminator/"
 			},
-			"~/.config/transmission": "transmission/linux/",
-			"~/.config/vlc": "vlc/linux/",
-			"~/.Xresources": "x/resources/",
-			"~/.xinitrc": "x/initrc"
+			"$HOME/.config/transmission": "transmission/linux/",
+			"$HOME/.config/vlc": "vlc/linux/",
+			"$HOME/.Xresources": "x/resources/",
+			"$HOME/.xinitrc": "x/initrc",
+			"$HOME/.rdm/connections.json":"redis/rdm-connections.json"
 		}
 	}
 ]

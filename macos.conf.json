@@ -7,34 +7,35 @@
 			}
 		}
 	}, {
-		"clean": ["~", "~/.config", "~/Library/Application Support/Sublime Text 3"]
+		"clean": ["$HOME", "$HOME/.config", "$HOME/Library/Application Support/Sublime Text 3"]
 	}, {
 		"link": {
-			"~/Library/Application Support/Sublime Text 3/Packages/User": {
+			"$HOME/Library/Application Support/Sublime Text 3/Packages/User": {
 				"force": true,
 				"path": "sublime-text-3/Packages/User/"
 			},
-			"~/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package": "sublime-text-3/Packages/Package Control.sublime-package",
-			"~/Library/Preferences/com.apple.Terminal.plist": {
+			"$HOME/Library/Application Support/Sublime Text 3/Packages/Package Control.sublime-package": "sublime-text-3/Packages/Package Control.sublime-package",
+			"$HOME/Library/Preferences/com.apple.Terminal.plist": {
 				"force": true,
 				"path": "macos/preferences/com.apple.Terminal.plist"
 			},
-			"~/Library/Application Support/Spectacle": "macos/appsupport/Spectacle/",
-			"~/Library/Preferences/com.divisiblebyzero.Spectacle.plist": "macos/preferences/com.divisiblebyzero.Spectacle.plist",
-			"~/Library/Application Support/com.fournova.Tower2": "macos/appsupport/com.fournova.Tower2/",
-			"~/Library/Preferences/com.fournova.Tower2.plist": "macos/preferences/com.fournova.Tower2.plist",
-			"~/Library/Preferences/com.googlecode.iterm2.plist": "macos/preferences/com.googlecode.iterm2.plist",
-			"~/Library/Preferences/com.zennaware.Cornerstone.plist": "macos/preferences/com.zennaware.Cornerstone.plist",
-			"~/Library/Preferences/fr.handbrake.HandBrake.plist": "handbrake/macos/preferences/fr.handbrake.HandBrake.plist",
-			"~/Library/Application Support/HandBrake/UserPresets.plist": "handbrake/macos/appsupport/UserPresets.plist",
-			"~/Library/Preferences/jp.tmkk.XLD.plist": "macos/preferences/jp.tmkk.XLD.plist",
-			"~/Library/Preferences/net.freemacsoft.AppCleaner.plist": "macos/preferences/net.freemacsoft.AppCleaner.plist",
-			"~/Library/Preferences/org.m0k.transmission.plist": "transmission/macos/preferences/org.m0k.transmission.plist",
-			"~/Library/Preferences/org.videolan.vlc": "vlc/macos/preferences/org.videolan.vlc/",
-			"~/Library/Preferences/org.videolan.vlc.plist": "vlc/macos/preferences/org.videolan.vlc.plist",
-			"~/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBox.plist",
-			"~/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBoxVM.plist",
-			"~/Library/Preferences/Valentina Studio": "valentina-studio/macos/preferences/"
+			"$HOME/Library/Application Support/Spectacle": "macos/appsupport/Spectacle/",
+			"$HOME/Library/Preferences/com.divisiblebyzero.Spectacle.plist": "macos/preferences/com.divisiblebyzero.Spectacle.plist",
+			"$HOME/Library/Application Support/com.fournova.Tower2": "macos/appsupport/com.fournova.Tower2/",
+			"$HOME/Library/Preferences/com.fournova.Tower2.plist": "macos/preferences/com.fournova.Tower2.plist",
+			"$HOME/Library/Preferences/com.googlecode.iterm2.plist": "macos/preferences/com.googlecode.iterm2.plist",
+			"$HOME/Library/Preferences/com.zennaware.Cornerstone.plist": "macos/preferences/com.zennaware.Cornerstone.plist",
+			"$HOME/Library/Preferences/fr.handbrake.HandBrake.plist": "handbrake/macos/preferences/fr.handbrake.HandBrake.plist",
+			"$HOME/Library/Application Support/HandBrake/UserPresets.plist": "handbrake/macos/appsupport/UserPresets.plist",
+			"$HOME/Library/Preferences/jp.tmkk.XLD.plist": "macos/preferences/jp.tmkk.XLD.plist",
+			"$HOME/Library/Preferences/net.freemacsoft.AppCleaner.plist": "macos/preferences/net.freemacsoft.AppCleaner.plist",
+			"$HOME/Library/Preferences/org.m0k.transmission.plist": "transmission/macos/preferences/org.m0k.transmission.plist",
+			"$HOME/Library/Preferences/org.videolan.vlc": "vlc/macos/preferences/org.videolan.vlc/",
+			"$HOME/Library/Preferences/org.videolan.vlc.plist": "vlc/macos/preferences/org.videolan.vlc.plist",
+			"$HOME/Library/Preferences/org.virtualbox.app.VirtualBox.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBox.plist",
+			"$HOME/Library/Preferences/org.virtualbox.app.VirtualBoxVM.plist": "virtualbox/macos/preferences/org.virtualbox.app.VirtualBoxVM.plist",
+			"$HOME/Library/Preferences/Valentina Studio": "valentina-studio/macos/preferences/",
+			"$HOME/Library/Preferences/rdm/connections.json":"redis/rdm-connections.json"
 		}
 	}
 ]
