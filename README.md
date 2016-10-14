@@ -13,18 +13,33 @@ $ git clone https://github.com/Tunous/dotfiles.git ~/.dotfiles
 $ ~/.dotfiles/install [config file(s)] # chose correct config file for the distribution you're updating
 ```
 
-#### Links
+#### MacOS
 
-Inspired by [this article](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/) and Dotbot. Here's links back to
-Dotbot "stuff" to help other people discover Dotbot.
+```shell
+$ ~/.dotfiles/install macos
+```
 
-* [dotbot](https://github.com/anishathalye/dotbot)
-* [fork](https://github.com/anishathalye/dotfiles_template/fork)
-* [anishathalye_dotfiles](https://github.com/anishathalye/dotfiles)
+#### MacOS - Fresh Install
 
-### Acknowledgments and Thanks to
+```shell
+$ ~/.dotfiles/install macos macos-new
+```
 
-* _**ALL** of the people with dotfiles out there that I've looked at to configure my system(s)._
+#### Linux
+
+```shell
+$ ~/.dotfiles/install linux
+```
+
+
+### Acknowledgments
+
+_Thanks to **ALL** of the people with dotfiles out there that I've looked at to configure my system(s)._
+
+Inspired by [this article](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/) and [Dotbot](https://github.com/anishathalye/dotbot). You can [fork](https://github.com/anishathalye/dotfiles_template/fork) Anish Athalye's template if you'd like or take a look at [his dotfiles](https://github.com/anishathalye/dotfiles).
+
+**The following have been extensivley used:**
+
 * [Anish Athalye](https://github.com/anishathalye) and his:
   *  [dotfiles repository](https://github.com/anishathalye/dotfiles)
 * [Mathias Bynens](https://github.com/mathiasbynens) and his:
