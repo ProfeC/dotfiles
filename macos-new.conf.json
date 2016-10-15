@@ -2,6 +2,7 @@
 	{
 		"shell": [
 			["xcode-select --install", "Install XCode Tools"],
+			["/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"", "Installing Homebrew"],
 			["brew tap homebrew/gui", "Adding Homebrew GUI"],
 			["brew tap homebrew/dupes", "Adding Homebrew Dupes"],
 			["brew tap homebrew/x11", "Adding Homebrew X11"]
@@ -14,7 +15,6 @@
 			"boinc",
 			"cocktail",
 			"dropbox",
-			"fonts",
 			"forklift",
 			"garmin-express",
 			"google-chrome",
@@ -49,7 +49,6 @@
 			"python",
 			"python3",
 			"rbenv",
-			"rbenv-gem-rehash",
 			"ruby-build",
 			"redis",
 			"s3cmd",
@@ -64,7 +63,8 @@
 		"shell": [
 			["./macos/setprefs.sh", "Updating System Preferences..."],
 			["sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh", "Making zsh the default shell..."],
-			["rbenv install 2.3.1", "Installing Ruby 2.3.1..."]
+			["rbenv install 2.3.1", "Installing Ruby 2.3.1..."],
+			["curl \"https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > \"$HOME/Downloads/node-latest.pkg\" && sudo installer -store -pkg \"$HOME/Downloads/node-latest.pkg\" -target \"/\"", "Installing Node.JS..."]
 		]
 	}
 ]
