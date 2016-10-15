@@ -7,3 +7,6 @@
 [submodule "dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+[submodule "vendor/powerline-fonts"]
+	path = vendor/powerline-fonts
+	url = https://github.com/powerline/fonts
