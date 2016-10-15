@@ -1,7 +1,7 @@
 [
 	{
 		"shell": [
-			["xcode-select --install", "Install XCode Tools"]
+			["xcode-select --install", "Install XCode Tools"],
 			["brew tap homebrew/gui", "Adding Homebrew GUI"],
 			["brew tap homebrew/dupes", "Adding Homebrew Dupes"],
 			["brew tap homebrew/x11", "Adding Homebrew X11"]
