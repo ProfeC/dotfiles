@@ -64,7 +64,7 @@
 			["./macos/setprefs.sh", "Updating System Preferences..."],
 			["sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh", "Making zsh the default shell..."],
 			["rbenv install 2.3.1", "Installing Ruby 2.3.1..."],
-			["curl \"https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > \"$HOME/Downloads/node-latest.pkg\" && sudo installer -store -pkg \"$HOME/Downloads/node-latest.pkg\" -target \"/\"", "Installing Node.JS..."]
+			["curl \"https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\\.pkg</a>.*|\\1|p')}.pkg" > \"$HOME/Downloads/node-latest.pkg\" && sudo installer -store -pkg \"$HOME/Downloads/node-latest.pkg\" -target \"/\"", "Installing Node.JS..."]
 		]
 	}
 ]
