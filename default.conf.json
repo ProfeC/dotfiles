@@ -55,5 +55,13 @@
 			},
 			"~/bin": "bin/"
 		}
+	},
+	{
+		"shell": [
+			[
+				"$HOME/.dotfiles/vendor/powerline-fonts/install.sh",
+				"Installing Powerline Fonts"
+			]
+		]
 	}
 ]

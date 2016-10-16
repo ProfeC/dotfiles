@@ -1,10 +1,16 @@
 # Use colors in coreutils utilities output
-alias ls='ls --color=auto'
-alias grep='grep --color'
+if [ `uname` = "Darwin" ]; then
+	alias ls='ls -G'
+	alias grep='grep -G'
+elif [ `uname -o` = "GNU/Linux" ]; then
+	alias ls='ls --color=auto'
+	alias grep='grep --color'
+fi
+
 
 # ls aliases
-alias ll='ls -lah'
-alias la='ls -A'
+alias ll='ls -Alh'
+alias la='ls -Alh'
 alias l='ls'
 
 # Aliases to protect against overwriting
