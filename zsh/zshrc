@@ -32,6 +32,7 @@ zstyle ':completion:*' menu select
 
 setopt COMPLETE_ALIASES
 setopt HIST_IGNORE_DUPS
+setopt PROMPT_SUBST
 
 autoload -Uz run-help
 autoload -Uz run-help-git
