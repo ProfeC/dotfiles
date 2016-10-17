@@ -59,7 +59,7 @@
 	{
 		"shell": [
 			[
-				"$HOME/.dotfiles/vendor/powerline-fonts/install.sh",
+				"~/.dotfiles/vendor/powerline-fonts/install.sh",
 				"Installing Powerline Fonts"
 			]
 		]
