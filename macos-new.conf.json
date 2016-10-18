@@ -1,7 +1,6 @@
 [
 	{
 		"shell": [
-			["xcode-select --install", "Install XCode Tools"],
 			["/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"", "Installing Homebrew"],
 			["brew tap homebrew/gui", "Adding Homebrew GUI"],
 			["brew tap homebrew/dupes", "Adding Homebrew Dupes"],
