@@ -21,6 +21,8 @@ $ ~/.dotfiles/install macos
 
 #### MacOS - Fresh Install
 
+Install Xcode and Xcode Tools from the AppStore. Once that has completed,
+
 ```shell
 $ ~/.dotfiles/install macos macos-new
 ```
