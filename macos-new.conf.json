@@ -23,6 +23,7 @@
 			["brew install zsh-completions", "Installing zsh-completions"],
 			["brew install zsh-git-prompt", "Installing zsh-git-prompt"],
 			["brew install zsh-syntax-highlighting", "Installing zsh-syntax-highlighting"],
+			["install caskroom/cask/brew-cask", "Installing Homebrew Cask"],
 			["cask install 1password", "Installing 1Password"],
 			["cask install appcleaner", "Installing AppCleaner"],
 			["cask install avast", "Installing Avast"],
