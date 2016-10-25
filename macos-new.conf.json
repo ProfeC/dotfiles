@@ -11,6 +11,7 @@
 			["brew install git-lfs", "Installing Git LFS"],
 			["brew install htop", "Installing HTop"],
 			["brew install mariadb", "Installing MariaDB"],
+			["brew install node", "Installing NodeJS"],
 			["brew install openssh", "Installing OpenSSH"],
 			["brew install python", "Installing Python"],
 			["brew install python3", "Installing Python 3"],
@@ -51,7 +52,6 @@
 			["brew cask install xld", "Installing xld"],
 			["brew cask install xquartz", "Installing xquartz"],
 			["sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh", "Making zsh the default shell..."],
-			["curl \"https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\\.pkg</a>.*|\\1|p')}.pkg\" > \"$HOME/Downloads/node-latest.pkg\" && sudo installer -store -pkg \"$HOME/Downloads/node-latest.pkg\" -target \"/\"", "Installing Node.JS..."],
 			["rbenv install 2.3.1", "Installing Ruby 2.3.1..."],
 			["./macos/setprefs.sh", "Updating System Preferences..."]
 		]
