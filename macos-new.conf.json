@@ -19,6 +19,7 @@
 			["brew install redis", "Installing Redis"],
 			["brew install s3cmd", "Installing s3cmd"],
 			["brew install svn", "Installing svn"],
+			["brew install yarn", "Installing yarn"],
 			["brew install zsh", "Installing Z Shell"],
 			["brew install zsh-autosuggestions", "Installing zsh-autosuggestions"],
 			["brew install zsh-completions", "Installing zsh-completions"],
