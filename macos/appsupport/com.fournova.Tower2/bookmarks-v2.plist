@@ -5,10 +5,8 @@
 	<key>children</key>
 	<array>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.15435905/</string>
 			<key>fileURL</key>
-			<string>file:///Users/Lee/dotfiles/</string>
+			<string>file:///Users/clarkgar/dotfiles/</string>
 			<key>lastOpenedDate</key>
 			<real>0.0</real>
 			<key>name</key>
@@ -16,67 +14,57 @@
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>1</integer>
+			<true/>
 		</dict>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.14592809/</string>
 			<key>fileURL</key>
 			<string>file:///Users/Lee/Projects/s3cmd/</string>
 			<key>lastOpenedDate</key>
-			<real>1470108824.8150079</real>
+			<real>0.0</real>
 			<key>name</key>
 			<string>s3cmd</string>
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>0</integer>
+			<false/>
 		</dict>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.13503882/</string>
 			<key>fileURL</key>
-			<string>file:///Users/Lee/Projects/log-viewer/</string>
+			<string>file:///Volumes/Storage/Projects/cs-log-viewer/</string>
 			<key>lastOpenedDate</key>
-			<real>1465429419.204505</real>
+			<real>0.0</real>
 			<key>name</key>
-			<string>log-viewer</string>
+			<string>cs-log-viewer</string>
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>1</integer>
+			<true/>
 		</dict>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.4075936/</string>
 			<key>fileURL</key>
 			<string>file:///Users/Lee/Projects/Arduino/</string>
 			<key>lastOpenedDate</key>
-			<real>1460920632.469918</real>
+			<real>0.0</real>
 			<key>name</key>
 			<string>Arduino</string>
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.4186354/</string>
 			<key>fileURL</key>
 			<string>file:///Users/Lee/Projects/WebIOPi/</string>
 			<key>lastOpenedDate</key>
-			<real>1451016587.471962</real>
+			<real>0.0</real>
 			<key>name</key>
 			<string>WebIOPi</string>
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.4186174/</string>
 			<key>fileURL</key>
 			<string>file:///Users/Lee/Projects/PiFace/</string>
 			<key>lastOpenedDate</key>
@@ -86,42 +74,36 @@
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 		<dict>
 			<key>children</key>
 			<array>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.8828520/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/nj-makerDay-2016/</string>
 					<key>lastOpenedDate</key>
-					<real>1465342139.377872</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>nj-makerDay-2016</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.10451399/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/nj-makerDay-2016-docs/</string>
 					<key>lastOpenedDate</key>
-					<real>1460977009.4769039</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>nj-makerDay-2016-docs</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.457839/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/shu-commonspot-wsou/</string>
 					<key>lastOpenedDate</key>
@@ -131,39 +113,33 @@
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.458060/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/git-tower/commonspot-gateway-2014/</string>
 					<key>lastOpenedDate</key>
-					<real>1446431497.056082</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>commonspot-gateway-2014</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.1561460/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/shu-documentation/</string>
 					<key>lastOpenedDate</key>
-					<real>1459460173.0767789</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>shu-documentation</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.478551/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/git-tower/cs-gateway/</string>
 					<key>lastOpenedDate</key>
@@ -173,11 +149,11 @@
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 			</array>
 			<key>expanded</key>
-			<integer>0</integer>
+			<false/>
 			<key>name</key>
 			<string>Seton Hall</string>
 			<key>type</key>
@@ -187,7 +163,7 @@
 			<key>children</key>
 			<array/>
 			<key>expanded</key>
-			<integer>1</integer>
+			<false/>
 			<key>name</key>
 			<string>Legacy</string>
 			<key>type</key>
@@ -197,36 +173,32 @@
 			<key>children</key>
 			<array>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.8163499/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/Philo243Web/wwwroot/</string>
 					<key>lastOpenedDate</key>
-					<real>1460921642.510725</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>Philo243Web</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.569125/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/somerset-app/pure-rails/</string>
 					<key>lastOpenedDate</key>
-					<real>1446072030.6940951</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>Somerset Songs</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 			</array>
 			<key>expanded</key>
-			<integer>0</integer>
+			<false/>
 			<key>name</key>
 			<string>Clients</string>
 			<key>type</key>
@@ -236,61 +208,53 @@
 			<key>children</key>
 			<array>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.2097116/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/foundation-libsass-template/</string>
 					<key>lastOpenedDate</key>
-					<real>1446166017.1775</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>foundation-libsass-template</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 			</array>
 			<key>expanded</key>
-			<integer>1</integer>
+			<false/>
 			<key>name</key>
 			<string>Other</string>
 			<key>type</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.457835/</string>
 			<key>fileURL</key>
 			<string>file:///Users/Lee/Projects/profec.github.io/</string>
 			<key>lastOpenedDate</key>
-			<real>1446154296.4704809</real>
+			<real>0.0</real>
 			<key>name</key>
 			<string>profec.github.io</string>
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 		<dict>
-			<key>fileReferenceURL</key>
-			<string>file:///.file/id=6571367.457836/</string>
 			<key>fileURL</key>
 			<string>file:///Users/Lee/Projects/profec.net/</string>
 			<key>lastOpenedDate</key>
-			<real>1457407716.91466</real>
+			<real>0.0</real>
 			<key>name</key>
 			<string>profec.net</string>
 			<key>type</key>
 			<integer>2</integer>
 			<key>valid</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 		<dict>
 			<key>children</key>
 			<array>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.9103190/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/pyserial/</string>
 					<key>lastOpenedDate</key>
@@ -300,81 +264,69 @@
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.9103092/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/esptool/</string>
 					<key>lastOpenedDate</key>
-					<real>1457407826.309247</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>esptool</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.8356890/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/fw1/</string>
 					<key>lastOpenedDate</key>
-					<real>1455886146.3850541</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>fw1</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.2425370/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/feeling-responsive/</string>
 					<key>lastOpenedDate</key>
-					<real>1448767614.945204</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>feeling-responsive</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.2323468/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/.zprezto/</string>
 					<key>lastOpenedDate</key>
-					<real>1446916749.790278</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>.zprezto</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.2320759/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/antigen/</string>
 					<key>lastOpenedDate</key>
-					<real>1446517250.7654991</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>antigen</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.1898457/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/awesome-terminal-fonts/</string>
 					<key>lastOpenedDate</key>
@@ -384,25 +336,23 @@
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 				<dict>
-					<key>fileReferenceURL</key>
-					<string>file:///.file/id=6571367.457832/</string>
 					<key>fileURL</key>
 					<string>file:///Users/Lee/Projects/mathiasbynens-dotfiles/</string>
 					<key>lastOpenedDate</key>
-					<real>1474849020.079849</real>
+					<real>0.0</real>
 					<key>name</key>
 					<string>mathiasbynens-dotfiles</string>
 					<key>type</key>
 					<integer>2</integer>
 					<key>valid</key>
-					<integer>1</integer>
+					<false/>
 				</dict>
 			</array>
 			<key>expanded</key>
-			<integer>1</integer>
+			<false/>
 			<key>name</key>
 			<string>Github Forks</string>
 			<key>type</key>
@@ -410,7 +360,7 @@
 		</dict>
 	</array>
 	<key>expanded</key>
-	<integer>1</integer>
+	<true/>
 	<key>name</key>
 	<string>Repositories</string>
 	<key>type</key>
