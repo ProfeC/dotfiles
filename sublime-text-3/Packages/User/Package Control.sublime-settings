@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"AngularJS",
+		"CFML",
 		"CodeFormatter",
 		"ColdFusion Docs Launcher",
 		"DashDoc",
