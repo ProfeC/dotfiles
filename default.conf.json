@@ -28,7 +28,7 @@
 				"Creating config folder."
 			],
 			[
-				"mkdir -p ~/projects",
+				"mkdir -p ~/Projects",
 				"Creating project folder."
 			],
 			[

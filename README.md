@@ -9,7 +9,7 @@ A repository for diligently handcrafted (_or blatantly copied, in the spirit of 
 ```dotfiles``` are managed and installed with [dotbot](https://github.com/anishathalye/dotbot). To install these dotfiles simplly clone this repository and run the installation script.
 
 ```shell
-$ git clone https://github.com/Tunous/dotfiles.git ~/.dotfiles
+$ git clone https://github.com/ProfeC/dotfiles.git ~/.dotfiles
 $ ~/.dotfiles/install [config file(s)] # chose correct config file for the distribution you're updating
 ```
 
@@ -31,6 +31,12 @@ $ ~/.dotfiles/install macos macos-new
 
 ```shell
 $ ~/.dotfiles/install linux
+```
+
+#### Arch Linux
+
+```shell
+$ ~/.dotfiles/install linux arch
 ```
 
 

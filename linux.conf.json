@@ -38,6 +38,7 @@
 			"$HOME/.config/vlc": "vlc/linux/",
 			"$HOME/.Xresources": "x/resources/",
 			"$HOME/.xinitrc": "x/initrc",
+			"$HOME/.s3cfg": "s3cmd/s3cfg",
 			"$HOME/.rdm/connections.json":"redis/rdm-connections.json"
 		}
 	}
