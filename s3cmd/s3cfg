@@ -1,5 +1,5 @@
 [default]
-access_key = 1MF1B6WJVZF7WW3PRMG2
+access_key = {{ CHANGE ME }}
 access_token = 
 add_encoding_exts = 
 add_headers = 
@@ -47,7 +47,7 @@ recursive = False
 recv_chunk = 4096
 reduced_redundancy = False
 restore_days = 1
-secret_key = fSBujnKcnYbOqciHU23nlARBSloBXk0bopHd6oFN
+secret_key = {{ CHANGE ME }}
 send_chunk = 4096
 server_side_encryption = False
 simpledb_host = sdb.amazonaws.com
