@@ -6,17 +6,21 @@
 				"Installing Pacaur"
 			],
 			[
-				"pacaur -S s3cmd",
-				"Installing S3 CMD"
+				"pacaur -Su --needed i3",
+				"Installing Window Manager"
 			],
 			[
-				"pacaur -S chromium firefox qt5-webengine",
+				"pacaur -Su --needed chromium firefox qt5-webengine",
 				"Installing web Browsers"
 			],
 			[
-				"pacaur -S sublime-text-dev",
+				"pacaur -Su --needed sublime-text-dev",
 				"Installing Sublime Text"
-			]
+			],
+			[
+				"pacaur -Su --needed s3cmd",
+				"Installing S3 CMD"
+			],
 		]
 	}
 ]
