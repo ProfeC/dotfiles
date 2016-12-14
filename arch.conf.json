@@ -1,26 +1,18 @@
 [
 	{
+
 		"shell": [
+
 			[
-				"curl -s https://gist.githubusercontent.com/ProfeC/cc826b144fb75705279d625e98aa0bf4/raw/b3b5595a262c0633da1025c29757bbdd81b715cd/pacaur_install.sh | bash",
-				"Installing Pacaur"
-			]
-		],
-		"shell": [
-			[
-				"pacaur -Su --needed i3",
-				"Installing Window Manager"
-			],
-			[
-				"pacaur -Su --needed chromium firefox qt5-webengine",
+				"pacman -Su --needed chromium firefox qt5-webengine",
 				"Installing web Browsers"
 			],
 			[
-				"pacaur -Su --needed sublime-text-dev",
+				"pacman -Su --needed sublime-text-dev",
 				"Installing Sublime Text"
 			],
 			[
-				"pacaur -Su --needed s3cmd",
+				"pacman -Su --needed s3cmd",
 				"Installing S3 CMD"
 			]
 		]
