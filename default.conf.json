@@ -32,7 +32,7 @@
 				"Creating project folder."
 			],
 			[
-				"mkdir -p ~/Pictures/wallpaper",
+				"mkdir -p ~/Pictures/Wallpapers",
 				"Creating favorite wallpaper  directory."
 			]
 		]
@@ -40,7 +40,7 @@
 	{
 		"link": {
 			"~/.dotfiles": "",
-			"~/Pictures/wallpaper/favs": "assets/wallpapers",
+			"~/Pictures/Wallpapers/favs": "assets/wallpapers",
 			"~/.antigen": "vendor/antigen",
 			"~/.bash_logout": "bash/bash_logout",
 			"~/.bash_profile": "bash/bash_profile",
