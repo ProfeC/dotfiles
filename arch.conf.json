@@ -4,24 +4,8 @@
 		"shell": [
 
 			[
-				"pacman -Su --needed zsh zsh-completions",
-				"Installing Z Shell"
-			],
-			[
-				"pacman -Su --needed chromium firefox qt5-webengine",
-				"Installing web Browsers"
-			],
-			[
-				"pacman -Su --needed sublime-text-dev",
-				"Installing Sublime Text"
-			],
-			[
-				"pacman -Su --needed s3cmd",
-				"Installing S3 CMD"
-			],
-			[
-				"pacman -Su --needed vagrant virtualbox virtualbox-host-modules-arch",
-				"Installing Vagrant & Virtual Box VM"
+				"./arch.sh",
+				"Installing Apps"
 			]
 		]
 	}
