@@ -24,4 +24,6 @@ sublime-text-3/Packages/pygments/
 sublime-text-3/Packages/python-jinja2/
 sublime-text-3/Packages/python-markdown/
 sublime-text-3/Packages/pyyaml/
+tmux/tmux/plugins/
+tmux/tmux/resurrect/*
 .DS_Store
