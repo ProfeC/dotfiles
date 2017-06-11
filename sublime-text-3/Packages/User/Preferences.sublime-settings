@@ -10,7 +10,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"default_line_ending": "unix",
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -23,9 +23,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"GitGutter-Edge",
-		"Markdown",
-		"SassBeautify",
+		"DashDoc",
 		"Vintage"
 	],
 	"indent_guide_options":
