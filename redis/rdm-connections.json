@@ -1,0 +1,28 @@
+[
+    {
+        "auth": "",
+        "host": "192.168.33.10",
+        "keys_pattern": "*",
+        "name": "MEAN Testing",
+        "namespace_separator": ":",
+        "port": 6379,
+        "ssh_port": 22,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    },
+    {
+        "auth": "",
+        "host": "localhost",
+        "keys_pattern": "*",
+        "name": "ScotchBox",
+        "namespace_separator": ":",
+        "port": 6379,
+        "ssh_host": "192.168.33.10",
+        "ssh_password": "vagrant",
+        "ssh_port": 22,
+        "ssh_private_key_path": "",
+        "ssh_user": "vagrant",
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    }
+]
