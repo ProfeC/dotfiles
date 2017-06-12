@@ -1,23 +1,23 @@
 {
-	"codeformatter_js_options":
-	{
-		"format_on_save": true, // Format on save
-		"space_in_paren": true, // Add padding spaces within paren, ie. f( a, b )
-	},
-
-    "codeformatter_coldfusion_options":
+    "codeformatter_js_options":
     {
-        "syntaxes": "coldfusion,cfm,cfml,cfc", // Syntax names which must process Coldfusion Markup Language formatter
         "format_on_save": true, // Format on save
-        "indent_size": 4, // indentation size
-        "indent_char": " ", // Indentation character
-        "indent_with_tabs": true, // Indent with one tab (overrides indent_size and indent_char options)
-        "exception_on_tag_mismatch": false, // If the last closing tag is not at the same indentation level as the first opening tag, there's probably a tag mismatch in the file
-        "expand_javascript": false, // Expand JavaScript inside of <script> tags (also affects CSS purely by coincidence)
-        "expand_tags": true, // Expand tag attributes onto new lines
-        "minimum_attribute_count": 3, // Minimum number of attributes needed before tag attributes are expanded to new lines
-        "first_attribute_on_new_line": false, // Put all attributes on separate lines from the tag (only uses 1 indentation unit as opposed to lining all attributes up with the first)
-        "reduce_empty_tags": true, // Put closing tags on same line as opening tag if there is no content between them
-        "custom_singletons": "" // Custom singleton tags for various template languages outside of the HTML5 spec
-    }
+        "space_in_paren": true, // Add padding spaces within paren, ie. f( a, b )
+    },
+
+    // "codeformatter_coldfusion_options":
+    // {
+    //     "syntaxes": "coldfusion,cfm,cfml,cfc", // Syntax names which must process Coldfusion Markup Language formatter
+    //     "format_on_save": true, // Format on save
+    //     "indent_size": 4, // indentation size
+    //     "indent_char": " ", // Indentation character
+    //     "indent_with_tabs": true, // Indent with one tab (overrides indent_size and indent_char options)
+    //     "exception_on_tag_mismatch": false, // If the last closing tag is not at the same indentation level as the first opening tag, there's probably a tag mismatch in the file
+    //     "expand_javascript": false, // Expand JavaScript inside of <script> tags (also affects CSS purely by coincidence)
+    //     "expand_tags": true, // Expand tag attributes onto new lines
+    //     "minimum_attribute_count": 3, // Minimum number of attributes needed before tag attributes are expanded to new lines
+    //     "first_attribute_on_new_line": false, // Put all attributes on separate lines from the tag (only uses 1 indentation unit as opposed to lining all attributes up with the first)
+    //     "reduce_empty_tags": true, // Put closing tags on same line as opening tag if there is no content between them
+    //     "custom_singletons": "" // Custom singleton tags for various template languages outside of the HTML5 spec
+    // }
 }

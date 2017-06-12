@@ -171,8 +171,8 @@
 
 	insteadOf = "gist:"
 [user]
-	name = ProfeC
-	email = gclark2@gmail.com
+	name = G. L. Clark, II
+	email = gary.clark@shu.edu
 [branch]
 	autosetuprebase = never
 [gc]
