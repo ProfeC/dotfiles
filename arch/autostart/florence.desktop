@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Virtual Keyboard
+Comment=Auto-start virtual keyboard
+Exec=florence --no-gnome

@@ -23,9 +23,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"GitGutter-Edge",
-		"Markdown",
-		"SassBeautify",
+		"DashDoc",
 		"Vintage"
 	],
 	"indent_guide_options":

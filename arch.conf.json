@@ -1,0 +1,12 @@
+[
+	{
+
+		"shell": [
+
+			[
+				"./arch.sh",
+				"Installing Apps"
+			]
+		]
+	}
+]

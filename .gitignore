@@ -6,4 +6,24 @@ sublime-text-3/Packages/User/Package Control.last-run
 sublime-text-3/Packages/User/Package Control.merged-ca-bundle
 sublime-text-3/Packages/User/Package Control.system-ca-bundle
 sublime-text-3/Packages/User/Package Control.user-ca-bundle
+sublime-text-3/Backup/
+sublime-text-3/Cache/
+sublime-text-3/Index/
+sublime-text-3/Installed Packages/
+sublime-text-3/Local/
+sublime-text-3/Packages/CodeFormatter/
+sublime-text-3/Packages/HTML-CSS-JS Prettify/
+sublime-text-3/Packages/Material Theme - Appbar/
+sublime-text-3/Packages/PyV8/
+sublime-text-3/Packages/SublimeLinter/
+sublime-text-3/Packages/TypeScript/
+sublime-text-3/Packages/User/JavaScript.sublime-settings
+sublime-text-3/Packages/markupsafe/
+sublime-text-3/Packages/mdpopups/
+sublime-text-3/Packages/pygments/
+sublime-text-3/Packages/python-jinja2/
+sublime-text-3/Packages/python-markdown/
+sublime-text-3/Packages/pyyaml/
+tmux/tmux/plugins/
+tmux/tmux/resurrect/*
 .DS_Store
