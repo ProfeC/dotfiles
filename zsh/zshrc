@@ -87,3 +87,6 @@ export BULLETTRAIN_RUBY_SHOW=false
 
 # Tell antigen that you're done.
 antigen apply
+export PATH="/usr/local/sbin:$PATH"
+export POWERLINE_COMMAND="powerline-render"
+
