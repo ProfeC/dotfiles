@@ -6,6 +6,8 @@
 	"installed_packages":
 	[
 		"AngularJS",
+		"Babel",
+		"Babel Snippets",
 		"CFML",
 		"CodeFormatter",
 		"ColdFusion Docs Launcher",
@@ -26,6 +28,7 @@
 		"Pandoc",
 		"Sass",
 		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"TypeScript"
 	],
 	"repositories":
