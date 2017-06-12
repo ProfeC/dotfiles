@@ -87,9 +87,8 @@ EOBUNDLES
 antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train # https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
 export BULLETTRAIN_TIME_12HR=false
 export BULLETTRAIN_RUBY_SHOW=false
-
-# Tell antigen that you're done.
-antigen apply
 export PATH="/usr/local/sbin:$PATH"
 export POWERLINE_COMMAND="powerline-render"
 
+# Tell antigen that you're done.
+antigen apply
