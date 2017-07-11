@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set nowrap
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -12,24 +13,70 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
+
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
+
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
+
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
+
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
-Plugin 'altercation/vim-colors-solarized' " Solarized Theme
-Plugin 'leafgarland/typescript-vim'
-Plugin 'scrooloose/nerdtree'
 
+" Language Syntax
+Plugin 'leafgarland/typescript-vim'
+Plugin 'vim-syntastic/syntastic'
+
+" Markdown / Writting
+Plugin 'reedes/vim-pencil'
+Plugin 'tpope/vim-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'LanguageTool'
+
+" Git Support
+Plugin 'kablamo/vim-git-log'
+Plugin 'gregsexton/gitv'
+Plugin 'tpope/vim-fugitive'
+"Plugin 'jaxbot/github-issues.vim'
+
+" Utilities
+Plugin 'scrooloose/nerdtree'
+Plugin 'godlygeek/tabular'
+Plugin 'Shougo/neocomplete.vim'
+
+" Themes
+Plugin 'AnsiEsc.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'sjl/badwolf'
+Plugin 'tomasr/molokai'
+Plugin 'morhetz/gruvbox'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'junegunn/limelight.vim'
+Plugin 'mkarmona/colorsbox'
+Plugin 'romainl/Apprentice'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'chriskempson/base16-vim'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'AlessandroYorba/Sierra'
+Plugin 'daylerees/colour-schemes'
+Plugin 'effkay/argonaut.vim'
+Plugin 'ajh17/Spacegray.vim'
+Plugin 'atelierbram/Base2Tone-vim'
+Plugin 'colepeters/spacemacs-theme.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ryanoasis/vim-devicons'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,11 +92,66 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Use the Solarized Dark theme
+" Themes & Styling
+set t_Co=256
 set background=dark
-colorscheme solarized
-let g:solarized_termtrans = 1
-let g:solarized_termcolors = 256
+"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+
+if (has("termguicolors"))
+	set termguicolors
+endif
+
+let base16colorspace=256 " Access colors present in 256 colorspace
+
+" Vim Airline Config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='hybrid'
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1
+
+" Syntastic Configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+
+" Markdown Syntax Support
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
+
+" Settings for Writting
+let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
+let g:languagetool_jar  = '/opt/languagetool/languagetool-commandline.jar'
+
+" Vim-pencil Configuration
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+
+" Solarized Dark theme
+"colorscheme solarized
+"let g:solarized_termtrans = 1
+"let g:solarized_termcolors = 256
+
+" Spacegray Colorscheme
+"colorscheme spacegray
+"let g:spacegray_underline_search = 1
+"let g:spacegray_italicize_comments = 1
+
+" Bad Wolf Colorscheme => https://github.com/sjl/badwolf 
+colorscheme badwolf
+let g:badwolf_darkgutter = 1
+let g:badwolf_tabline = 3
+let g:badwolf_html_link_underline = 0
 
 " Make Vim more useful
 set nocompatible
@@ -158,3 +260,8 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+""""""""""""""
+" REF-20170711-1545 => http://coderoncode.com/tools/2017/04/16/vim-the-perfect-ide.html
+"
+""""""""""""""
