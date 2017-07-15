@@ -5,7 +5,7 @@
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
-#export TERM="xterm-256color"
+export TERM="xterm-256color"
 export EDITOR=vim
 export VISUAL=$EDITOR
 export BROWSER="/usr/bin/google-chrome-stable"
@@ -89,6 +89,13 @@ export BULLETTRAIN_TIME_12HR=false
 export BULLETTRAIN_RUBY_SHOW=false
 export PATH="/usr/local/sbin:$PATH"
 export POWERLINE_COMMAND="powerline-render"
+
+BULLETTRAIN_PROMPT_ORDER=(
+  context
+  time
+  git
+  dir
+)
 
 # Tell antigen that you're done.
 antigen apply
