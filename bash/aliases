@@ -140,3 +140,9 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Make Docker do Podman instead
+alias docker=podman
+
+# Use exa in place of ls
+alias ls='exa -la'
