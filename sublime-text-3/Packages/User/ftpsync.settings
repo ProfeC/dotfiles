@@ -4,10 +4,10 @@
 
 	"default": {
 
-		"host": "auth.dev.shu.commonspotcloud.com",
-		"username": "cfusion",  // or null for anonymous login
-		"password": "$etONh@11Un!v**",
-		"path": "/site8/",
+		"host": "",
+		"username": "",  // or null for anonymous login
+		"password": "",
+		"path": "",
 
 		"upload_on_save": false, // set *false* if you do not want to upload on save!
 
