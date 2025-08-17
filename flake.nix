@@ -1,14 +1,16 @@
 {
-  description = "Lee's portable, hardware-aware NixOS config";
+  description = "Portable, hardware-aware NixOS config";
 
   inputs = {
     # Pin to a specific nixpkgs branch/version
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     # Optional hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
+    # Optional: pin flake-utils for helper functions
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, ... }:
+  outputs = inputs @ { self, nixpkgs, ... }:
   let
     system = "x86_64-linux";
 
@@ -20,6 +22,7 @@
     # Choose profile based on detected model
     profile = if builtins.match ".*Macmini.*" model != null then
       ./profiles/macmini.nix
+      ./configuration.nix
     else if builtins.match ".*ThinkPad.*" model != null then
       ./profiles/shu-laptop.nix
     else
