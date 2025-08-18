@@ -7,18 +7,18 @@
     # Optional hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
     # Optional: pin flake-utils for helper functions
-    flake-utils.url = "github:numtide/flake-utils";
+    # flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = inputs @ { self, nixpkgs, ... }:
-  flake-utils.lib.eachDefaultSystem (system: {
+  outputs = { self, nixpkgs, nixos-hardware, flake-utils, ... }: {
+  # flake-utils.lib.eachDefaultSystem (system: {
     nixosConfigurations = {
       # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
 
       # Mac Mini (2014) 16GB Ram 1 TB HD
-      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#mac-mini`
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#mac-mini-01`
       mac-mini-01 = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
         modules = [
           ./modules/common.nix
           ./hosts/mac-mini/configuration.nix
@@ -33,7 +33,7 @@
       # SHU Laptop - Lenovo ThinkPad T14s
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
       shu-lappy = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
         modules = [
           ./modules/common.nix
           ./hosts/shu-laptop/configuration.nix
@@ -46,7 +46,7 @@
       # Portable USB Drive
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
       usb-drive = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
         modules = [
           ./modules/common.nix
           ./hosts/usb-drive/configuration.nix
@@ -59,7 +59,7 @@
       # Generic (Default) Minimal Config
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
       generic = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
         modules = [
           ./modules/common.nix
           ./hosts/default/configuration.nix
@@ -69,5 +69,6 @@
       };
 
     };
-  });
+  # });
+  };
 }
