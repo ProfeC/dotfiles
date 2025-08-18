@@ -11,32 +11,63 @@
   };
 
   outputs = inputs @ { self, nixpkgs, ... }:
-  let
-    system = "x86_64-linux";
-
-    # Reads DMI info from /sys to detect hardware model
-    detectModel = builtins.readFile "/sys/class/dmi/id/product_name";
-    trim = str: builtins.replaceStrings ["\n" "\r"] [""] str;
-    model = trim detectModel;
-
-    # Choose profile based on detected model
-    profile = if builtins.match ".*Macmini.*" model != null then
-      ./profiles/macmini.nix
-      ./configuration.nix
-    else if builtins.match ".*ThinkPad.*" model != null then
-      ./profiles/shu-laptop.nix
-    else
-      ./profiles/generic.nix;
-
-  in {
+  flake-utils.lib.eachDefaultSystem (system: {
     nixosConfigurations = {
-      portable = nixpkgs.lib.nixosSystem {
+      # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
+
+      # Mac Mini (2014) 16GB Ram 1 TB HD
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#mac-mini`
+      mac-mini-01 = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          ./common.nix
-          profile
+          ./modules/common.nix
+          ./hosts/mac-mini/configuration.nix
+          ./modules/x11.nix
+          ./modules/kde-plasma.nix
+          ./modules/firefox.nix
+          ./modules/bluetooth.nix
+          ./modules/audio-pipewire.nix
         ];
       };
+
+      # SHU Laptop - Lenovo ThinkPad T14s
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
+      shu-lappy = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./modules/common.nix
+          ./hosts/shu-laptop/configuration.nix
+          ./modules/kde-plasma.nix
+          ./modules/bluetooth.nix
+          ./modules/audio-pipewire.nix
+        ];
+      };
+
+      # Portable USB Drive
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
+      usb-drive = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./modules/common.nix
+          ./hosts/usb-drive/configuration.nix
+          ./modules/kde-plasma.nix
+          ./modules/bluetooth.nix
+          ./modules/audio-pipewire.nix
+        ];
+      };
+
+      # Generic (Default) Minimal Config
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
+      generic = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./modules/common.nix
+          ./hosts/default/configuration.nix
+          ./modules/kde-plasma.nix
+          ./modules/audio-pipewire.nix
+        ];
+      };
+
     };
-  };
+  });
 }
