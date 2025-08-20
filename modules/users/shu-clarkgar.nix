@@ -12,7 +12,7 @@
       kdePackages.kate
     ];
 
-    # Trick: give VMs an easy default password, but not bare metal.
-    initialPassword = lib.mkIf config.virtualisation.graphics.enable "changeme";
+    # Set the initial password.
+    initialHashedPassword = "";
   };
 }
