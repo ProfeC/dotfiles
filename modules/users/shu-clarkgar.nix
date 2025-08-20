@@ -13,6 +13,6 @@
     ];
 
     # Set the initial password.
-    initialHashedPassword = "";
+    initialHashedPassword = "$y$j9T$Z7Pj5n6.NBWyHi6HXLrsa.$eYLHZC7pUE/bnHcz96z1RqiaWgif41Aa57wgvjzVAc2";
   };
 }
