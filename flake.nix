@@ -10,8 +10,10 @@
     # flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, flake-utils, ... }: {
-  # flake-utils.lib.eachDefaultSystem (system: {
+  outputs = { self, nixpkgs, nixos-hardware, flake-utils, ... }:
+  let
+    system = "x86_64-linux";
+  in {
     nixosConfigurations = {
       # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
 
@@ -20,13 +22,7 @@
       mac-mini-01 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./modules/common.nix
-          ./hosts/mac-mini/configuration.nix
-          ./modules/x11.nix
-          ./modules/kde-plasma.nix
-          ./modules/firefox.nix
-          ./modules/bluetooth.nix
-          ./modules/audio-pipewire.nix
+          ./profiles/mac-mini-16g.nix
         ];
       };
 
@@ -35,11 +31,7 @@
       shu-lappy = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./modules/common.nix
-          ./hosts/shu-laptop/configuration.nix
-          ./modules/kde-plasma.nix
-          ./modules/bluetooth.nix
-          ./modules/audio-pipewire.nix
+          ./profiles/shu-t14s.nix
         ];
       };
 
@@ -48,11 +40,7 @@
       usb-drive = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./modules/common.nix
-          ./hosts/usb-drive/configuration.nix
-          ./modules/kde-plasma.nix
-          ./modules/bluetooth.nix
-          ./modules/audio-pipewire.nix
+          ./profiles/usb-drive-samsung-64g.nix
         ];
       };
 
@@ -67,8 +55,6 @@
           ./modules/audio-pipewire.nix
         ];
       };
-
     };
-  # });
   };
 }
