@@ -11,7 +11,7 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
 
-  networking.hostName = "shu-thinkpad-t14s-nixos";
+  networking.hostName = "shu-t14s-nixos";
   hardware.enableAllFirmware = true;
 
   # Power management

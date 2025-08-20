@@ -2,7 +2,7 @@
 { config, pkgs, lib, ... }:
 {
   imports = [
-    ../hosts/shu-laptop/configuration.nix
+    ../hosts/mac-mini/configuration.nix
     ../modules/common.nix
     ../modules/audio-pipewire.nix
     ../modules/bluetooth.nix

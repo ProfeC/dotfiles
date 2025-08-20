@@ -23,6 +23,8 @@
         system = "x86_64-linux";
         modules = [
           ./profiles/mac-mini-16g.nix
+          ./modules/users/lee.nix
+          ./modules/users/serveradmin.nix
         ];
       };
 
@@ -32,6 +34,8 @@
         system = "x86_64-linux";
         modules = [
           ./profiles/shu-t14s.nix
+          ./modules/users/lee.nix
+          ./modules/users/shu-clarkgar.nix
         ];
       };
 
@@ -41,6 +45,7 @@
         system = "x86_64-linux";
         modules = [
           ./profiles/usb-drive-samsung-64g.nix
+          ./modules/users/lee.nix
         ];
       };
 
@@ -53,6 +58,8 @@
           ./hosts/default/configuration.nix
           ./modules/kde-plasma.nix
           ./modules/audio-pipewire.nix
+          ./modules/users/lee.nix
+          ./modules/users/serveradmin
         ];
       };
     };
