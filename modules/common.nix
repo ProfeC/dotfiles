@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, inputs, pkgs, ... }:
 
 {
   # Basic boot settings for portability
@@ -19,6 +19,13 @@
   # Enable the Flakes feature and the accompanying new nix command-line tool
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Enable Nix User Repo - Use with care!
+  # nixpkgs = {
+  #   overlays = [
+  #     inputs.nur.overlays.default
+  #   ];
+  # };
+
   # Basic tools
   environment.systemPackages = with pkgs; [
     btop
@@ -26,7 +33,11 @@
     curl
     git
     nano
+    neovim
+    rsync
+    tree
     # vim
+    vimPlugins.vim-plug 
     wget
   ];
 

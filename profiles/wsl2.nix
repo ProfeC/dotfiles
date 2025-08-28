@@ -6,7 +6,6 @@
     ../modules/common.nix
     # ../modules/brave.nix
     ../modules/firefox.nix
-    # ../modules/virtualization.nix
     ../modules/x11.nix
   ];
 }

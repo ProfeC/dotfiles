@@ -5,17 +5,27 @@
     # Pin to a specific nixpkgs branch/version
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 
-    # Optional hardware database for known machines
+    # Hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
 
-    # Optional: pin flake-utils for helper functions
+    # flake-utils for helper functions
     flake-utils.url = "github:numtide/flake-utils";
 
-    # Optional: NixOS on WSL2
+    # NixOS on WSL2
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
 
-    # Optional: Systems modules
+    # Systems modules
     systems.url = "github:nix-systems/default";
+
+    # Style/Theme management for NixOS
+    # stylix.url = "github:danth/stylix";
+    # stylix.inputs.nixpkgs.follows = "nixpkgs";
+
+    # # Nix User Repository: User contributed nix packages
+    # nur = {
+    #   url = "github:nix-community/NUR";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = { 
@@ -24,7 +34,9 @@
     systems,
     nixos-wsl, 
     nixos-hardware, 
-    flake-utils, 
+    flake-utils,
+    # stylix,
+    nur,
     ... 
   }:
   let
@@ -41,6 +53,7 @@
           ./profiles/mac-mini-16g.nix
           ./modules/users/lee.nix
           ./modules/users/serveradmin.nix
+          # stylix.nixosModules.stylix
         ];
       };
 
