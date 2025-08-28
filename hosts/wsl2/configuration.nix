@@ -8,13 +8,14 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [
-    # include NixOS-WSL modules
-    <nixos-wsl/modules>
-  ];
+  # imports = [
+  #   # include NixOS-WSL modules
+  #   <nixos-wsl/modules>
+  # ];
 
   wsl.enable = true;
-  wsl.defaultUser = "nixos";
+  # wsl.defaultUser = "nixos";
+  wsl.defaultUser = "clarkgar";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

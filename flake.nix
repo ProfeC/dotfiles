@@ -8,6 +8,7 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware";
     # Optional: pin flake-utils for helper functions
     # flake-utils.url = "github:numtide/flake-utils";
+    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
   };
 
   outputs = { self, nixpkgs, nixos-hardware, flake-utils, ... }:
@@ -25,17 +26,6 @@
           ./profiles/mac-mini-16g.nix
           ./modules/users/lee.nix
           ./modules/users/serveradmin.nix
-        ];
-      };
-
-      # SHU Laptop - Lenovo ThinkPad T14s
-      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
-      shu-lappy = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./profiles/shu-t14s.nix
-          ./modules/users/lee.nix
-          ./modules/users/shu-clarkgar.nix
         ];
       };
 
@@ -62,6 +52,30 @@
           ./modules/users/serveradmin
         ];
       };
+
+      # SHU Laptop - Lenovo ThinkPad T14s
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
+      shu-lappy = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./profiles/shu-t14s.nix
+          ./modules/users/lee.nix
+          ./modules/users/shu-clarkgar.nix
+        ];
+      };
+
+      # Windows WSL2
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#wsl2`
+      wsl2 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          nixos-wsl.nixosModules.default
+          ./profiles/wsl2.nix
+          ./modules/users/lee.nix
+          ./modules/users/shu-clarkgar.nix
+        ];
+      };
+
     };
   };
 }
