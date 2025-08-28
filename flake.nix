@@ -4,14 +4,29 @@
   inputs = {
     # Pin to a specific nixpkgs branch/version
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+
     # Optional hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
+
     # Optional: pin flake-utils for helper functions
-    # flake-utils.url = "github:numtide/flake-utils";
+    flake-utils.url = "github:numtide/flake-utils";
+
+    # Optional: NixOS on WSL2
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
+
+    # Optional: Systems modules
+    systems.url = "github:nix-systems/default";
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, flake-utils, ... }:
+  outputs = { 
+    self, 
+    nixpkgs,
+    systems,
+    nixos-wsl, 
+    nixos-hardware, 
+    flake-utils, 
+    ... 
+  }:
   let
     system = "x86_64-linux";
   in {
