@@ -1,8 +1,8 @@
-# profiles/macmini-7-1.nix
+# profiles/shu-t14s.nix
 { config, pkgs, lib, ... }:
 {
   imports = [
-    ../hosts/mac-mini/configuration.nix
+    ../hosts/shu-laptop/configuration.nix
     ../modules/common.nix
     ../modules/audio-pipewire.nix
     ../modules/bluetooth.nix
