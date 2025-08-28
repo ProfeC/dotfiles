@@ -13,9 +13,15 @@
   #   <nixos-wsl/modules>
   # ];
 
-  wsl.enable = true;
-  # wsl.defaultUser = "nixos";
-  wsl.defaultUser = "clarkgar";
+  wsl = {
+    enable = true;
+    # defaultUser = "nixos";
+    defaultUser = "clarkgar";
+    wslConf.automount.root = "/mnt";
+    wslConf.interop.appendWindowsPath = false;
+    wslConf.network.generateHosts = false;
+    startMenuLaunchers = true;
+  }
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
