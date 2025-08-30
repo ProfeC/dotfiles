@@ -19,9 +19,9 @@
     #   # include NixOS-WSL modules
     #   <nixos-wsl/modules>
     ../modules/common.nix
-    # ../modules/brave.nix
-    ../modules/firefox.nix
-    ../modules/x11.nix
+    # ../modules/browsers/brave.nix
+    ../modules/browsers/firefox.nix
+    ../modules/system/x11.nix
   ];
 
   wsl = {

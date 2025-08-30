@@ -32,13 +32,28 @@
     coreutils
     curl
     git
-    nano
-    neovim
-    rsync
     tree
-    # vim
     vimPlugins.vim-plug 
     wget
+
+    # Some text editors.
+    nano
+    neovim
+    # vim
+
+    # Some networking tools.
+    fuse
+    fuse3
+    openconnect
+    rsync
+    sshfs-fuse
+    socat
+    screen
+    tcpdump
+
+    # Some compression/archiver tools.
+    unzip
+    zip
   ];
 
   # Set the default editor to Nano

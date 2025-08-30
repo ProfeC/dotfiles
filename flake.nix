@@ -67,20 +67,6 @@
         ];
       };
 
-      # Generic (Default) Minimal Config
-      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
-      generic = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./modules/common.nix
-          ./hosts/default/configuration.nix
-          ./modules/kde-plasma.nix
-          ./modules/audio-pipewire.nix
-          ./modules/users/lee.nix
-          ./modules/users/serveradmin
-        ];
-      };
-
       # SHU Laptop - Lenovo ThinkPad T14s
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
       shu-lappy = nixpkgs.lib.nixosSystem {
@@ -101,6 +87,20 @@
           ./profiles/wsl2.nix
           ./modules/users/lee.nix
           ./modules/users/shu-clarkgar.nix
+        ];
+      };
+
+      # Generic (Default) Minimal Config
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
+      generic = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./modules/common.nix
+          ./modules/users/lee.nix
+          ./modules/users/serveradmin
+          ./hosts/default/configuration.nix
+          ./modules/desktops/kde-plasma.nix
+          ./modules/system/audio-pipewire.nix
         ];
       };
 

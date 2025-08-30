@@ -4,12 +4,12 @@
   imports = [
     ../hosts/shu-laptop/configuration.nix
     ../modules/common.nix
-    ../modules/audio-pipewire.nix
-    ../modules/bluetooth.nix
-    # ../modules/brave.nix
-    ../modules/firefox.nix
-    ../modules/kde-plasma.nix
-    # ../modules/virtualization.nix
-    ../modules/x11.nix
+    ../modules/system/audio-pipewire.nix
+    ../modules/system/bluetooth.nix
+    # ../modules/browsers/brave.nix
+    ../modules/browsers/firefox.nix
+    ../modules/desktops/kde-plasma.nix
+    # ../modules/virtualization/virtualization.nix
+    ../modules/system/x11.nix
   ];
 }

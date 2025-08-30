@@ -33,18 +33,17 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  # brave // Installed via modules.
-    btop
-    coreutils
-    curl
-    git
+    # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    # brave // Installed via modules.
+    # btop
+    # coreutils
+    # curl
+    # git
     python3Full
-    rclone
+    # rclone
     vivaldi
     vivaldi-ffmpeg-codecs
-    vscodium
-    wget
+    # wget
 
     # w3m-nographics # needed for the manual anyway
     testdisk # useful for repairing boot problems
@@ -59,17 +58,7 @@
 
     # Some text editors.
     obsidian
-    # vim
-    nano
-
-    # Some networking tools.
-    fuse
-    fuse3
-    openconnect
-    sshfs-fuse
-    socat
-    screen
-    tcpdump
+    vscodium
 
     # Hardware-related tools.
     sdparm
@@ -79,9 +68,6 @@
     usbutils
     nvme-cli
 
-    # Some compression/archiver tools.
-    unzip
-    zip
   ];
   
   programs.dconf.enable = true;
