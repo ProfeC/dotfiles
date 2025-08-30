@@ -33,17 +33,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    # brave // Installed via modules.
-    # btop
-    # coreutils
-    # curl
-    # git
     python3Full
-    # rclone
-    vivaldi
-    vivaldi-ffmpeg-codecs
-    # wget
+    # vivaldi
+    # vivaldi-ffmpeg-codecs
 
     # w3m-nographics # needed for the manual anyway
     testdisk # useful for repairing boot problems
@@ -83,7 +75,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

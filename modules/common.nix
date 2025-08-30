@@ -51,16 +51,17 @@
     curl
     git
     tree
-    vimPlugins.vim-plug 
     wget
 
     # Some text editors.
     nano
     neovim
     # vim
+    vimPlugins.vim-plug
 
     # Some networking tools.
     openconnect
+    rclone
     rsync
     sshfs-fuse
     socat
@@ -68,6 +69,7 @@
     tcpdump
 
     # Some compression/archiver tools.
+    gzip
     unzip
     zip
   ];
