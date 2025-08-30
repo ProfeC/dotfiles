@@ -40,7 +40,7 @@
     ... 
   }:
   let
-    system = "x86_64-linux";
+    mySystem = "x86_64-linux";
   in {
     nixosConfigurations = {
       # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
@@ -48,7 +48,7 @@
       # Mac Mini (2014) 16GB Ram 1 TB HD
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#mac-mini-01`
       mac-mini-01 = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+        system = mySystem;
         modules = [
           ./profiles/mac-mini-16g.nix
           ./modules/users/lee.nix
