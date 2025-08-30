@@ -8,6 +8,7 @@
     ../modules/system/bluetooth.nix
     # ../modules/browsers/brave.nix
     ../modules/browsers/firefox.nix
+    ../modules/browsers/vivaldi.nix
     ../modules/desktops/kde-plasma.nix
     # ../modules/virtualization/virtualization.nix
     ../modules/system/x11.nix
