@@ -1,7 +1,8 @@
-# profiles/macmini-7-1.nix
+# profiles/usb-drive-samsung-64g.nix
 { config, pkgs, lib, ... }:
 {
   imports = [
+    ../modules/system/boot-loader.nix
     ../modules/common.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix

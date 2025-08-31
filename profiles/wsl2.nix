@@ -22,6 +22,7 @@
     # ../modules/browsers/brave.nix
     ../modules/browsers/firefox.nix
     ../modules/system/x11.nix
+    # ../modules/development/git.nix
   ];
 
   wsl = {

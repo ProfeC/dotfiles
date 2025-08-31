@@ -3,6 +3,7 @@
 {
   imports = [
     ../hosts/shu-laptop/configuration.nix
+    ../modules/system/boot-loader.nix
     ../modules/common.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix
