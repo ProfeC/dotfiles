@@ -27,7 +27,7 @@
   wsl = {
     enable = true;
     # defaultUser = "nixos";
-    defaultUser = "clarkgar";
+    # defaultUser = "clarkgar";
     wslConf.automount.root = "/mnt";
     wslConf.interop.appendWindowsPath = false;
     wslConf.network.generateHosts = false;
