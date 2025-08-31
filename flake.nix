@@ -85,8 +85,8 @@
         modules = [
           nixos-wsl.nixosModules.default
           ./profiles/wsl2.nix
-          ./modules/users/lee.nix
-          ./modules/users/shu-clarkgar.nix
+#          ./modules/users/lee.nix
+#          ./modules/users/shu-clarkgar.nix
         ];
       };
 

@@ -32,10 +32,10 @@
     wslConf.interop.appendWindowsPath = false;
     wslConf.network.generateHosts = false;
     startMenuLaunchers = true;
-  }
+  };
 
   # Enable garbage collection for this profile.
-  nix.settings.gc = {
+  nix.gc = {
     automatic = true;
     options = "--delete-older-than 13d";
   };
