@@ -48,6 +48,7 @@
   }:
   let
     mySystem = "x86_64-linux";
+    pkgsFor = system: import nixpkgs { inherit system; };
   in {
     nixosConfigurations = {
       # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
@@ -92,8 +93,8 @@
         modules = [
           nixos-wsl.nixosModules.default
           ./profiles/wsl2.nix
-#          ./modules/users/lee.nix
-#          ./modules/users/shu-clarkgar.nix
+          # ./modules/users/lee.nix
+          # ./modules/users/shu-clarkgar.nix
         ];
       };
 
@@ -112,5 +113,31 @@
       };
 
     };
+
+    # 👇 Add devShells for mkdocs project
+    devShells = flake-utils.lib.eachDefaultSystem (system:
+      let
+        pkgs = pkgsFor system;
+        python = pkgs.python312;
+      in {
+        shu-docs = pkgs.mkShell {
+          buildInputs = [
+            python
+            python.pkgs.pip
+            python.pkgs.virtualenv
+          ];
+
+          shellHook = ''
+            # Set up a throwaway venv if one doesn't exist
+            if [ ! -d .venv ]; then
+              echo "⚙️ Creating Python venv for MkDocs..."
+              virtualenv .venv
+              .venv/bin/pip install -r requirements.txt
+            fi
+            source .venv/bin/activate
+            echo "✅ MkDocs dev environment ready. Run: mkdocs serve"
+          '';
+        };
+      });
   };
 }
