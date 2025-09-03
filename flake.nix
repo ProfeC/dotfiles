@@ -11,6 +11,12 @@
     # flake-utils for helper functions
     flake-utils.url = "github:numtide/flake-utils";
 
+    # include home-manager as an input, and let it 'follow' the main nixpkgs branch letting it install packages from nixpkgs instead of keeping its own repository
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # NixOS on WSL2
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
 
@@ -29,14 +35,15 @@
   };
 
   outputs = { 
-    self, 
-    nixpkgs,
-    systems,
-    nixos-wsl, 
-    nixos-hardware, 
     flake-utils,
-    # stylix,
+    home-manager,
+    nixos-hardware, 
+    nixos-wsl, 
+    nixpkgs,
     nur,
+    self, 
+    # stylix,
+    systems,
     ... 
   }:
   let
