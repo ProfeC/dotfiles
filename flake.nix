@@ -99,19 +99,18 @@
       };
 
       # Generic (Default) Minimal Config
-      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#generic`
       generic = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./modules/common.nix
           ./modules/users/lee.nix
-          ./modules/users/serveradmin
+          ./modules/users/serveradmin.nix
           ./hosts/default/configuration.nix
           ./modules/desktops/kde-plasma.nix
           ./modules/system/audio-pipewire.nix
         ];
       };
-
     };
 
     # 👇 Add devShells for mkdocs project
