@@ -117,11 +117,11 @@
     devShells = {
       shu-docs = pkgs.mkShell {
         buildInputs = [
-          pkgs.python312
-          python.pkgs.pip
-          python.pkgs.virtualenv
-          python.pkgs.mkdocs
-          python.pkgs.mkdocs-material
+          pkgsFor.python312
+          python.pkgsFor.pip
+          python.pkgsFor.virtualenv
+          python.pkgsFor.mkdocs
+          python.pkgsFor.mkdocs-material
         ];
   
         shellHook = ''
