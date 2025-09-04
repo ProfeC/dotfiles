@@ -115,7 +115,7 @@
 
     # 👇 Add devShells for mkdocs project
     devShells = {
-      shu-docs = pkgs.mkShell {
+      shu-docs = pkgsFor.mkShell {
         buildInputs = [
           pkgsFor.python312
           python.pkgsFor.pip
