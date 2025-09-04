@@ -114,31 +114,27 @@
     };
 
     # 👇 Add devShells for mkdocs project
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = pkgsFor system;
-        python = pkgs.python312;
-      in {
-        devShells.shu-docs = pkgs.mkShell {
-          buildInputs = [
-            python
-            python.pkgs.pip
-            python.pkgs.virtualenv
-            python.pkgs.mkdocs
-            python.pkgs.mkdocs-material
-          ];
-
-          shellHook = ''
-            # Set up a throwaway venv if one doesn't exist
-            if [ ! -d .venv ]; then
-              echo "⚙️ Creating Python venv for MkDocs..."
-              virtualenv .venv
-              .venv/bin/pip install -r requirements.txt
-            fi
-            source .venv/bin/activate
-            echo "✅ MkDocs dev environment ready. Run: mkdocs serve"
-          '';
-        };
-      });
+    devShells = {
+      shu-docs = pkgs.mkShell {
+        buildInputs = [
+          pkgs.python312
+          python.pkgs.pip
+          python.pkgs.virtualenv
+          python.pkgs.mkdocs
+          python.pkgs.mkdocs-material
+        ];
+  
+        shellHook = ''
+          # Set up a throwaway venv if one doesn't exist
+          if [ ! -d .venv ]; then
+            echo "⚙️ Creating Python venv for MkDocs..."
+            virtualenv .venv
+            .venv/bin/pip install -r requirements.txt
+          fi
+          source .venv/bin/activate
+          echo "✅ MkDocs dev environment ready. Run: mkdocs serve"
+        '';
+      };
+    };
   };
 }
