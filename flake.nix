@@ -114,16 +114,18 @@
     };
 
     # 👇 Add devShells for mkdocs project
-    devShells = flake-utils.lib.eachDefaultSystem (system:
+    flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = pkgsFor system;
         python = pkgs.python312;
       in {
-        shu-docs = pkgs.mkShell {
+        devShells.shu-docs = pkgs.mkShell {
           buildInputs = [
             python
             python.pkgs.pip
             python.pkgs.virtualenv
+            python.pkgs.mkdocs
+            python.pkgs.mkdocs-material
           ];
 
           shellHook = ''
