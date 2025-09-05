@@ -3,15 +3,15 @@
 
   inputs = {
     # Pin to a specific nixpkgs branch/version
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     #  nixpkgs.url = "flake:nixpkgs/nixpkgs-unstable";
 
     # Hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
 
     # flake-utils for helper functions
-    flake-utils.url = "github:numtide/flake-utils";
+    flake-utils.url = "github:numtide/flake-utils/flake-utils-unstable";
 
     # include home-manager as an input, and let it 'follow' the main nixpkgs branch letting it install packages from nixpkgs instead of keeping its own repository
     home-manager = {
@@ -29,11 +29,11 @@
     # stylix.url = "github:danth/stylix";
     # stylix.inputs.nixpkgs.follows = "nixpkgs";
 
-    # # Nix User Repository: User contributed nix packages
-    # nur = {
-    #   url = "github:nix-community/NUR";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    # Nix User Repository: User contributed nix packages
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -42,7 +42,7 @@
     nixos-hardware, 
     nixos-wsl, 
     nixpkgs,
-    nur,
+    # nur,
     self, 
     # stylix,
     systems,
@@ -129,7 +129,7 @@
         let
           pkgs = nixpkgsFor.${system};
         in {
-        shuDocs = pkgs.mkShell {
+        shu-docs = pkgs.mkShell {
           # shu-docs = import ./devShells/shu-docs.nix { system = "x86_64-linux"; };
           buildInputs = with pkgs; [
             bat # bat (cat clone with syntax highlighting)
