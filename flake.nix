@@ -14,7 +14,7 @@
     systems.url = "github:nix-systems/default";
 
     # flake-utils for helper functions
-    flake-utils.url = "github:numtide/flake-utils/flake-utils";
+    flake-utils.url = "github:numtide/flake-utils";
     flake-utils.inputs.systems.follows = "systems";
 
     # include home-manager as an input, and let it 'follow' the main nixpkgs branch letting it install packages from nixpkgs instead of keeping its own repository
