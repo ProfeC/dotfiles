@@ -39,7 +39,6 @@
   outputs = {
     flake-utils,
     home-manager,
-    inputs,
     nixos-hardware, 
     nixos-wsl, 
     nixpkgs,
@@ -117,7 +116,7 @@
 
       # 👇 Add devShells
       devShells = {
-        mySystem = {
+        x86_64-linux = {
           shu-docs = import ./devShells/shu-docs.nix { system = "x86_64-linux"; };
         };
       };
