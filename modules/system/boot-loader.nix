@@ -1,4 +1,4 @@
-{ config, pkgs, ... };
+{ config, pkgs, ... }:
 
 {
   # Basic boot settings for portability
