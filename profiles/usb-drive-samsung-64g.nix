@@ -12,4 +12,13 @@
     # ../modules/virtualization/virtualization.nix
     ../modules/system/x11.nix
   ];
+
+  # 👇 required for flake check / evaluation
+  system.stateVersion = "25.05";
+
+  # 👇 minimal fake root — swap with actual UUID if/when you boot from this
+  fileSystems."/" = {
+    device = "none";
+    fsType = "tmpfs";
+  };
 }
