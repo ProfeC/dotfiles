@@ -50,6 +50,16 @@
   }:
     let
       mySystem = "x86_64-linux";
+
+      # System types to support.
+      supportedSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
+
+      # Helper function to generate an attrset '{ x86_64-linux = f "x86_64-linux"; ... }'.
+      forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
+
+      # Nixpkgs instantiated for supported system types.
+      nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; });
+
     in {
       nixosConfigurations = {
         # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
@@ -115,10 +125,18 @@
       };
 
       # 👇 Add devShells
-      devShells = {
-        x86_64-linux = {
+      devShells = forAllSystems (system:
+        let
+          pkgs = nixpkgsFor.${system};
+        in {
+        shuDocs = pkgs.mkShell {
           # shu-docs = import ./devShells/shu-docs.nix { system = "x86_64-linux"; };
+          buildInputs = with pkgs; [
+            bat # bat (cat clone with syntax highlighting)
+            eza # eza (a modern replacement for ls)
+            htop
+          ];
         };
-      };
+      });
     };
 }
