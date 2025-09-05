@@ -137,6 +137,12 @@
             eza # eza (a modern replacement for ls)
             htop
           ];
+        
+          shellHook = ''
+            # prepend an indicator to the shell prompt
+            export PS1="(shu-docs) $PS1"
+            echo "📝 Welcome to the shu-docs devShell!"
+          '';
         };
       });
     };
