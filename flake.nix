@@ -38,6 +38,7 @@
   outputs = {
     flake-utils,
     home-manager,
+    inputs,
     nixos-hardware, 
     nixos-wsl, 
     nixpkgs,
