@@ -35,7 +35,18 @@
     # };
   };
 
-  outputs = inputs:
+  outputs = {
+    flake-utils,
+    home-manager,
+    nixos-hardware, 
+    nixos-wsl, 
+    nixpkgs,
+    nur,
+    self, 
+    # stylix,
+    systems,
+    ... 
+  }:
     let
       mySystem = "x86_64-linux";
       flakeContext = {
