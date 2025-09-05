@@ -50,7 +50,6 @@
   }:
     let
       mySystem = "x86_64-linux";
-      flakeContext = inherit inputs;
     in {
       nixosConfigurations = {
         # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
@@ -118,7 +117,7 @@
       # 👇 Add devShells
       devShells = {
         mySystem = {
-          shu-docs = import ./devShells/shu-docs.nix flakeContext { system = "x86_64-linux"; };
+          shu-docs = import ./devShells/shu-docs.nix { system = "x86_64-linux"; };
         };
       };
     };
