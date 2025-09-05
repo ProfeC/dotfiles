@@ -50,9 +50,7 @@
   }:
     let
       mySystem = "x86_64-linux";
-     # flakeContext = {
-     #   inherit inputs;
-     # };
+      flakeContext = inherit inputs;
     in {
       nixosConfigurations = {
         # Clone repo with `git clone https://github.com/you/dotfiles.git /etc/nixos`
