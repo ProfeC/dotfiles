@@ -113,27 +113,10 @@
       };
     };
 
-    # 👇 Add devShells for mkdocs project
+    # 👇 Add devShells
     devShells = {
-      shu-docs = pkgsFor.mkShell {
-        buildInputs = [
-          pkgsFor.python312
-          python.pkgsFor.pip
-          python.pkgsFor.virtualenv
-          python.pkgsFor.mkdocs
-          python.pkgsFor.mkdocs-material
-        ];
-  
-        shellHook = ''
-          # Set up a throwaway venv if one doesn't exist
-          if [ ! -d .venv ]; then
-            echo "⚙️ Creating Python venv for MkDocs..."
-            virtualenv .venv
-            .venv/bin/pip install -r requirements.txt
-          fi
-          source .venv/bin/activate
-          echo "✅ MkDocs dev environment ready. Run: mkdocs serve"
-        '';
+      mySystem = {
+        shu-docs = import ./devShells/shu-docs.nix flakeContext { system = "x86_64-linux"; };
       };
     };
   };
