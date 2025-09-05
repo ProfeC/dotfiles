@@ -10,8 +10,12 @@
     # Hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
 
+    # Systems modules
+    systems.url = "github:nix-systems/default";
+
     # flake-utils for helper functions
-    flake-utils.url = "github:numtide/flake-utils/flake-utils-unstable";
+    flake-utils.url = "github:numtide/flake-utils/flake-utils";
+    flake-utils.inputs.systems.follows = "systems";
 
     # include home-manager as an input, and let it 'follow' the main nixpkgs branch letting it install packages from nixpkgs instead of keeping its own repository
     home-manager = {
@@ -21,9 +25,6 @@
 
     # NixOS on WSL2
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
-
-    # Systems modules
-    systems.url = "github:nix-systems/default";
 
     # Style/Theme management for NixOS
     # stylix.url = "github:danth/stylix";
