@@ -3,7 +3,8 @@
 
   inputs = {
     # Pin to a specific nixpkgs branch/version
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    #  nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "flake:nixpkgs/nixpkgs-unstable";
 
     # Hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
