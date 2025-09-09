@@ -23,6 +23,7 @@
     ../modules/browsers/firefox.nix
     ../modules/system/x11.nix
     # ../modules/development/git.nix
+    ../modules/desktops/kde-plasma.nix
   ];
 
   wsl = {
