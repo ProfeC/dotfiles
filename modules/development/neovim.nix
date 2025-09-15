@@ -43,10 +43,12 @@ in
       set tabstop=2
 
       " Theme (pick one, or install a plugin later)
-      let g:onedark_config = {
-          \ 'style': 'warm',
-      }
-      colorscheme onedark	" https://github.com/navarasu/onedark.nvim
+      colorscheme default
+
+      " let g:onedark_config = {
+      "   'style': 'warm',
+      " }
+      " colorscheme onedark	" https://github.com/navarasu/onedark.nvim
 
       " File browser: use built-in netrw
       let g:netrw_banner = 0

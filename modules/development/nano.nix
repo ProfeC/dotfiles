@@ -22,8 +22,6 @@ in
       ## General usability
       set linenumbers       # show line numbers
       set softwrap          # wrap long lines
-      set morespace         # remove blank line at bottom
-      set smooth            # smooth scrolling
       set mouse             # mouse support
       set indicator         # scrollbar-like indicator
 
@@ -37,13 +35,13 @@ in
       set functioncolor white,cyan
 
       ## Highlight current line
-      set highlightcolor ,yellow
+      set stripecolor ,green
 
       ## Backups
       set backup
 
-      ## Syntax highlighting
-      include "${pkgs.nanorc}/share/nano/*.nanorc"
+      ## Syntax highlighting (include if present)
+      include "${pkgs.nano}/share/nano/*.nanorc"
     '';
   };
 }
