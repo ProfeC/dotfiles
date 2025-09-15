@@ -18,13 +18,20 @@
   imports = [
     #   # include NixOS-WSL modules
     #   <nixos-wsl/modules>
+    # ../hosts/shu-laptop/hardware-configuration-wsl2.nix
     ../modules/common.nix
     # ../modules/browsers/brave.nix
     ../modules/browsers/firefox.nix
     ../modules/system/x11.nix
     # ../modules/development/git.nix
-    # ../modules/desktops/kde-plasma.nix
+    # ../modules/development/vscodium.nix
+    ../modules/development/nano.nix
+    ../modules/development/neovim.nix
   ];
+
+  # development.vscodium.enable = true;
+  myNano.enable = true;
+  myNeovim.enable = true;
 
   wsl = {
     enable = true;

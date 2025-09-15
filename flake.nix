@@ -50,7 +50,7 @@
     ... 
   }:
     let
-      mySystem = "x86_64-linux";
+      linuxSystem = "x86_64-linux";
 
       # System types to support.
       supportedSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
@@ -68,7 +68,7 @@
         # Mac Mini (2014) 16GB Ram 1 TB HD
         # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#mac-mini-01`
         mac-mini-01 = nixpkgs.lib.nixosSystem {
-          system = mySystem;
+          system = linuxSystem;
           modules = [
             ./profiles/mac-mini-16g.nix
             ./modules/users/lee.nix
@@ -80,7 +80,7 @@
         # Portable USB Drive
         # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
         usb-drive = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          system = linuxSystem;
           modules = [
             ./profiles/usb-drive-samsung-64g.nix
             ./modules/users/lee.nix
@@ -90,7 +90,7 @@
         # SHU Laptop - Lenovo ThinkPad T14s
         # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
         shu-lappy = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          system = linuxSystem;
           modules = [
             ./profiles/shu-t14s.nix
             ./modules/users/lee.nix
@@ -101,7 +101,7 @@
         # Windows WSL2
         # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#wsl2`
         wsl2 = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          system = linuxSystem;
           modules = [
             nixos-wsl.nixosModules.default
             ./profiles/wsl2.nix
