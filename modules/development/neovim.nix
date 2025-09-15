@@ -13,49 +13,82 @@ in
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       neovim
+      git
+      curl
     ];
 
-    # Drop a minimal init.vim into /etc/xdg/nvim
-    environment.etc."xdg/nvim/init.vim".text = ''
-      " Basic comfort settings (Nano-like)
-      set number             " line numbers
-      set relativenumber     " relative numbers (easier motions)
-      set cursorline         " highlight current line
-      set wrap               " soft wrap
-      set linebreak          " wrap without breaking words
-      syntax on              " syntax highlighting
+    # System-wide Neovim config: basic editor defaults
+    environment.etc."xdg/nvim/init.lua".text = ''
+      -- Editor basics (Nano-like defaults)
+      vim.o.number = true
+      vim.o.relativenumber = true
+      vim.o.cursorline = true
+      vim.o.wrap = true
+      vim.o.linebreak = true
+      vim.o.expandtab = true
+      vim.o.shiftwidth = 2
+      vim.o.tabstop = 2
+      vim.o.termguicolors = true
+      vim.o.showcmd = true
+      vim.o.showmode = true
+      vim.o.ruler = true
 
-      " UI tweaks
-      set showcmd            " show incomplete commands
-      set showmode           " show mode (INSERT, NORMAL, etc.)
-      set ruler              " show cursor position
-      set termguicolors      " better colors
+      -- Search improvements
+      vim.o.ignorecase = true
+      vim.o.smartcase = true
+      vim.o.hlsearch = true
+      vim.o.incsearch = true
 
-      " Search
-      set ignorecase
-      set smartcase
-      set hlsearch
-      set incsearch
+      -- Built-in file browser (netrw)
+      vim.g.netrw_banner = 0
+      vim.g.netrw_liststyle = 3
+      vim.g.netrw_browse_split = 4
+      vim.g.netrw_altv = 1
+      vim.g.netrw_winsize = 25
+    '';
 
-      " Tabs/spaces
-      set expandtab
-      set shiftwidth=2
-      set tabstop=2
+    # Drop a helper script to install lazy.nvim + Onedark Warm for each user
+    environment.etc."profile.d/nvim-theme.sh".text = ''
+      #!/usr/bin/env bash
+      # Only run if user has no ~/.config/nvim/init.lua
+      if [ ! -f "$HOME/.config/nvim/init.lua" ]; then
+        mkdir -p "$HOME/.config/nvim"
+        cat <<'EOF' > "$HOME/.config/nvim/init.lua"
+        -- Bootstrap lazy.nvim
+        local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+        if not vim.loop.fs_stat(lazypath) then
+          vim.fn.system({
+            "git",
+            "clone",
+            "--filter=blob:none",
+            "https://github.com/folke/lazy.nvim.git",
+            "--branch=stable",
+            lazypath,
+          })
+        end
+        vim.opt.rtp:prepend(lazypath)
 
-      " Theme (pick one, or install a plugin later)
-      colorscheme default
+        local lazy = require("lazy")
 
-      " let g:onedark_config = {
-      "   'style': 'warm',
-      " }
-      " colorscheme onedark	" https://github.com/navarasu/onedark.nvim
+        -- Plugins
+        lazy.setup({
+          { "navarasu/onedark.nvim" }
+        })
 
-      " File browser: use built-in netrw
-      let g:netrw_banner = 0
-      let g:netrw_liststyle = 3
-      let g:netrw_browse_split = 4
-      let g:netrw_altv = 1
-      let g:netrw_winsize = 25
+        -- Force install plugins if missing
+        lazy.sync()
+
+        -- Onedark warm theme
+        require('onedark').setup { style = 'warm' }
+        require('onedark').load()
+
+        -- Include system-wide defaults
+        local sys_defaults = '/etc/xdg/nvim/init.lua'
+        if vim.loop.fs_stat(sys_defaults) then
+          dofile(sys_defaults)
+        end
+EOF
+      fi
     '';
   };
 }

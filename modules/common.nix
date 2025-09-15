@@ -47,9 +47,11 @@
 
   # Basic tools
   environment.systemPackages = with pkgs; [
+    bat
     btop
     coreutils
     curl
+    eza
     git
     tree
     wget

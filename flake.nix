@@ -113,7 +113,7 @@
         # Generic (Default) Minimal Config
         # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#generic`
         generic = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          system = linuxSystem;
           modules = [
             ./modules/common.nix
             ./modules/users/lee.nix
@@ -126,23 +126,10 @@
       };
 
       # 👇 Add devShells
-      devShells = forAllSystems (system:
-        let
-          pkgs = nixpkgsFor.${system};
-        in {
-        shu-docs = pkgs.mkShell {
-          # shu-docs = import ./devShells/shu-docs.nix { system = "x86_64-linux"; };
-          buildInputs = with pkgs; [
-            bat # bat (cat clone with syntax highlighting)
-            eza # eza (a modern replacement for ls)
-            htop
-          ];
-        
-          shellHook = ''
-            # prepend an indicator to the shell prompt
-            export PS1="(shu-docs) $PS1"
-            echo "📝 Welcome to the shu-docs devShell!"
-          '';
+      devShells = forAllSystems (system: {
+        shu-docs = import ./devShells/shu-docs.nix {
+          inherit system;
+          pkgs =  nixpkgsFor.${system}; 
         };
       });
     };

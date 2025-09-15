@@ -13,35 +13,33 @@ in
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       nano
-      nanorc          # provides syntax highlighting files
-      ranger          # optional file browser
-      lf              # optional file browser
+      git
+      ranger  # optional file browser
+      lf      # optional file browser
     ];
 
+    # System-wide Nano configuration
     environment.etc."nanorc".text = ''
-      ## General usability
+      ## Basic usability
       set linenumbers       # show line numbers
       set softwrap          # wrap long lines
-      set mouse             # mouse support
-      set indicator         # scrollbar-like indicator
+      set mouse             # enable mouse support
+      set indicator          # visual scroll indicator
+      set backup             # keep backups
 
-      ## Colors & themes
-      set titlecolor white,blue
-      set statuscolor brightwhite,magenta
-      set selectedcolor black,yellow
-      set stripecolor ,green
-      set spotlightcolor black,cyan
-      set errorcolor white,red
-      set functioncolor white,cyan
+      ## Warm-ish color palette (matches Onedark Warm feel)
+      set titlecolor brightwhite,orange
+      set statuscolor brightwhite,brown
+      set selectedcolor black,orange
+      set stripecolor ,yellow
+      set functioncolor brightyellow,red
+      set errorcolor brightwhite,red
+      set numbercolor brightyellow,blue
 
-      ## Highlight current line
-      set stripecolor ,green
-
-      ## Backups
-      set backup
-
-      ## Syntax highlighting (include if present)
-      include "${pkgs.nano}/share/nano/*.nanorc"
+      ## Include syntax highlighting if available
+      if exist "${pkgs.nano}/share/nano"
+        include "${pkgs.nano}/share/nano/*.nanorc"
+      endif
     '';
   };
 }
