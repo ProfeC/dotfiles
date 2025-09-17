@@ -20,18 +20,15 @@
     #   <nixos-wsl/modules>
     # ../hosts/shu-laptop/hardware-configuration-wsl2.nix
     ../modules/common.nix
-    # ../modules/browsers/brave.nix
     ../modules/browsers/firefox.nix
     ../modules/system/x11.nix
     # ../modules/development/git.nix
     ../modules/editors/nano.nix
     ../modules/editors/neovim.nix
-    ../modules/development/vscodium.nix
   ];
 
-  development.vscodium.enable = true;
   editors.nano.enable = true;
-  editros.neovim.enable = true;
+  editors.neovim.enable = true;
 
   wsl = {
     enable = true;
