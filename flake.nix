@@ -126,11 +126,13 @@
       };
 
       # 👇 Add devShells
-      devShells = forAllSystems (system: {
-        shu-docs = import ./devShells/shu-docs.nix {
-          inherit system;
-          pkgs =  nixpkgsFor.${system}; 
-        };
-      });
+      devShells = forAllSystems (system:
+        let
+          pkgs = nixpkgsFor.${system};
+        in
+        {
+          shu-docs = import ./devShells/shu-docs.nix { inherit system pkgs; };
+          python = import ./devShells/python.nix { inherit system pkgs; };
+        });
     };
 }

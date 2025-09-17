@@ -5,12 +5,20 @@ pkgs.mkShell {
 
   # Python + Nixpkgs packages
   packages = [
-    (pkgs.python312.withPackages (ps: with ps; [
+    (pkgs.python3.withPackages (ps: with ps; [
+      docx2python
+      docx2txt
+      mammoth
       mkdocs
       mkdocs-material
       mkdocs-glightbox
+      tqdm
       virtualenv
     ]))
+
+    pkgs.pandoc
+    pkgs.python3Packages.python-docx
+    pkgs.python3Packages.html2text
 
     # Fonts for previews and such
     pkgs.nerd-fonts.fira-code

@@ -75,10 +75,15 @@
     gzip
     unzip
     zip
+
+    # Fonts for previews and such
+    nerd-fonts.fira-code
+    nerd-fonts.noto
+    nerd-fonts.sauce-code-pro
   ];
 
-  # Set the default editor to Nano
-  environment.variables.EDITOR = "nano";
+  # Set the default editor to Neovim
+  environment.variables.EDITOR = "nvim";
 
   # Enable SSH
   # services.openssh.enable = true;
