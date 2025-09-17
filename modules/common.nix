@@ -1,24 +1,27 @@
 { config, inputs, pkgs, ... }:
 
 {
-#  # Basic boot settings for portability
-#  boot.loader.systemd-boot.enable = true;
-#  boot.loader.efi.canTouchEfiVariables = false;
-#
-#  # Generic hardware support
-#  boot.initrd.availableKernelModules = [
-#    "ahci" "ehci_pci" "firewire_ohci" "ohci_pci" "sd_mod" "sdhci_pci" "sr_mod" "usb_storage" "usbhid" "xhci_pci"
-#  ];
-#
-#  boot.supportedFilesystems = [ "btrfs" "ext4" "vfat" "ntfs" ];
-
   networking.networkmanager.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Enable the Flakes feature and the accompanying new nix command-line tool
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  # Set some Nix defaults.
+  nix = {
+    gc = {
+      automatic = true;
+      options = "--delete-older-than 13d";
+    };
+
+    optimise = {
+      automatic = true;
+      dates = ["weekly"];
+    };
+
+    # Enable the Flakes feature and the accompanying new nix command-line tool
+    settings.experimental-features = [ "nix-command" "flakes" ];
+
+  };
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -98,7 +101,5 @@
   #   #  thunderbird
   #   ];
   # };
-
-
 
 }

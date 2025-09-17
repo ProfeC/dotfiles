@@ -121,7 +121,13 @@
             ./hosts/default/configuration.nix
             ./modules/desktops/kde-plasma.nix
             ./modules/system/audio-pipewire.nix
+            ../modules/development/nano.nix
+            ../modules/development/neovim.nix
           ];
+
+          # development.vscodium.enable = true;
+          myNano.enable = true;
+          myNeovim.enable = true;
         };
       };
 

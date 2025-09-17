@@ -1,12 +1,17 @@
 { config, pkgs, ... }:
 
 {
+  imports =
+    [ 
+      # Include the results of the hardware scan.
+      #./hardware-configuration.nix
+
+      inputs.hardware.nixosModules.lenovo-thinkpad-t14s
+      inputs.hardware.nixosModules.lenovo-thinkpad-t14s
+    ];
+
   # Bootloader
   boot.initrd.availableKernelModules = [ "nvme" "ehci_pci" "xhci_pci" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" "thinkpad_acpi" ];
-  ###
-  ### diff from ../../common.nix
-  ### boot.initrd.availableKernelModules = [ "nvme"   "rtsx_pci_sdmmc" "thinkpad_acpi" ];
-  ###
   boot.initrd.kernelModules = [ "acpi_call" ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];

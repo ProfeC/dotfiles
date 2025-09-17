@@ -11,7 +11,13 @@
     ../modules/desktops/kde-plasma.nix
     # ../modules/virtualization/virtualization.nix
     ../modules/system/x11.nix
+    ../modules/development/nano.nix
+    ../modules/development/neovim.nix
   ];
+
+  # development.vscodium.enable = true;
+  myNano.enable = true;
+  myNeovim.enable = true;
 
   # 👇 required for flake check / evaluation
   system.stateVersion = "25.05";
