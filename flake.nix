@@ -126,8 +126,8 @@
           ];
 
           # development.vscodium.enable = true;
-          myNano.enable = true;
-          myNeovim.enable = true;
+          editors.nano.enable = true;
+          editors.neovim.enable = true;
         };
       };
 

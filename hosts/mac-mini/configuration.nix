@@ -34,8 +34,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     python3Full
-    # vivaldi
-    # vivaldi-ffmpeg-codecs
 
     # w3m-nographics # needed for the manual anyway
     testdisk # useful for repairing boot problems
@@ -50,7 +48,7 @@
 
     # Some text editors.
     obsidian
-    vscodium
+#     vscodium
 
     # Hardware-related tools.
     sdparm

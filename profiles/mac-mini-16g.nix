@@ -14,11 +14,12 @@
     ../modules/desktops/kde-plasma.nix
     # ../modules/virtualization/virtualization.nix
     ../modules/system/x11.nix
-    ../modules/development/nano.nix
-    ../modules/development/neovim.nix
+    ../modules/editors/nano.nix
+    ../modules/editors/neovim.nix
+    ../modules/development/vscodium.nix
   ];
 
-  # development.vscodium.enable = true;
-  myNano.enable = true;
-  myNeovim.enable = true;
+  development.vscodium.enable = true;
+  editors.nano.enable = true;
+  editors.neovim.enable = true;
 }
