@@ -2,15 +2,17 @@
 
 {
   imports = [ # Include the results of the hardware scan.
-    ./hardware-configuration.nix
+    ./hardware-configuration-t14s.nix
   ];
 
   # Bootloader & kernel
-  boot.initrd.availableKernelModules = [ "nvme" "ehci_pci" "xhci_pci" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" "thinkpad_acpi" ];
   boot.initrd.kernelModules = [ "acpi_call" ];
-  boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
-  boot.supportedFilesystems = [ "btrfs" "ext4" "vfat" "ntfs" ];
+
+  # --- Bootloader (UEFI) ---
+  boot.loader.systemd-boot.enable = true;
+  # allow installer / Nix to update the EFI variables
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.networkmanager.enable = true;
   networking.hostName = "shu-t14s-nixos";
@@ -27,7 +29,7 @@
   services.libinput.touchpad.naturalScrolling = true;
   services.libinput.touchpad.disableWhileTyping = true;
   services.libinput.touchpad.accelProfile = "adaptive";
-  services.libinput.touchpad.accelSpeed = 0.5;
+  services.libinput.touchpad.accelSpeed = "0.5";
 
   # Fingerprint reader
   services.fprintd.enable = true;
