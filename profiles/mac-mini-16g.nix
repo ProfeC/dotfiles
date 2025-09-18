@@ -20,6 +20,6 @@
   ];
 
   development.vscodium.enable = true;
-  editors.nano.enable = true;
-  editors.neovim.enable = true;
+  editor.nano.enable = true;
+  editor.neovim.enable = true;
 }

@@ -3,18 +3,17 @@
 with lib;
 
 let
-  cfg = config.editors.neovim;
+  cfg = config.editor.neovim;
 in
 {
-  options.editors.neovim = {
+  options.editor.neovim = {
     enable = mkEnableOption "Enable customized Neovim editor";
   };
 
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       neovim
-      git
-      curl
+      vimPlugins.vim-plug
     ];
 
     # System-wide Neovim config: basic editor defaults

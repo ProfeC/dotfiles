@@ -1,22 +1,23 @@
 # profiles/shu-t14s.nix
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
+
 {
+  # Import the machine-specific configuration
   imports = [
-    ../hosts/shu-laptop/configuration.nix
-    ../modules/system/boot-loader.nix
+    ../hosts/shu-laptop/configuration.nix   # Now receives `inputs` from the profile
     ../modules/common.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix
-    # ../modules/browsers/brave.nix
     ../modules/browsers/firefox.nix
+    ../modules/browsers/vivaldi.nix
     ../modules/desktops/kde-plasma.nix
-    # ../modules/virtualization/virtualization.nix
     ../modules/system/x11.nix
-    ../modules/development/nano.nix
-    ../modules/development/neovim.nix
+    ../modules/development/vscodium.nix
+    ../modules/editors/nano.nix
+    ../modules/editors/neovim.nix
   ];
 
-  # development.vscodium.enable = true;
-  myNano.enable = true;
-  myNeovim.enable = true;
+  development.vscodium.enable = true;
+  editor.nano.enable = true;
+  editor.neovim.enable = true;
 }

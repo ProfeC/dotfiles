@@ -3,10 +3,10 @@
 with lib;
 
 let
-  cfg = config.editors.nano;
+  cfg = config.editor.nano;
 in
 {
-  options.editors.nano = {
+  options.editor.nano = {
     enable = mkEnableOption "Enable customized nano editor";
   };
 

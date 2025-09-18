@@ -92,6 +92,7 @@
         shu-lappy = nixpkgs.lib.nixosSystem {
           system = linuxSystem;
           modules = [
+            nixos-hardware.nixosModules.lenovo-thinkpad-t14s
             ./profiles/shu-t14s.nix
             ./modules/users/lee.nix
             ./modules/users/shu-clarkgar.nix

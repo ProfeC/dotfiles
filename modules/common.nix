@@ -59,12 +59,6 @@
     tree
     wget
 
-    # Some text editors.
-    nano
-    neovim
-    # vim
-    vimPlugins.vim-plug
-
     # Some networking tools.
     openconnect
     rclone
