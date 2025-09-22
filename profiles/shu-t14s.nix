@@ -5,6 +5,7 @@
   # Import the machine-specific configuration
   imports = [
     ../hosts/shu-laptop/configuration.nix   # Now receives `inputs` from the profile
+    ../modules/system/boot-loader.nix
     ../modules/common.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix
