@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ config,lib, pkgs, ... }:
 
 {
   # Basic boot settings for portability
   boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = false;
+  boot.loader.efi.canTouchEfiVariables = lib.mkDefault false;
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
