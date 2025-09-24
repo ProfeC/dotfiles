@@ -15,6 +15,7 @@
     # ../modules/virtualization/virtualization.nix
     ../modules/system/x11.nix
     ../modules/editors/nano.nix
+    ../modules/editors/obsidian.nix
     ../modules/editors/neovim.nix
     ../modules/development/vscodium.nix
   ];
@@ -22,4 +23,5 @@
   development.vscodium.enable = true;
   editor.nano.enable = true;
   editor.neovim.enable = true;
+  editor.obsidian.enable = true;
 }
