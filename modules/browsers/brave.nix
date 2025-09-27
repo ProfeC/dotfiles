@@ -1,4 +1,4 @@
-# brave.nix
+# modules/browsers/brave.nix
 { pkgs, ... }:
 
 {
@@ -20,10 +20,4 @@
     #!/usr/bin/env bash
     exec ${pkgs.brave}/bin/brave --enable-features=WebUIDarkMode --use-system-theme "$@"
   '';
-
-  ## Handy aliases for separate work/home profiles
-  programs.bash.shellAliases = {
-    brave-work = "brave --user-data-dir=$HOME/.config/brave-work --use-system-theme";
-    brave-home = "brave --user-data-dir=$HOME/.config/brave-home --use-system-theme";
-  };
 }

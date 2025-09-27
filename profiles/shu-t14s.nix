@@ -9,7 +9,6 @@
     ../modules/browsers/vivaldi.nix
     ../modules/common.nix
     ../modules/desktops/kde-plasma.nix
-    ../modules/development/vscodium.nix
     ../modules/editors/nano.nix
     ../modules/editors/neovim.nix
     ../modules/editors/obsidian.nix
@@ -19,7 +18,6 @@
     ../modules/system/x11.nix
   ];
 
-  development.vscodium.enable = true;
   editor.nano.enable = true;
   editor.neovim.enable = true;
   editor.obsidian.enable = true;

@@ -29,7 +29,7 @@ in {
   ## Extension policy (system-wide)
   ## NOTE: switch to xdg.configFile in HM later
   ########################################
-  xdg.configFile."vivaldi/policies/managed/extensions.json".text = ''
+  home.file.".config/vivaldi/policies/managed/extensions.json".text = ''
     {
       "ExtensionInstallForcelist": [
         "nngceckbapebfimnlniiiahkandclblb",  // Bitwarden
@@ -50,19 +50,19 @@ in {
   ########################################
   ## Patch .desktop file(s)
   ########################################
-  xdg.desktopEntries.vivaldi-tuned = {
+  home.file.".local/share/applications/vivaldi-tuned.desktop".text = ''
     name = "Vivaldi (Tuned)";
     exec = "${vivaldiTuned}";
     icon = "vivaldi";
     type = "Application";
     categories = [ "Network" "WebBrowser" ];
-  };
+  '';
 
-  xdg.desktopEntries.vivaldi-default = {
+  home.file.".local/share/applications/vivaldi-default.desktop".text = ''
     name = "Vivaldi (Default)";
     exec = "${pkgs.vivaldi}/bin/vivaldi";
     icon = "vivaldi";
     type = "Application";
     categories = [ "Network" "WebBrowser" ];
-  };
+  '';
 }

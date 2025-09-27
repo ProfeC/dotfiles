@@ -3,12 +3,11 @@
 
 {
   imports = [
-    # ../../modules/browsers/brave.nix
-    # ../../editors/neovim.nix
-    # ../../editors/nano.nix
+    ./nano.nix
+    ./neovim.nix
     # ../../editors/obsidian.nix
     ./vivaldi.nix
-    # ../../development/vscodium.nix
+    ./vscodium.nix
   ];
 
   home.username = "lee";
@@ -20,7 +19,6 @@
   ####################
   home.packages = with pkgs; [
     kdePackages.kate
-    vscodium
     obsidian
   ];
 
@@ -52,25 +50,8 @@
   ####################
   # Programs Configuration
   ####################
-  programs.neovim.enable = true; # integrate neovimCfg if stable
   programs.bash.enable = true;
-
-  ####################
-  # Shell Aliases
-  ####################
-  programs.bash.shellAliases = lib.mkMerge [
-    # brave.programs.bash.shellAliases
-    # vivaldi.programs.bash.shellAliases
-  ];
-
-  ####################
-  # Browser Extensions / Policies
-  ####################
-  # home.file."xdg/brave/policies/managed/extensions.json".text =
-  #   brave.environment.etc."opt/brave/policies/managed/extensions.json".text;
-
-  # home.file."xdg/vivaldi/policies/managed/extensions.json".text =
-  #   vivaldi.environment.etc."opt/vivaldi/policies/managed/extensions.json".text;
+  programs.neovim.enable = true;
 
   ####################
   # Desktop Entries (Optional)
@@ -92,9 +73,4 @@
   ####################
   # home.file.".config/nvim/init.lua".text = neovimCfg.config.environment.etc."xdg/config/nvim/init.lua".text;
 
-
-  # development.vscodium.enable = true;
-  # editor.nano.enable = true;
-  # editor.neovim.enable = true;
-  # editor.obsidian.enable = true;
 }
