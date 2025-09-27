@@ -3,24 +3,21 @@
 {
   imports = [
     ../hosts/mac-mini/configuration.nix
-    ../modules/system/boot-loader.nix
-    ../modules/common.nix
-    ../modules/system/audio-pipewire.nix
-    ../modules/system/bluetooth.nix
     # ../modules/browsers/brave.nix
     ../modules/browsers/firefox.nix
-    ../modules/system/fuse.nix
     ../modules/browsers/vivaldi.nix
+    ../modules/common.nix
     ../modules/desktops/kde-plasma.nix
-    # ../modules/virtualization/virtualization.nix
-    ../modules/system/x11.nix
     ../modules/editors/nano.nix
-    ../modules/editors/obsidian.nix
     ../modules/editors/neovim.nix
-    ../modules/development/vscodium.nix
+    ../modules/editors/obsidian.nix
+    ../modules/system/audio-pipewire.nix
+    ../modules/system/bluetooth.nix
+    ../modules/system/fuse.nix
+    ../modules/system/x11.nix
+    # ../modules/virtualization/virtualization.nix
   ];
 
-  development.vscodium.enable = true;
   editor.nano.enable = true;
   editor.neovim.enable = true;
   editor.obsidian.enable = true;
