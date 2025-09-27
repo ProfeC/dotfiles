@@ -1,5 +1,5 @@
 # profiles/shu-t14s.nix
-{ config, pkgs, lib, inputs, ... }:
+{ config, pkgs, lib, inputs, home-manager, ... }:
 
 {
   # Import the machine-specific configuration
