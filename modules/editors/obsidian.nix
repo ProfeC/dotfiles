@@ -1,3 +1,4 @@
+# modules/editors/obsidian.nix
 { config, lib, pkgs, ... }:
 
 with lib;
@@ -14,8 +15,5 @@ in
     environment.systemPackages = with pkgs; [
       obsidian
     ];
-
-    # environment.etc."obsidianrc".text = ''
-    # '';
   };
 }

@@ -74,6 +74,15 @@
             ./modules/users/lee.nix
             ./modules/users/serveradmin.nix
             # stylix.nixosModules.stylix
+
+            # Home Manager
+            home-manager.nixosModules.home-manager {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "bak";
+              home-manager.users.lee = import ./modules/home/lee;
+              # home-manager.users.clarkgar = import ./modules/home/clarkgar;
+            }
           ];
         };
 

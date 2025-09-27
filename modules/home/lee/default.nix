@@ -5,7 +5,7 @@
   imports = [
     ./nano.nix
     ./neovim.nix
-    # ../../editors/obsidian.nix
+    ./obsidian.nix
     ./vivaldi.nix
     ./vscodium.nix
   ];
