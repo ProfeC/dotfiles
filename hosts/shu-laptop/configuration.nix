@@ -38,4 +38,11 @@
 
   # dconf
   programs.dconf.enable = true;
+
+  # File System Mounts
+  fileSystems."/mnt/win11data" = {
+    device = "/dev/disk/by-uuid/426AD8096AD7F79D"; # safer than /dev/nvme0n1p3
+    fsType = "ntfs3";
+    options = [ "rw" "uid=1000" "gid=100" "umask=022" ];
+  };
 }
