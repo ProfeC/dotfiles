@@ -1,11 +1,13 @@
-{ config, lib, pkgs, ... }:
-
-with lib;
-
-let
-  cfg = config.editor.nano;
-in
+# modules/editors/nano.nix
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+with lib; let
+  cfg = config.editor.nano;
+in {
   options.editor.nano = {
     enable = mkEnableOption "Enable customized nano editor";
   };
@@ -13,9 +15,8 @@ in
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       nano
-      git
-      ranger  # optional file browser
-      lf      # optional file browser
+      ranger # optional file browser
+      lf # optional file browser
     ];
   };
 }
