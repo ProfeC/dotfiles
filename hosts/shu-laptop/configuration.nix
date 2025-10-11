@@ -2,7 +2,7 @@
 
 {
   imports = [ # Include the results of the hardware scan.
-    ./hardware-configuration-t14s.nix
+    ./hardware-configuration-t14s-ssd.nix
   ];
 
   # Bootloader & kernel

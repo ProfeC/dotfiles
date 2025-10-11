@@ -79,6 +79,9 @@
     nerd-fonts.sauce-code-pro
   ];
 
+  # Enable CUPS to print documents.
+  services.printing.enable = true;
+
   # Set the default editor to Neovim
   environment.variables.EDITOR = "nvim";
 
