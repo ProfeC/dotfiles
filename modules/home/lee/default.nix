@@ -8,6 +8,7 @@
     ./obsidian.nix
     ./vivaldi.nix
     ./vscodium.nix
+    ./wezterm.nix
   ];
 
   home.username = "lee";
@@ -52,6 +53,17 @@
   ####################
   programs.bash.enable = true;
   programs.neovim.enable = true;
+  
+  programs.zsh = {
+    enable = true;
+    ohMyZsh.enable = false; # set to true if you use oh-my-zsh
+    enableAutosuggestions = true;
+    enableSyntaxHighlighting = true;
+    shellAliases = {
+      ll = "ls -lah";
+      lt = "ls -laht";
+    }
+  };
 
   ####################
   # Desktop Entries (Optional)
