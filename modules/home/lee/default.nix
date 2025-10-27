@@ -1,7 +1,10 @@
 # modules/home/lee/default.nix
-{ config, pkgs, lib, ... }:
-
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ./nano.nix
     ./neovim.nix
@@ -21,6 +24,7 @@
   home.packages = with pkgs; [
     kdePackages.kate
     obsidian
+    steam
   ];
 
   ####################
@@ -84,5 +88,4 @@
   # Optional: editor configs / neovim bootstrap
   ####################
   # home.file.".config/nvim/init.lua".text = neovimCfg.config.environment.etc."xdg/config/nvim/init.lua".text;
-
 }
