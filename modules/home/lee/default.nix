@@ -28,6 +28,13 @@
   ];
 
   ####################
+  # Fonts
+  ####################
+  fonts = {
+    fontconfig.enable = true;
+  };
+
+  ####################
   # Git Config
   ####################
   programs.git = {
@@ -57,16 +64,17 @@
   ####################
   programs.bash.enable = true;
   programs.neovim.enable = true;
-  
+
   programs.zsh = {
     enable = true;
-    ohMyZsh.enable = false; # set to true if you use oh-my-zsh
+    loginShell = true;
+    # ohMyZsh.enable = false; # set to true if you use oh-my-zsh
     enableAutosuggestions = true;
     enableSyntaxHighlighting = true;
     shellAliases = {
       ll = "ls -lah";
       lt = "ls -laht";
-    }
+    };
   };
 
   ####################
