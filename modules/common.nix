@@ -1,6 +1,9 @@
-{ config, inputs, pkgs, ... }:
-
 {
+  config,
+  inputs,
+  pkgs,
+  ...
+}: {
   networking.networkmanager.enable = true;
 
   # Allow unfree packages
@@ -19,8 +22,7 @@
     };
 
     # Enable the Flakes feature and the accompanying new nix command-line tool
-    settings.experimental-features = [ "nix-command" "flakes" ];
-
+    settings.experimental-features = ["nix-command" "flakes"];
   };
 
   # Set your time zone.
@@ -74,7 +76,10 @@
     zip
 
     # Fonts for previews and such
+    jetbrains-mono
+    nerd-fonts.droid-sans-mono
     nerd-fonts.fira-code
+    nerd-fonts.meslo-lg # Meslo Nerd Font (package name in nixpkgs may vary by channel)
     nerd-fonts.noto
     nerd-fonts.sauce-code-pro
   ];
@@ -98,5 +103,4 @@
   #   #  thunderbird
   #   ];
   # };
-
 }
