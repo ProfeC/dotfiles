@@ -66,12 +66,12 @@ local colors = {
 
 return {
   -- Appearance
-  font = wezterm.font_with_fallback({
-    "MesloLGS NF",      -- common Meslo nerd font name
-    "MesloLGS Nerd Font",
-    "FiraCode Nerd Font",
-    "JetBrains Mono"
-  }),
+  -- font = wezterm.font_with_fallback({
+  --   "MesloLGS NF",      -- common Meslo nerd font name
+  --   "MesloLGS Nerd Font",
+  --   "FiraCode Nerd Font",
+  --   "JetBrains Mono"
+  -- }),
   font_size = 11.0,
   line_height = 1.13,
   color_scheme = "EbonyNightMuted",
@@ -88,21 +88,24 @@ return {
   -- macOS-only blur won't help on Win; WezTerm provides background_blur if supported
   -- macos_window_background_blur = 3,
   kde_window_background_blur = true,
-  background_blur = 6.0, -- subtle blur if compositor supports it
---   win32_system_backdrop = "Acrylic",
+  -- background_blur = 6.0, -- subtle blur if compositor supports it
+  -- win32_system_backdrop = "Acrylic",
 
   -- Performance
   enable_kitty_keyboard = true,
-  front_end = "WebGpu", -- use GPU rendering if available
+  -- front_end = "WebGpu", -- use GPU rendering if available
   max_fps = 120,
   scrollback_lines = 10000,
 
   -- Default program -> WSL distro (mostly NixOS)
   -- This will launch wsl.exe and run an interactive login zsh shell.
-  default_prog = { "wsl.exe", "-d", "NixOS", "--exec", "bash", "-l" },
+  -- default_prog = { "wsl.exe", "-d", "NixOS", "--exec", "bash", "-l" },
 
   -- If you prefer Debian, replace the above with:
   -- default_prog = { "wsl.exe", "-d", "Debian", "--exec", "zsh", "-l" },
+
+  -- If you prefer NixOS, replace the above with:
+  default_prog = { os.getenv("SHELL"), "-l" },
 
   -- Keybindings (sane & productive)
   keys = {
