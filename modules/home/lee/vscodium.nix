@@ -43,9 +43,9 @@ in {
     package = pkgs.vscodium;
 
     # Merge both extension sources
-    extensions = nixpkgsExtensions ++ marketplaceExtensions;
+    profiles.default.extensions = nixpkgsExtensions ++ marketplaceExtensions;
 
-    userSettings = {
+    profiles.default.userSettings = {
       "editor.bracketPairColorization.enabled" = true;
       "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
       "editor.codeActionsOnSave"."source.fixAll" = "always";
@@ -79,7 +79,7 @@ in {
       "nix.serverSettings"."nil"."formatting"."command" = ["${pkgs.alejandra}/bin/alejandra"];
     };
 
-    keybindings = [
+    profiles.default.keybindings = [
       {
         key = "ctrl+`";
         command = "workbench.action.terminal.focus";

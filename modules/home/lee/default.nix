@@ -12,6 +12,7 @@
     ./vivaldi.nix
     ./vscodium.nix
     ./wezterm.nix
+    ./zsh.nix
   ];
 
   home.homeDirectory = "/home/lee";
@@ -39,9 +40,9 @@
   ####################
   programs.git = {
     enable = true;
-    userName = "G. L. Clark, II";
-    userEmail = "gclark2@gmail.com";
-    extraConfig = {
+    settings = {
+      user.name = "G. L. Clark, II";
+      user.email = "gclark2@gmail.com";
       init.defaultBranch = "main";
       safe.directory = [
         "/etc/nixos"
@@ -74,46 +75,6 @@
       lt = "ls -laht";
     };
   };
-
-  programs.zsh = {
-    enable = true;
-    autosuggestion.enable = true;
-    enableCompletion = true;
-    syntaxHighlighting.enable = true;
-
-    oh-my-zsh = {
-      enable = true;
-      theme = "agnoster";
-    };
-
-    shellAliases = {
-      ll = "ls -lah";
-      lt = "ls -laht";
-    };
-  };
-
-  # Better shell prompt!
-  programs.starship = {
-    enable = true;
-    settings = {
-      username = {
-        style_user = "blue bold";
-        style_root = "red bold";
-        format = "[$user]($style) ";
-        disabled = false;
-        show_always = true;
-      };
-      hostname = {
-        ssh_only = false;
-        ssh_symbol = "🌐 ";
-        format = "on [$hostname](bold red) ";
-        trim_at = ".local";
-        disabled = false;
-      };
-    };
-  };
-
-  # home.sessionVariables.SHELL = "${pkgs.zsh}/bin/zsh";
 
   ####################
   # Desktop Entries (Optional)
