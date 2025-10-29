@@ -93,14 +93,6 @@
   # Enable SSH
   # services.openssh.enable = true;
 
-  # # Define a user account. Don't forget to set a password with ‘passwd’.
-  # users.users.lee = {
-  #   isNormalUser = true;
-  #   description = "Lee";
-  #   extraGroups = [ "networkmanager" "wheel" ];
-  #   packages = with pkgs; [
-  #     kdePackages.kate
-  #   #  thunderbird
-  #   ];
-  # };
+  # Enable global programs
+  programs.zsh.enable = true;
 }
