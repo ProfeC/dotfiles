@@ -97,7 +97,7 @@ return {
   enable_scroll_bar = true,
   window_decorations = "RESIZE|TITLE",
   enable_tab_bar = true,
-  hide_tab_bar_if_only_one_tab = true,
+  hide_tab_bar_if_only_one_tab = false,
   use_fancy_tab_bar = true,
   kde_window_background_blur = true,
   enable_kitty_keyboard = true,
