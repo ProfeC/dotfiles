@@ -22,6 +22,7 @@
     ../modules/system/bluetooth.nix
     ../modules/system/boot-loader.nix
     ../modules/system/x11.nix
+    ../modules/system/tailscale.nix
   ];
 
   editor.nano.enable = true;
