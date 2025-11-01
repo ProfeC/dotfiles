@@ -8,9 +8,6 @@
     ../modules/browsers/vivaldi.nix
     ../modules/common.nix
     ../modules/desktops/kde-plasma.nix
-    ../modules/editors/nano.nix
-    ../modules/editors/neovim.nix
-    ../modules/editors/obsidian.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix
     ../modules/system/fuse.nix

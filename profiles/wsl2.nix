@@ -18,8 +18,6 @@
     ../modules/browsers/firefox.nix
     ../modules/system/x11.nix
     # ../modules/development/git.nix
-    ../modules/editors/nano.nix
-    ../modules/editors/neovim.nix
   ];
 
   editor.nano.enable = true;

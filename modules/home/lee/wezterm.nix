@@ -5,11 +5,11 @@
   pkgs,
   ...
 }: let
-  wezterm_extra = builtins.readFile ./config/wezterm/wezterm-extra.lua;
+  wezterm_config = builtins.readFile ./config/wezterm/wezterm-extra.lua;
 in {
   programs.wezterm = {
     enable = true;
     package = pkgs.wezterm;
-    extraConfig = wezterm_extra;
+    extraConfig = wezterm_config;
   };
 }

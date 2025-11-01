@@ -6,9 +6,10 @@
   ...
 }: {
   imports = [
-    ./nano.nix
-    ./neovim.nix
-    ./obsidian.nix
+    ./editors/nano.nix
+    ./editors/neovim.nix
+    ./editors/obsidian.nix
+    ./editors/zed.nix
     ./vivaldi.nix
     ./vscodium.nix
     ./wezterm.nix
@@ -66,7 +67,6 @@
   programs.home-manager.enable = true;
   programs.fish.enable = true;
   programs.fzf.enable = true;
-  programs.neovim.enable = true;
 
   programs.bash = {
     enable = true;

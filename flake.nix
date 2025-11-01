@@ -144,10 +144,6 @@
           ../modules/development/nano.nix
           ../modules/development/neovim.nix
         ];
-
-        # development.vscodium.enable = true;
-        editors.nano.enable = true;
-        editors.neovim.enable = true;
       };
     };
 

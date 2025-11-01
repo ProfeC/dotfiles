@@ -88,7 +88,7 @@
   services.printing.enable = true;
 
   # Set the default editor to Neovim
-  environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "nano";
 
   # Enable SSH
   # services.openssh.enable = true;

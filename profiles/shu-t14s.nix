@@ -14,9 +14,6 @@
     ../modules/browsers/vivaldi.nix
     ../modules/common.nix
     ../modules/desktops/kde-plasma.nix
-    ../modules/editors/nano.nix
-    ../modules/editors/neovim.nix
-    ../modules/editors/obsidian.nix
     ../modules/gaming/steam.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix
@@ -24,8 +21,4 @@
     ../modules/system/x11.nix
     ../modules/system/tailscale.nix
   ];
-
-  editor.nano.enable = true;
-  editor.neovim.enable = true;
-  editor.obsidian.enable = true;
 }
