@@ -13,9 +13,6 @@
     ../modules/system/fuse.nix
     ../modules/system/x11.nix
     # ../modules/virtualization/virtualization.nix
+    ../modules/system/tailscale.nix
   ];
-
-  editor.nano.enable = true;
-  editor.neovim.enable = true;
-  editor.obsidian.enable = true;
 }
