@@ -76,6 +76,6 @@ in {
   };
 
   # Optional: convenience alias
-  programs.bash.shellAliases.zed = "zed";
-  programs.zsh.shellAliases.zed = "zed";
+  programs.bash.shellAliases.zed = "zeditor";
+  programs.zsh.shellAliases.zed = "zeditor";
 }

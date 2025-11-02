@@ -67,6 +67,7 @@
       mac-mini-01 = nixpkgs.lib.nixosSystem {
         system = linuxSystem;
         modules = [
+          nixos-hardware.nixosModules.apple-macmini-4-1
           ./profiles/mac-mini-16g.nix
           ./modules/users/lee.nix
           ./modules/users/serveradmin.nix
