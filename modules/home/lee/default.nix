@@ -10,6 +10,7 @@
     ./editors/neovim.nix
     ./editors/obsidian.nix
     ./editors/zed.nix
+    ./gaming/minecraft.nix
     ./vivaldi.nix
     ./vscodium.nix
     ./wezterm.nix
@@ -26,6 +27,7 @@
   home.packages = with pkgs; [
     kdePackages.kate
     obsidian
+    # prismlauncher
     steam
   ];
 

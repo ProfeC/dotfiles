@@ -69,7 +69,7 @@ local colors = {
 -- Maximize window at startup
 wezterm.on("gui-startup", function(cmd)
   local _, _, window = wezterm.mux.spawn_window(cmd or {})
-  window:gui_window():maximize()
+  -- window:gui_window():maximize()
 end)
 
 -- Show hostname + time in the right status bar
