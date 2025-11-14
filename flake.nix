@@ -11,7 +11,7 @@
 
     # include home-manager as an input, and let it 'follow' the main nixpkgs branch letting it install packages from nixpkgs instead of keeping its own repository
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -26,14 +26,16 @@
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
 
     # Style/Theme management for NixOS
-    # stylix.url = "github:danth/stylix";
-    # stylix.inputs.nixpkgs.follows = "nixpkgs";
+    stylix = {
+      url = "github:danth/stylix/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Nix User Repository: User contributed nix packages
-    # nur = {
-    #   url = "github:nix-community/NUR";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
