@@ -14,7 +14,6 @@
     ../modules/browsers/vivaldi.nix
     ../modules/common.nix
     ../modules/desktops/kde-plasma.nix
-    ../modules/gaming/steam.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix
     ../modules/system/boot-loader.nix

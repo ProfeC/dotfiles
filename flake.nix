@@ -3,15 +3,16 @@
 
   inputs = {
     # Pin to a specific nixpkgs branch/version
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     # Hardware database for known machines
     nixos-hardware.url = "github:NixOS/nixos-hardware";
 
     # include home-manager as an input, and let it 'follow' the main nixpkgs branch letting it install packages from nixpkgs instead of keeping its own repository
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      # url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -27,7 +28,8 @@
 
     # Style/Theme management for NixOS
     stylix = {
-      url = "github:danth/stylix/release-25.05";
+      # url = "github:danth/stylix/release-25.05";
+      url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
