@@ -26,6 +26,7 @@
   ####################
   home.packages = with pkgs; [
     kdePackages.kate
+    libreoffice-fresh
     obsidian
     # prismlauncher
     steam
