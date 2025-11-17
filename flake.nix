@@ -27,17 +27,17 @@
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
 
     # Style/Theme management for NixOS
-    stylix = {
-      # url = "github:danth/stylix/release-25.05";
-      url = "github:danth/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # stylix = {
+    #   # url = "github:danth/stylix/release-25.05";
+    #   url = "github:nix-community/stylix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # Nix User Repository: User contributed nix packages
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nur = {
+    #   url = "github:nix-community/NUR";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = {
@@ -55,7 +55,8 @@
     linuxSystem = "x86_64-linux";
 
     # System types to support.
-    supportedSystems = ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"];
+    # supportedSystems = ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"];
+    supportedSystems = ["x86_64-linux"];
 
     # Helper function to generate an attrset '{ x86_64-linux = f "x86_64-linux"; ... }'.
     forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
@@ -75,7 +76,6 @@
           ./profiles/mac-mini-16g.nix
           ./modules/users/lee.nix
           ./modules/users/serveradmin.nix
-          # stylix.nixosModules.stylix
 
           # Home Manager
           home-manager.nixosModules.home-manager
