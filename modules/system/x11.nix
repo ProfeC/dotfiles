@@ -6,7 +6,7 @@
   # You can disable this if you're only using the Wayland session.
   services.xserver = {
     enable = true;
-    libinput.enable = true;
+    # libinput.enable = true;
   };
 
   # Configure keymap in X11

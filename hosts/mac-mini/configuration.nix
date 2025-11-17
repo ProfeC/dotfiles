@@ -33,8 +33,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    python3Full
-
+    # python3Full
     # w3m-nographics # needed for the manual anyway
     testdisk # useful for repairing boot problems
     ms-sys # for writing Microsoft boot sectors / MBRs
@@ -62,16 +61,16 @@
 
   programs.dconf.enable = true;
 
-  # File System Mounts
-  fileSystems."/mnt/games" = {
-    device = "//192.168.13.3/gaming";
-    fsType = "cifs";
-    options = let
-      # this line prevents hanging on network split
-      automount_opts = "x-systemd.automount,noauto,nofail,vers=3.0,iocharset=utf8,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+  # # File System Mounts
+  # fileSystems."/mnt/games" = {
+  #   device = "//192.168.13.3/gaming";
+  #   fsType = "cifs";
+  #   options = let
+  #     # this line prevents hanging on network split
+  #     automount_opts = "x-systemd.automount,noauto,nofail,vers=3.0,iocharset=utf8,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
 
-    in ["${automount_opts},credentials=/home/lee/etc/nixos/secrets/smb-secrets"];
-  };
+  #   in ["${automount_opts},credentials=/home/lee/etc/nixos/secrets/smb-secrets"];
+  # };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
