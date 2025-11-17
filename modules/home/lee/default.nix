@@ -22,21 +22,10 @@
   home.username = "lee";
 
   ####################
-  # Network Mounts
-  ####################
-  home.activation.mounHomeSMB = lib.hm.dag.entryAfter [ "writeBoundry"] ''
-    mkdir -p "$HOME/Games"
-    if ! mountpoint -q "$HOME/Games"; then
-      ${pkgs.cifs-utils}/bin/mount.cifs \
-          //192.168.13.3/gaming "$HOME/Games" \
-          -o credentials=$HOME/etc/nixos/secrets/smb-secrets,uid=$(id -u),gid=$(id -g).vers=3.0
-    fi
-  '';
-
-  ####################
   # Core Packages
   ####################
   home.packages = with pkgs; [
+    cifs-utils
     kdePackages.kate
     libreoffice-fresh
     obsidian

@@ -46,8 +46,8 @@
     cryptsetup # needed for dm-crypt volumes
 
     # Some text editors.
-    obsidian
-#     vscodium
+    # obsidian
+    # vscodium
 
     # Hardware-related tools.
     sdparm
@@ -61,16 +61,24 @@
 
   programs.dconf.enable = true;
 
-  # # File System Mounts
-  # fileSystems."/mnt/games" = {
-  #   device = "//192.168.13.3/gaming";
-  #   fsType = "cifs";
-  #   options = let
-  #     # this line prevents hanging on network split
-  #     automount_opts = "x-systemd.automount,noauto,nofail,vers=3.0,iocharset=utf8,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
-
-  #   in ["${automount_opts},credentials=/home/lee/etc/nixos/secrets/smb-secrets"];
-  # };
+  # System-level SMB Mounts
+  fileSystems."/mnt/games" = {
+    device = "//192.168.13.3/gaming";
+    fsType = "cifs";
+    options = [
+      "credentials=/home/lee/etc/nixos/secrets/.smbcredentials" # Credentials file
+      "gid=100"
+      "iocharset=utf8"
+      "noauto" # Only mount when accessed (with automount)
+      "nofail"
+      "uid=1000"
+      "vers=3.0" # SMB version (optional, adjust if needed)
+      "x-systemd.automount" # Auto-mount on access (optional, for lazy mounting)
+      "x-systemd.device-timeout=5s"
+      "x-systemd.idle-timeout=60"
+      "x-systemd.mount-timeout=5s"
+    ];
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

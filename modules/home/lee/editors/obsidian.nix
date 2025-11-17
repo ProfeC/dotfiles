@@ -21,9 +21,13 @@ in {
   # home.file.".config/obsidian/app.json".source = /home/lee/.config/obsidian/app.json;
   # home.file.".config/obsidian/workspace.json".source = /home/lee/.config/obsidian/workspace.json;
   # home.file.".config/obsidian/plugins".source = /home/lee/.config/obsidian/plugins;
-  home.file.".config/obsidian/Preferences".text = ''
-    {"browser":{"enable_spellchecking":true},"partition":{"per_host_zoom_levels":{"5758236113743254910":{},"9337329102044273761" │ :{}}},"spellcheck":{"dictionaries":["en-US"],"dictionary":""}}
-  '';
+
+  xdg.configFile."obsidian/Preferences" = {
+    text = ''
+    {"browser":{"enable_spellchecking":true},"partition":{"per_host_zoom_levels":{"5758236113743254910":{},"9337329102044273761" │ :{}}},"migrated_user_scripts_toggle":true,"spellcheck":{"dictionaries":["en-US"],"dictionary":""}}
+    '';
+    force = true;
+  };
 
   # ########################
   # # Shell Aliases for Vaults
