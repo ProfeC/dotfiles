@@ -17,9 +17,12 @@
     #   plugins = ["git" "sudo" "history-substring-search" "z"];
     # };
 
-    # shellAliases = {
-    #   ll = "ls -lah";
-    # };
+    shellAliases = {
+      cat = "bat -s";
+      g = "git";
+      ll = "ls -lah";
+      lt = "ls -laht";
+    };
 
     # The declarative replacement for .zshrc
     initContent = ''
@@ -34,14 +37,8 @@
 
       eval "$(starship init zsh)"
 
-      # Aliases
-      alias cat="bat -s"
-      alias ll="ls -lah"
-      alias lt="ls -laht"
-      alias g="git"
-
       # Example env vars
-      export EDITOR="nvim"
+      export EDITOR="zed"
       export LANG="en_US.UTF-8"
 
       # Set a custom greeting

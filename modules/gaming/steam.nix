@@ -11,7 +11,7 @@
 
   # Other configurations to optimize Steam
   # services.xserver.videoDrivers = [ "nvidia" ];  # or "intel", "amd", etc.
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
   # Configure settings for running Steam
   users.users.lee = {

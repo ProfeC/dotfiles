@@ -1,5 +1,5 @@
 result
 macmini-nixos.qcow2
-secrets
+secrets/*
 dotfiles-202508211045.tar.gz
-smb-secrets
+.smbsecrets

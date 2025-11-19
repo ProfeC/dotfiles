@@ -29,8 +29,8 @@
     kdePackages.kate
     libreoffice-fresh
     obsidian
-    # prismlauncher
     steam
+    # steam.cmd
   ];
 
   ####################
