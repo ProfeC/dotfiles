@@ -4,6 +4,20 @@
   pkgs,
   ...
 }: {
+  # Enable the Steam service
+  environment.systemPackages = with pkgs; [
+    steam
+  ];
+
+  # Other configurations to optimize Steam
+  # services.xserver.videoDrivers = [ "nvidia" ];  # or "intel", "amd", etc.
+  hardware.opengl.enable = true;
+
+  # Configure settings for running Steam
+  users.users.lee = {
+    extraGroups = [ "games" ];
+  };
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
