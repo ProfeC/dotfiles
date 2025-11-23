@@ -18,17 +18,18 @@
     ../modules/system/audio-pipewire.nix
     ../modules/system/bluetooth.nix
     ../modules/system/boot-loader.nix
-    ../modules/system/auto-updater.nix
+    ../modules/system/auto-upgrade.nix
     ../modules/system/x11.nix
     ../modules/system/tailscale.nix
   ];
 
   # Auto Updater
   autoUpgrade = {
-    enable = true;
+    enable = false;
     mode = "check";
     flakePath = "/home/lee/etc/nixos#shuLappy";
     dryRun = true;
-    requireAc = true;
-  }
+    requireAC = true;
+    rebootDelay = 13;
+  };
 }
