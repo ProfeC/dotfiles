@@ -135,6 +135,26 @@
         ];
       };
 
+      # TrueNAS Virtual Machines
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
+      vm-gaming = nixpkgs.lib.nixosSystem {
+        system = linuxSystem;
+        modules = [
+          ./profiles/vm-gaming.nix
+          ./modules/users/lee.nix
+
+          # Home Manager
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "bak";
+            home-manager.users.lee = import ./modules/home/lee;
+            # home-manager.users.clarkgar = import ./modules/home/clarkgar;
+          }
+        ];
+      };
+
       # Generic (Default) Minimal Config
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#generic`
       generic = nixpkgs.lib.nixosSystem {
