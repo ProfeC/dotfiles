@@ -27,7 +27,7 @@
   autoUpgrade = {
     enable = false;
     mode = "check";
-    flakePath = "/home/lee/etc/nixos#shuLappy";
+    flakePath = "/home/lee/etc/nixos#shu-lappy";
     dryRun = true;
     requireAC = true;
     rebootDelay = 13;
