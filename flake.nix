@@ -136,7 +136,7 @@
       };
 
       # TrueNAS Virtual Machines
-      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
+      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#vm-gaming`
       vm-gaming = nixpkgs.lib.nixosSystem {
         system = linuxSystem;
         modules = [
