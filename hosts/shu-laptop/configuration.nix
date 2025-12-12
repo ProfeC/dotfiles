@@ -44,7 +44,7 @@
   fileSystems."/mnt/win11data" = {
     device = "/dev/disk/by-uuid/426AD8096AD7F79D"; # safer than /dev/nvme0n1p3
     fsType = "ntfs3";
-    options = [ "rw" "uid=1000" "gid=100" "umask=022" ];
+    options = [ "rw" "uid=1000" "gid=100" "umask=022" "nofail" ];
   };
 
   # Games
@@ -67,4 +67,12 @@
       "x-systemd.mount-timeout=5s"
     ];
   };
+
+  # This value determines the NixOS release from which the default
+  # settings for stateful data, like file locations and database versions
+  # on your system were taken. It‘s perfectly fine and recommended to leave
+  # this value at the release version of the first install of this system.
+  # Before changing this value read the documentation for this option
+  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+  system.stateVersion = "25.05"; # Did you read the comment?
 }
