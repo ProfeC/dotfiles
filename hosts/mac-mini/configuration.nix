@@ -14,8 +14,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = lib.mkForce true;
 
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # Use latest kernel. => Commented here; loaded from ./modules/system/boot-loader.nix
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "macmini-nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -66,7 +66,7 @@
     device = "//192.168.13.3/gaming";
     fsType = "cifs";
     options = [
-      "credentials=/home/lee/etc/nixos/secrets/.smbcredentials" # Credentials file
+      "credentials=/home/lee/etc/nixos/secrets/smb-secrets" # Credentials file
       "dir_mode=0775" # Permissions for directories
       "file_mode=0775" # Permissions for files
       "gid=100"

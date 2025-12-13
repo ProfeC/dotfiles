@@ -52,7 +52,7 @@
     device = "//192.168.13.3/gaming";
     fsType = "cifs";
     options = [
-      "credentials=/home/lee/etc/nixos/secrets/.smbcredentials" # Credentials file
+      "credentials=/home/lee/etc/nixos/secrets/smb-secrets" # Credentials file
       "dir_mode=0775" # Permissions for directories
       "file_mode=0775" # Permissions for files
       "gid=100"
