@@ -11,13 +11,14 @@
     ../modules/desktops/kde-plasma.nix
     ../modules/gaming/steam.nix
     ../modules/system/audio-pipewire.nix
+    ../modules/system/auto-upgrade.nix
     ../modules/system/bluetooth.nix
     ../modules/system/boot-loader.nix
-    ../modules/system/auto-upgrade.nix
-    ../modules/system/x11.nix
     ../modules/system/tailscale.nix
+    ../modules/system/video.nix
+    ../modules/system/x11.nix
   ];
-  
+
   networking.networkmanager.enable = true;
 
   # Allow unfree packages
