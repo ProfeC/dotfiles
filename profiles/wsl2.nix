@@ -15,8 +15,6 @@
     #   <nixos-wsl/modules>
     # ../hosts/shu-laptop/hardware-configuration-wsl2.nix
     ../modules/default.nix
-    ../modules/browsers/firefox.nix
-    ../modules/system/x11.nix
     # ../modules/development/git.nix
   ];
 

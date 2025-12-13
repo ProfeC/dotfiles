@@ -2,15 +2,9 @@
 { config, pkgs, lib, ... }:
 {
   imports = [
-    ../modules/system/boot-loader.nix
     ../modules/default.nix
-    ../modules/system/audio-pipewire.nix
-    ../modules/system/bluetooth.nix
     # ../modules/browsers/brave.nix
-    ../modules/browsers/firefox.nix
-    ../modules/desktops/kde-plasma.nix
     # ../modules/virtualization/virtualization.nix
-    ../modules/system/x11.nix
   ];
 
   # development.vscodium.enable = true;

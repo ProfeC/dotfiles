@@ -5,15 +5,6 @@
     ../hosts/mac-mini/configuration.nix
     ../modules/default.nix
     # ../modules/browsers/brave.nix
-    ../modules/browsers/firefox.nix
-    ../modules/browsers/vivaldi.nix
-    ../modules/desktops/kde-plasma.nix
-    ../modules/gaming/steam.nix
-    ../modules/system/audio-pipewire.nix
-    ../modules/system/bluetooth.nix
-    ../modules/system/fuse.nix
-    ../modules/system/x11.nix
     # ../modules/virtualization/virtualization.nix
-    ../modules/system/tailscale.nix
   ];
 }
