@@ -10,9 +10,9 @@
   # Import the machine-specific configuration
   imports = [
     ../hosts/shu-laptop/configuration.nix # Now receives `inputs` from the profile
+    ../modules/default.nix
     ../modules/browsers/firefox.nix
     ../modules/browsers/vivaldi.nix
-    ../modules/common.nix
     ../modules/desktops/kde-plasma.nix
     ../modules/gaming/steam.nix
     ../modules/system/audio-pipewire.nix

@@ -3,10 +3,10 @@
 {
   imports = [
     ../hosts/mac-mini/configuration.nix
+    ../modules/default.nix
     # ../modules/browsers/brave.nix
     ../modules/browsers/firefox.nix
     ../modules/browsers/vivaldi.nix
-    ../modules/common.nix
     ../modules/desktops/kde-plasma.nix
     ../modules/gaming/steam.nix
     ../modules/system/audio-pipewire.nix
