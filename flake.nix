@@ -160,14 +160,10 @@
       generic = nixpkgs.lib.nixosSystem {
         system = linuxSystem;
         modules = [
-          ./modules/common.nix
+          ./modules/default.nix
           ./modules/users/lee.nix
           ./modules/users/serveradmin.nix
           ./hosts/default/configuration.nix
-          ./modules/desktops/kde-plasma.nix
-          ./modules/system/audio-pipewire.nix
-          ../modules/development/nano.nix
-          ../modules/development/neovim.nix
         ];
       };
     };
