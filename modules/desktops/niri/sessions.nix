@@ -1,30 +1,53 @@
 # modules/desktops/niri/sessions.nix
 { pkgs, ... }:
 
-{
-  services.displayManager.extraSessionFilePackages = [
-    (pkgs.writeTextDir "share/wayland-sessions/niri-legos.desktop" ''
-      [Desktop Entry]
-      Name=Niri (Legos)
-      Comment=Niri + Waybar + Fuzzel
-      Exec=env NIRI_PROFILE=legos niri
-      Type=Application
-    '')
+let
+  mkNiriSession =
+    { name
+    , sessionName
+    , comment
+    , profile
+    }:
+    pkgs.stdenv.mkDerivation {
+      pname = "niri-${profile}-session";
+      version = "1.0";
 
-    (pkgs.writeTextDir "share/wayland-sessions/niri-dms.desktop" ''
-      [Desktop Entry]
-      Name=Niri (DankMaterialShell)
-      Comment=Niri + DMS
-      Exec=env NIRI_PROFILE=dms niri
-      Type=Application
-    '')
+      dontUnpack = true;
 
-    (pkgs.writeTextDir "share/wayland-sessions/niri-noctalia.desktop" ''
-      [Desktop Entry]
-      Name=Niri (Noctalia)
-      Comment=Niri + Noctalia Shell
-      Exec=env NIRI_PROFILE=noctalia niri
-      Type=Application
-    '')
+      installPhase = ''
+        mkdir -p $out/share/wayland-sessions
+        cat > $out/share/wayland-sessions/${sessionName}.desktop <<EOF
+        [Desktop Entry]
+        Name=${name}
+        Comment=${comment}
+        Exec=env NIRI_PROFILE=${profile} niri
+        Type=Application
+        EOF
+      '';
+
+      passthru.providedSessions = [ sessionName ];
+    };
+in {
+  services.displayManager.sessionPackages = [
+    (mkNiriSession {
+      name = "Niri (Legos)";
+      sessionName = "niri-legos";
+      comment = "Niri + Waybar + Fuzzel";
+      profile = "legos";
+    })
+
+    (mkNiriSession {
+      name = "Niri (DankMaterialShell)";
+      sessionName = "niri-dms";
+      comment = "Niri + DankMaterialShell";
+      profile = "dms";
+    })
+
+    (mkNiriSession {
+      name = "Niri (Noctalia)";
+      sessionName = "niri-noctalia";
+      comment = "Niri + Noctalia Shell";
+      profile = "noctalia";
+    })
   ];
 }
