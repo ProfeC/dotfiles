@@ -8,7 +8,7 @@
   imports = [
     ../modules/browsers/firefox.nix
     ../modules/browsers/vivaldi.nix
-    ../modules/desktops/kde-plasma.nix
+    ../modules/desktops/default.nix
     ../modules/gaming/steam.nix
     ../modules/system/audio-pipewire.nix
     ../modules/system/auto-upgrade.nix
