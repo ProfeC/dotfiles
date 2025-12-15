@@ -10,7 +10,7 @@ let
     }:
     pkgs.stdenv.mkDerivation {
       pname = "niri-${profile}-session";
-      version = "1.0";
+      version = "1.0.1";
 
       dontUnpack = true;
 
@@ -20,7 +20,7 @@ let
         [Desktop Entry]
         Name=${name}
         Comment=${comment}
-        Exec=env NIRI_PROFILE=${profile} niri
+        Exec=niri --config %h/.config/niri/${profile}.kdl
         Type=Application
         EOF
       '';
