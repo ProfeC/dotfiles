@@ -1,5 +1,5 @@
 # modules/home/lee/desktops/niri/default.nix
-{ config, pkgs. lib, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports = [
@@ -10,8 +10,8 @@
   ];
 
   home.file = {
-    ".config/niri/legos.kdl".source = ./profiles/legos.kdl;
-    # ".config/niri/dms.kdl".source = ./profiles/dms.kdl;
-    # ".config/niri/noctalia.kdl".source = ./profiles/noctalia.kdl;
+    ".config/niri/legos.kdl".source = ./configs/legos.kdl;
+    # ".config/niri/dms.kdl".source = ./configs/dms.kdl;
+    # ".config/niri/noctalia.kdl".source = ./configs/noctalia.kdl;
   };
 }
