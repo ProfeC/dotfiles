@@ -3,6 +3,8 @@
 
 {
   home.packages = with pkgs; [
-    noctalia
   ];
+
+  programs.waybar.enable = true;
+
 }

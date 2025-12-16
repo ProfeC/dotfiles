@@ -4,8 +4,10 @@
 
 {
   home.packages = with pkgs; [
-    dank-material-shell
     waybar
     fuzzel
   ];
+
+  programs.waybar.enable = true;
+
 }

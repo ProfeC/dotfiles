@@ -3,6 +3,6 @@
   imports = [
     ./kde-plasma.nix
     ./niri/system.nix
-    ./niri/sessions.nix
+    # ./niri/sessions.nix
   ];
 }

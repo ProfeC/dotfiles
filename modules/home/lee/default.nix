@@ -8,7 +8,7 @@
   imports = [
     ./desktops/niri
     ./editors/nano.nix
-    ./editors/neovim.nix
+    # ./editors/neovim.nix
     ./editors/obsidian.nix
     ./editors/zed.nix
     ./gaming/minecraft.nix
