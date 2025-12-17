@@ -1,4 +1,5 @@
 # modules/desktops/default.nix
+{ inputs, ... }:
 {
   imports = [
     ./kde-plasma.nix

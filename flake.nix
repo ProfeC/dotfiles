@@ -1,5 +1,5 @@
 {
-  description = "Portable, hardware-aware NixOS config";
+  description = "NixOS config";
 
   inputs = {
     # Pin to a specific nixpkgs branch/version
@@ -38,20 +38,64 @@
     #   url = "github:nix-community/NUR";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+
+    # Niri
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # #  Dank Material Shell
+    # dgop = {
+    #   url = "github:AvengeMedia/dgop";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
+    # dankMaterialShell = {
+    #   url = "github:AvengeMedia/DankMaterialShell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.dgop.follows = "dgop";
+    # };
+
+    # noctalia = {
+    #   url = "github:noctalia-dev/noctalia-shell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.quickshell.follows = "nixpkgs";
+    # };
+
+    quickshell = {
+      url = "github:outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # nix-gaming = {
+    #   url = "github:fufexan/nix-gaming";
+    #   inputs = {
+    #     nixpkgs.follows = "nixpkgs";
+    #     flake-parts.follows = "flake-parts";
+    #   };
+    # };
+
   };
 
   outputs = {
+    # dankMaterialShell,
+    # dgop,
     flake-utils,
     home-manager,
+    niri,
+    # nix-gaming,
     nixos-hardware,
     nixos-wsl,
     nixpkgs,
+    # noctalia,
     # nur,
+    # quickshell,
     self,
     # stylix,
     systems,
     ...
-  }: let
+  }@inputs: let
     linuxSystem = "x86_64-linux";
 
     # System types to support.
@@ -109,7 +153,7 @@
           nixos-hardware.nixosModules.lenovo-thinkpad-t14s
           ./profiles/shu-t14s.nix
           ./modules/users/lee.nix
-          ./modules/users/shu-clarkgar.nix
+          # ./modules/users/shu-clarkgar.nix
 
           # Home Manager
           home-manager.nixosModules.home-manager
