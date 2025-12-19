@@ -6,17 +6,17 @@
 }: {
   # Import the machine-specific configuration
   imports = [
-    ../modules/browsers/firefox.nix
-    ../modules/browsers/vivaldi.nix
-    ../modules/desktops/default.nix
-    ../modules/gaming/steam.nix
-    ../modules/system/audio-pipewire.nix
-    # ../modules/system/auto-upgrade.nix
-    ../modules/system/bluetooth.nix
-    ../modules/system/boot-loader.nix
-    ../modules/system/tailscale.nix
-    ../modules/system/video.nix
-    ../modules/system/x11.nix
+    ./browsers/firefox.nix
+    ./browsers/vivaldi.nix
+    ./desktops/default.nix
+    ./gaming/steam.nix
+    ./system/audio-pipewire.nix
+    # ./system/auto-upgrade.nix - do not use. HM takes care of this at the user level.
+    ./system/bluetooth.nix
+    ./system/boot-loader.nix
+    ./system/tailscale.nix
+    ./system/video.nix
+    ./system/x11.nix
   ];
 
   networking.networkmanager.enable = true;

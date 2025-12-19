@@ -14,7 +14,7 @@
     #   # include NixOS-WSL modules
     #   <nixos-wsl/modules>
     # ../hosts/shu-laptop/hardware-configuration-wsl2.nix
-    ../modules/default.nix
+    ../nixosModules/default.nix
   ];
 
   # editor.nano.enable = true;

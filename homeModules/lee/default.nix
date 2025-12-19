@@ -1,4 +1,4 @@
-# modules/home/lee/default.nix
+# homeModules/lee/default.nix
 {
   config,
   pkgs,

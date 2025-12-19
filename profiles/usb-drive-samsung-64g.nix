@@ -2,9 +2,7 @@
 { config, pkgs, lib, ... }:
 {
   imports = [
-    ../modules/default.nix
-    # ../modules/browsers/brave.nix
-    # ../modules/virtualization/virtualization.nix
+    ../nixosModules/default.nix
   ];
 
   # development.vscodium.enable = true;

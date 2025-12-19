@@ -3,8 +3,6 @@
 {
   imports = [
     ../hosts/mac-mini/configuration.nix
-    ../modules/default.nix
-    # ../modules/browsers/brave.nix
-    # ../modules/virtualization/virtualization.nix
+    ../nixosModules/default.nix
   ];
 }

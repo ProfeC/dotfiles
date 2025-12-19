@@ -10,6 +10,6 @@
   # Import the machine-specific configuration
   imports = [
     ../hosts/shu-laptop/configuration.nix # Now receives `inputs` from the profile
-    ../modules/default.nix
+    ../nixosModules/default.nix
   ];
 }

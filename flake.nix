@@ -118,8 +118,8 @@
         modules = [
           nixos-hardware.nixosModules.apple-macmini-4-1
           ./profiles/mac-mini-16g.nix
-          ./modules/users/lee.nix
-          ./modules/users/serveradmin.nix
+          ./nixosModules/users/lee.nix
+          ./nixosModules/users/serveradmin.nix
 
           # Home Manager
           home-manager.nixosModules.home-manager
@@ -128,8 +128,8 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               backupFileExtension = "bak";
-              users.lee = import ./modules/home/lee;
-              # users.clarkgar = import ./modules/home/clarkgar;
+              users.lee = import ./homeModules/lee;
+              # users.clarkgar = import ./homeModules/clarkgar;
             };
           }
         ];
@@ -141,7 +141,7 @@
       #   system = linuxSystem;
       #   modules = [
       #     ./profiles/usb-drive-samsung-64g.nix
-      #     ./modules/users/lee.nix
+      #     ./nixosModules/users/lee.nix
       #   ];
       # };
 
@@ -153,8 +153,8 @@
         modules = [
           nixos-hardware.nixosModules.lenovo-thinkpad-t14s
           ./profiles/shu-t14s.nix
-          ./modules/users/lee.nix
-          # ./modules/users/shu-clarkgar.nix
+          ./nixosModules/users/lee.nix
+          # ./nixosModules/users/shu-clarkgar.nix
 
           # Home Manager
           home-manager.nixosModules.home-manager
@@ -162,8 +162,8 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "bak";
-            home-manager.users.lee = import ./modules/home/lee;
-            # home-manager.users.clarkgar = import ./modules/home/clarkgar;
+            home-manager.users.lee = import ./homeModules/lee;
+            # home-manager.users.clarkgar = import ./homeModules/clarkgar;
           }
         ];
       };
@@ -175,8 +175,8 @@
         modules = [
           nixos-wsl.nixosModules.default
           ./profiles/wsl2.nix
-          # ./modules/users/lee.nix
-          # ./modules/users/shu-clarkgar.nix
+          # ./nixosModules/users/lee.nix
+          # ./nixosModules/users/shu-clarkgar.nix
         ];
       };
 
@@ -186,7 +186,7 @@
         system = linuxSystem;
         modules = [
           ./profiles/vm-gaming.nix
-          ./modules/users/lee.nix
+          ./nixosModules/users/lee.nix
 
           # Home Manager
           home-manager.nixosModules.home-manager
@@ -194,7 +194,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "bak";
-            home-manager.users.lee = import ./modules/home/lee;
+            home-manager.users.lee = import ./homeModules/lee;
             # home-manager.users.clarkgar = import ./modules/home/clarkgar;
           }
         ];
@@ -205,9 +205,9 @@
       generic = nixpkgs.lib.nixosSystem {
         system = linuxSystem;
         modules = [
-          ./modules/default.nix
-          ./modules/users/lee.nix
-          ./modules/users/serveradmin.nix
+          ./nixosModules/default.nix
+          ./nixosModules/users/lee.nix
+          ./nixosModules/users/serveradmin.nix
           ./hosts/default/configuration.nix
         ];
       };

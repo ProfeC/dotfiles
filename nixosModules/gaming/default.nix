@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    ../modules/browsers/steam.nix
+    ./steam.nix
   ];
   # Enable the gaming service
   environment.systemPackages = with pkgs; [
