@@ -30,10 +30,10 @@
       source ~/.config/zsh/prompt.zsh
       export TERM=xterm-256color
 
-      export FZF_DEFAULT_OPTS="
-        --height 40% --layout=reverse --info=inline
-        --color=fg:$EB_FG,header:$EB_DIM,spinner:$EB_ACC,fg+:$EB_FG,hl:$EB_ACC
-      "
+      # export FZF_DEFAULT_OPTS="
+      #   --height 40% --layout=reverse --info=inline
+      #   --color=fg:$EB_FG,header:$EB_DIM,spinner:$EB_ACC,fg+:$EB_FG,hl:$EB_ACC
+      # "
 
       eval "$(starship init zsh)"
 

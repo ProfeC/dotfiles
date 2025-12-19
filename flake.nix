@@ -45,23 +45,22 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # #  Dank Material Shell
-    # dgop = {
-    #   url = "github:AvengeMedia/dgop";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    #  Dank Material Shell
+    dgop = {
+      url = "github:AvengeMedia/dgop";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-    # dankMaterialShell = {
-    #   url = "github:AvengeMedia/DankMaterialShell";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    #   inputs.dgop.follows = "dgop";
-    # };
+    dankMaterialShell = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.dgop.follows = "dgop";
+    };
 
-    # noctalia = {
-    #   url = "github:noctalia-dev/noctalia-shell";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    #   inputs.quickshell.follows = "nixpkgs";
-    # };
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     quickshell = {
       url = "github:outfoxxed/quickshell";
@@ -78,7 +77,7 @@
 
   };
 
-  outputs = {
+  outputs = inputs@{
     # dankMaterialShell,
     # dgop,
     flake-utils,
@@ -88,14 +87,14 @@
     nixos-hardware,
     nixos-wsl,
     nixpkgs,
-    # noctalia,
+    noctalia,
     # nur,
     # quickshell,
     self,
     # stylix,
     systems,
     ...
-  }@inputs: let
+  }: let
     linuxSystem = "x86_64-linux";
 
     # System types to support.
@@ -115,6 +114,7 @@
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#mac-mini-01`
       mac-mini-01 = nixpkgs.lib.nixosSystem {
         system = linuxSystem;
+        specialArgs = { inherit inputs; };
         modules = [
           nixos-hardware.nixosModules.apple-macmini-4-1
           ./profiles/mac-mini-16g.nix
@@ -135,20 +135,21 @@
         ];
       };
 
-      # Portable USB Drive
-      # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
-      usb-drive = nixpkgs.lib.nixosSystem {
-        system = linuxSystem;
-        modules = [
-          ./profiles/usb-drive-samsung-64g.nix
-          ./modules/users/lee.nix
-        ];
-      };
+      # # Portable USB Drive
+      # # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#usb-drive`
+      # usb-drive = nixpkgs.lib.nixosSystem {
+      #   system = linuxSystem;
+      #   modules = [
+      #     ./profiles/usb-drive-samsung-64g.nix
+      #     ./modules/users/lee.nix
+      #   ];
+      # };
 
       # SHU Laptop - Lenovo ThinkPad T14s
       # Switch with `sudo nixos-rebuild switch --flake /etc/nixos#shu-lappy`
       shu-lappy = nixpkgs.lib.nixosSystem {
         system = linuxSystem;
+        specialArgs = { inherit inputs; };
         modules = [
           nixos-hardware.nixosModules.lenovo-thinkpad-t14s
           ./profiles/shu-t14s.nix

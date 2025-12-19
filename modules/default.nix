@@ -11,7 +11,7 @@
     ../modules/desktops/default.nix
     ../modules/gaming/steam.nix
     ../modules/system/audio-pipewire.nix
-    ../modules/system/auto-upgrade.nix
+    # ../modules/system/auto-upgrade.nix
     ../modules/system/bluetooth.nix
     ../modules/system/boot-loader.nix
     ../modules/system/tailscale.nix
@@ -73,6 +73,7 @@
     curl
     eza
     git
+    niri
     tree
     wget
 

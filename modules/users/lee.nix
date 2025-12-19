@@ -9,7 +9,7 @@
     isNormalUser = true;
     description = "Lee";
     extraGroups = ["networkmanager" "wheel"];
-    initialHashedPassword = ""; # Set the initial password.
+    hashedPasswordFile ="/run/secrets/pw-lee";
     shell = pkgs.zsh;
   };
 }

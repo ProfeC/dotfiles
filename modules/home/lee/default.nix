@@ -3,17 +3,20 @@
   config,
   pkgs,
   lib,
+  inputs,
   ...
 }: {
   imports = [
     ./desktops/niri
+    # ./desktops/noctalia
     ./editors/nano.nix
     # ./editors/neovim.nix
     ./editors/obsidian.nix
     ./editors/zed.nix
     ./gaming/minecraft.nix
+    ./flake-update-notify.nix
     ./vivaldi.nix
-    ./vscodium.nix
+    # ./vscodium.nix
     ./wezterm.nix
     ./zsh.nix
   ];
@@ -27,7 +30,9 @@
   ####################
   home.packages = with pkgs; [
     cifs-utils
+    dbus
     kdePackages.kate
+    libnotify
     libreoffice-fresh
     obsidian
     steam
@@ -49,12 +54,17 @@
     settings = {
       user.name = "G. L. Clark, II";
       user.email = "gclark2@gmail.com";
+      pull.rebase = true;
       init.defaultBranch = "main";
       safe.directory = [
         "/etc/nixos"
         "~/etc/nixos"
         "~/Projects"
       ];
+      alias = {
+        st = "status";
+        lg = "log --online --graph --decorate";
+      };
     };
   };
 
@@ -71,11 +81,13 @@
   ####################
   programs.home-manager.enable = true;
   programs.fish.enable = true;
-  programs.fzf.enable = true;
+  # programs.fzf.enable = true;
 
   programs.bash = {
     enable = true;
     shellAliases = {
+      cat = "bat -s";
+      g = "git";
       ll = "ls -lah";
       lt = "ls -laht";
     };

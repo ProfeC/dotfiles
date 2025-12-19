@@ -15,22 +15,21 @@
     #   <nixos-wsl/modules>
     # ../hosts/shu-laptop/hardware-configuration-wsl2.nix
     ../modules/default.nix
-    # ../modules/development/git.nix
   ];
 
-  editor.nano.enable = true;
-  editor.neovim.enable = true;
-  programs.bash.enable = true;
-  programs.zsh = {
-    enable = true;
-    ohMyZsh.enable = false; # set to true if you use oh-my-zsh
-    enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;
-    shellAliases = {
-      ll = "ls -lah";
-      lt = "ls -laht";
-    };
-  };
+  # editor.nano.enable = true;
+  # editor.neovim.enable = true;
+  # programs.bash.enable = true;
+  # programs.zsh = {
+  #   enable = true;
+  #   ohMyZsh.enable = false; # set to true if you use oh-my-zsh
+  #   enableAutosuggestions = true;
+  #   enableSyntaxHighlighting = true;
+  #   shellAliases = {
+  #     ll = "ls -lah";
+  #     lt = "ls -laht";
+  #   };
+  # };
 
   wsl = {
     enable = true;
