@@ -6,6 +6,7 @@
 }: {
   # Import the machine-specific configuration
   imports = [
+    ./desktops
     ./gaming/steam.nix
     ./system/audio-pipewire.nix
     # ./system/auto-upgrade.nix - do not use. HM takes care of this at the user level.
@@ -70,7 +71,6 @@
     curl
     eza
     git
-    niri
     tree
     wget
 

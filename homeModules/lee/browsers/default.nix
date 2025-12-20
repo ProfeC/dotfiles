@@ -8,7 +8,7 @@
     ../../common/browsers.nix
     # ./brave.nix
     # ./firefox.nix
-    # ./vivaldi.nix
+    ./vivaldi.nix
   ];
 
 }

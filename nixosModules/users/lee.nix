@@ -9,7 +9,7 @@
     isNormalUser = true;
     description = "Lee";
     extraGroups = ["networkmanager" "wheel" "games"];
-    hashedPasswordFile ="/run/secrets/pw-lee";
+    hashedPasswordFile ="../../secrets/pw-lee";
     shell = pkgs.zsh;
   };
 }

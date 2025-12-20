@@ -4,16 +4,13 @@
   pkgs,
   ...
 }: {
-  # Enable the Steam service
-  environment.systemPackages = with pkgs; [
-    steam-rom-manager # App for adding 3rd party games/ROMS as Steam launch items.
-  ];
 
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
+  # Enable the Steam service
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play

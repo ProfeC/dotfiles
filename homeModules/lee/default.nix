@@ -16,10 +16,9 @@
     ./editors/zed.nix
     ./gaming/default.nix
     ./flake-update-notify.nix
-    ./vivaldi.nix
-    # ./vscodium.nix
     ./wezterm.nix
     ./zsh.nix
+    ../common/gui-apps.nix
   ];
 
   home.homeDirectory = "/home/lee";
@@ -32,12 +31,7 @@
   home.packages = with pkgs; [
     cifs-utils
     dbus
-    kdePackages.kate
     libnotify
-    libreoffice-fresh
-    obsidian
-    steam
-    # steam.cmd
   ];
 
   ####################
@@ -97,11 +91,7 @@
   ####################
   # Desktop Entries (Optional)
   ####################
-  # home.file.".local/share/applications/vivaldi-tuned.desktop".text =
-  #   vivaldi.environment.desktopEntries.vivaldi-tuned;
 
-  # home.file.".local/share/applications/vivaldi-default.desktop".text =
-  #   vivaldi.environment.desktopEntries.vivaldi-default;
 
   ####################
   # Dotfiles

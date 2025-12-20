@@ -9,7 +9,7 @@
     isNormalUser = true;
     description = "Server Admin";
     extraGroups = ["networkmanager" "wheel"];
-    hashedPasswordFile ="/run/secrets/pw-serveradmin";
+    hashedPasswordFile ="../../secrets/pw-serveradmin";
     # openssh.authorizedKeys.keys = [];
 
     # This makes sure you always have Kate installed, but you can add more here.

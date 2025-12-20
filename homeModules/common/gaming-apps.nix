@@ -11,5 +11,8 @@
     heroic # Game launcher
     lutris # Games launcher
     mangohud # In game stats HUD overlay
+    # steam
+    # steam.cmd
+    steam-rom-manager # App for adding 3rd party games/ROMS as Steam launch items.
   ];
 }
