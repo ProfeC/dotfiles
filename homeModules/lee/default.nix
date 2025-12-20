@@ -13,7 +13,7 @@
     # ./editors/neovim.nix
     ./editors/obsidian.nix
     ./editors/zed.nix
-    ./gaming/minecraft.nix
+    ./gaming/default.nix
     ./flake-update-notify.nix
     ./vivaldi.nix
     # ./vscodium.nix

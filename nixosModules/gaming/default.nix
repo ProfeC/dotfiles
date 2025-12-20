@@ -10,9 +10,6 @@
   # Enable the gaming service
   environment.systemPackages = with pkgs; [
     cmake # Cross-platform, open-source build system generator
-    heroic # Game launcher
-    lutris # Games launcher
-    mangohud # In game stats HUD overlay
     protonup # GloriousEggroll’s proton fork, ProtonGE.
   ];
 
