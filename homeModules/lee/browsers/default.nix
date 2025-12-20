@@ -6,7 +6,7 @@
 }: {
   imports = [
     ../../common/browsers.nix
-    ./brave.nix
+    # ./brave.nix
     # ./firefox.nix
     # ./vivaldi.nix
   ];

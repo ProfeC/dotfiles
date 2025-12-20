@@ -6,9 +6,6 @@
 }: {
   # Import the machine-specific configuration
   imports = [
-    ./browsers/firefox.nix
-    ./browsers/vivaldi.nix
-    ./desktops/default.nix
     ./gaming/steam.nix
     ./system/audio-pipewire.nix
     # ./system/auto-upgrade.nix - do not use. HM takes care of this at the user level.

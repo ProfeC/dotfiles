@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    ../../homeModules/common/gaming-apps.nix
+    ../../common/gaming-apps.nix
     ./minecraft.nix
   ];
 
