@@ -1,11 +1,9 @@
 # modules/home/lee/desktops/noctalia/default.nix
 { pkgs, inputs, ... }: let
-  noctaliaPath = inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  noctaliaPkg = inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in {
   # Make the Noctalia package available for this user (CLI, assets, etc.).
-  environment.systemPackages = with pkgs; [
-    noctaliaPath
-  ];
+  home.packages = [ noctaliaPkg ];
 
   # configure options
   programs.noctalia-shell = {
