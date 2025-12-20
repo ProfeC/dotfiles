@@ -1,4 +1,4 @@
-# steam.nix
+# nixosModules/gaming/default.nix
 {
   config,
   pkgs,
@@ -20,11 +20,6 @@
   # services.xserver.videoDrivers = [ "nvidia" ];  # or "intel", "amd", etc.
   hardware.graphics.enable = true;
   hardware.xone.enable = true;
-
-  # Configure settings for running Steam
-  users.users.lee = {
-    extraGroups = [ "games" ];
-  };
 
   programs.gamemode.enable = true;
 }

@@ -8,7 +8,7 @@
   users.users.lee = {
     isNormalUser = true;
     description = "Lee";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "games"];
     hashedPasswordFile ="/run/secrets/pw-lee";
     shell = pkgs.zsh;
   };
