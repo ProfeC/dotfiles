@@ -1,10 +1,7 @@
-# modules/browsers/brave.nix
+# homeModules/lee/browsers/brave.nix
 { pkgs, ... }:
 
 {
-  ## Install Brave
-  environment.systemPackages = with pkgs; [ brave ];
-
   ## Force‑install Bitwarden + PureVPN extensions
   environment.etc."opt/brave/policies/managed/extensions.json".text = ''
     {

@@ -7,6 +7,7 @@
   ...
 }: {
   imports = [
+    ./browsers
     ./desktops/niri
     # ./desktops/noctalia
     ./editors/nano.nix
