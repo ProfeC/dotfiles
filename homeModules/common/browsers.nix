@@ -4,7 +4,9 @@
   pkgs,
   ...
 }: {
-  # imports = [  ];
+  imports = [
+    ./browser-extension-bootstrap.nix
+  ];
 
   # Add launchers and "stuff".
   home.packages = with pkgs; [
