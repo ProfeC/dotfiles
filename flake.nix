@@ -78,8 +78,8 @@
   };
 
   outputs = inputs@{
-    # dankMaterialShell,
-    # dgop,
+    dankMaterialShell,
+    dgop,
     flake-utils,
     home-manager,
     niri,
@@ -128,6 +128,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               backupFileExtension = "bak";
+              extraSpecialArgs = { inherit inputs;};
               users.lee = import ./homeModules/lee;
               # users.clarkgar = import ./homeModules/clarkgar;
             };
@@ -159,11 +160,14 @@
           # Home Manager
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "bak";
-            home-manager.users.lee = import ./homeModules/lee;
-            # home-manager.users.clarkgar = import ./homeModules/clarkgar;
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              backupFileExtension = "bak";
+              extraSpecialArgs = { inherit inputs;};
+              users.lee = import ./homeModules/lee;
+              # users.clarkgar = import ./homeModules/clarkgar;
+            };
           }
         ];
       };

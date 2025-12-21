@@ -1,5 +1,5 @@
 # modules/home/lee/desktops/niri/profile-base.nix
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -7,6 +7,6 @@
     fuzzel        # or alternatives (rofi?) later
   ];
 
-  programs.waybar.enable = true;
-  services.mako.enable = true;
+  programs.waybar.enable = lib.mkDefault true;
+  services.mako.enable = lib.mkDefault true;
 }
