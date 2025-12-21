@@ -1,0 +1,5 @@
+// dank.kdl — Niri + Dank Material Shell (DMS)
+include "base.kdl"
+
+// DMS docs recommend this for Niri autostart:
+spawn-at-startup "dms" "run"

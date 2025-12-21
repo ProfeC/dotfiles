@@ -1,13 +1,11 @@
 # modules/home/lee/desktops/niri/profile-dms.nix
 # dms => Dank Material Shell
 { pkgs, ... }:
-
 {
-  home.packages = with pkgs; [
-    waybar
-    fuzzel
+  home.packages = [
+    dms
+    fuzzel  # keep Mod+D consistent while evaluating
   ];
 
-  programs.waybar.enable = true;
-
+  programs.waybar.enable = false;
 }

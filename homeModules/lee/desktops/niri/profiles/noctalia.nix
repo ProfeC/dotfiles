@@ -1,10 +1,10 @@
 # modules/home/lee/desktops/niri/profile-nocalia.nix
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
+let
+  noctaliaPkg = inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default;
+in {
+  home.packages = [ noctaliaPkg ];
 
-{
-  home.packages = with pkgs; [
-  ];
-
-  programs.waybar.enable = true;
-
+  programs.waybar.enable = false;
+  # optionally disable mako later
 }

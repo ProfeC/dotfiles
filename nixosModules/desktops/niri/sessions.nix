@@ -30,10 +30,10 @@ let
 in {
   services.displayManager.sessionPackages = [
     (mkNiriSession {
-      name = "Niri (Legos)";
-      sessionName = "niri-legos";
+      name = "Niri (Base)";
+      sessionName = "niri-base";
       comment = "Niri + Waybar + Fuzzel";
-      profile = "legos";
+      profile = "base";
     })
 
     (mkNiriSession {

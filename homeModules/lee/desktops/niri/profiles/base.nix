@@ -1,4 +1,4 @@
-# modules/home/lee/desktops/niri/profile-legos.nix
+# modules/home/lee/desktops/niri/profile-base.nix
 { pkgs, ... }:
 
 {

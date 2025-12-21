@@ -4,13 +4,13 @@
 {
   imports = [
     ./packages.nix
-    ./profiles/legos.nix
+    ./profiles/base.nix
     ./profiles/dms.nix
     ./profiles/noctalia.nix
   ];
 
   home.file = {
-    ".config/niri/legos.kdl".source = ./configs/legos.kdl;
+    ".config/niri/base.kdl".source = ./configs/base.kdl;
     ".config/niri/dms.kdl".source = ./configs/dms.kdl;
     ".config/niri/noctalia.kdl".source = ./configs/noctalia.kdl;
   };

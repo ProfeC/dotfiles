@@ -1,0 +1,4 @@
+// noctalia.kdl — Niri + Noctalia shell
+include "base.kdl"
+
+spawn-at-startup "noctalia-shell"
