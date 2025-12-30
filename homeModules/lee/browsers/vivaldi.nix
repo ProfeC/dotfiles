@@ -52,12 +52,6 @@ in {
     vivaldi = "vivaldi-tuned";
   };
 
-  home.file = {
-    ".local/share/applications/vivaldi-stable.desktop".text =''
-      Exec=vivaldi --profile-directory=Default %U
-    '';
-  };
-
   # ########################################
   # ## Patch .desktop file(s)
   # ########################################
