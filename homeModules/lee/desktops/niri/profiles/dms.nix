@@ -3,22 +3,23 @@
 { pkgs, inputs, ... }:
 
 {
+  # Import the external homeModules from your flake inputs
   imports = [
-    # Provides config.lib.niri.actions (what DMS expects)
-    inputs.niri.homeModules.niri
-
-    # DMS Modules
-    inputs.dankMaterialShell.homeModules.dankMaterialShell.default
-    inputs.dankMaterialShell.homeModules.dankMaterialShell.niri
+    inputs.dankMaterialShell.homeModules.dankMaterialShell  # DMS module
+    inputs.niri.homeModules.niri  # Niri module
   ];
 
+  # Enable Niri (required for DMS to work)
+  programs.niri.enable = true;
+
+  # Enable DMS with your desired options
   programs.dankMaterialShell = {
     enable = true;
 
     # Optional, but helpful for keyboard-first Niri evaluation
     niri = {
       enableKeybinds = true;
-      enableSpawn = true; # auto-start DMS with niri
+      enableSpawn = true;  # Auto-start DMS with Niri
     };
   };
 
@@ -27,5 +28,5 @@
 
   # Keep this only if you want Mod+D -> fuzzel consistent while evaluating
   # (DMS has its own launcher)
-  # home.packages = [ pkgs.fuzzel ];
+  home.packages = [ pkgs.fuzzel ];
 }
