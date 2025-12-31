@@ -1,4 +1,16 @@
 // noctalia.kdl — Niri + Noctalia shell
 include "base.kdl"
 
+binds {
+    Mod+C { spawn "noctalia-shell ipc call launcher clipboard"; }
+    Mod+D { spawn "noctalia-shell ipc call launcher toggle"; }
+    Mod+Space { spawn "noctalia-shell ipc call launcher toggle"; }
+    Mod+P { spawn "noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+S { spawn "noctalia-shell ipc call settings toggle"; }
+
+    Mod+Shift+L { spawn "noctalia-shell ipc call lockScreen lock"; } // lock the screen
+    Mod+Shift+I { spawn "noctalia-shell ipc call idleInhibitor toggle"; } // prevent from going idle
+    Mod+Shift+S { spawn "noctalia-shell ipc call controlCenter toggle"; }
+}
+
 spawn-at-startup "noctalia-shell"

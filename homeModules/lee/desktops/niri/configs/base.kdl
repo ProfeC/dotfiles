@@ -1,20 +1,145 @@
 // base.kdl — shared Niri behavior + binds
 
 input {
-  // Keyboard-first: use Mod (Super on TTY, Alt when nested)
-  // You can customize Mod mapping if you want later.
-  // See niri key binding docs.
+    // Keyboard-first: use Mod (Super on TTY, Alt when nested)
+    // You can customize Mod mapping if you want later.
+    // See niri key binding docs.
 
-  touchpad {
-    tap
-    natural-scroll
-  }
+    keyboard {
+        xkb {
+            layout "us"
+        }
 
-  mouse {
-    // Leave defaults unless you want to tweak accel later.
-    // accel-profile "flat"
-    // accel-speed 0.2
-  }
+        // Enable numlock on startup, omitting this setting disables it.
+        numlock
+    }
+
+    touch {
+        // off
+        map-to-output "eDP-1"
+        // calibration-matrix 1.0 0.0 0.0 0.0 1.0 0.0
+    }
+
+    touchpad {
+        accel-profile "adaptive"
+        accel-speed 0.3
+        disabled-on-external-mouse
+        natural-scroll
+        scroll-method "two-finger"
+        tap
+    }
+
+    mouse {
+        accel-profile "adaptive"
+        accel-speed 0.3
+        natural-scroll
+        scroll-method "two-finger"
+    }
+}
+
+output "eDP-1" {
+    mode "1920x1080"
+    scale 1.00
+    transform "normal"
+    position x=1280 y=0
+}
+
+layout {
+    gaps 13
+    center-focused-column "on-overflow"
+
+    preset-column-widths {
+        proportion 0.25
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 0.75
+    }
+
+    focus-ring {
+        // Uncomment this line to disable the focus ring.
+        // off
+
+        // How many logical pixels the ring extends out from the windows.
+        width 3
+
+        // Color of the ring on the active monitor.
+        active-color "#7fc8ff"
+
+        // Color of the ring on inactive monitors.
+        inactive-color "#505050"
+    }
+
+    // You can also add a border. It's similar to the focus ring, but always visible.
+    border {
+        // The settings are the same as for the focus ring.
+        // If you enable the border, you probably want to disable the focus ring.
+        off
+
+        width 3
+        active-color "#ffc87f"
+        inactive-color "#505050"
+
+        // Color of the border around windows that request your attention.
+        urgent-color "#9b0000"
+    }
+
+    // You can enable drop shadows for windows.
+    shadow {
+        // Uncomment the next line to enable shadows.
+        // on
+
+        // Softness controls the shadow blur radius.
+        softness 30
+
+        // Spread expands the shadow.
+        spread 5
+
+        // Offset moves the shadow relative to the window.
+        offset x=0 y=5
+
+        // You can also change the shadow color and opacity.
+        color "#0007"
+    }
+
+    struts {
+        // left 64
+        // right 64
+        // top 64
+        // bottom 64
+    }
+}
+
+cursor {
+    hide-when-typing
+    hide-after-inactive-ms 1500
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+// Uncomment this line to ask the clients to omit their client-side decorations if possible.
+prefer-no-csd
+
+// You can change the path where screenshots are saved.
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// Animation settings.
+animations {
+    // Uncomment to turn off all animations.
+    // off
+
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    slowdown 0.75
+}
+
+// Work around WezTerm's initial configure bug
+// by setting an empty default-column-width.
+window-rule {
+    // This regular expression is intentionally made as specific as possible, since this is the default config, and we want no false positives. You can get away with just app-id="wezterm" if you want.
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
 }
 
 // Prefer to keep binds in one place and re-use them via include.
@@ -23,7 +148,9 @@ input {
 binds {
   // --- Launchers ---
   Mod+Return { spawn "wezterm"; }   // change to your terminal
+  Mod+T { spawn "wezterm"; }   // change to your terminal
   Mod+D      { spawn "fuzzel"; }      // if you use a launcher; swap later if DMS/Noctalia provides one
+  Mod+Shift+Slash { show-hotkey-overlay; }  // shows a list of important hotkeys.
 
   // --- Window management ---
   Mod+Q       { close-window; }

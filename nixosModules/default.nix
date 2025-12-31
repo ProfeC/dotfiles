@@ -108,4 +108,16 @@
 
   # Enable global programs
   programs.zsh.enable = true;
+
+  # Ensure user `systemd` services get killed on logout.
+  services.logind.settings.Login.KillUserProcesses = true;
+
+  # Ensure XDG paths remain consistent across DE sessions.
+  environment.sessionVariables = {
+    XDG_CONFIG_HOME = "$HOME/.config";
+    XDG_DATA_HOME   = "$HOME/.local/share";
+    XDG_STATE_HOME  = "$HOME/.local/state";
+    XDG_CACHE_HOME  = "$HOME/.cache";
+  };
+
 }
