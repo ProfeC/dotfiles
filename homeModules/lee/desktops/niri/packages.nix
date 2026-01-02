@@ -4,6 +4,10 @@
   home.packages = with pkgs; [
     niri
     xwayland-satellite
+    fuzzel
+    # rofi
+    swaylock
+    alacritty
 
     # U/X Tools
     brightnessctl # brightness control
