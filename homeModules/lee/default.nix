@@ -75,7 +75,7 @@
   # Programs Configuration
   ####################
   programs.home-manager.enable = true;
-  programs.fish.enable = true;
+  # programs.fish.enable = true;
   # programs.fzf.enable = true;
 
   programs.bash = {
