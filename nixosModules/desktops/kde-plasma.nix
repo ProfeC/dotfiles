@@ -2,8 +2,9 @@
 
 {
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
@@ -14,12 +15,13 @@
 
   # Add some system packages; ref: https://nixos.wiki/wiki/KDE#Contemporary_Setup
   environment.systemPackages = with pkgs; [
-    kdePackages.ksystemlog # KDE system log application
-    kdePackages.sddm-kcm # Configuration module for SDDM
     kdePackages.isoimagewriter # Program to write hybrid ISO files to USB disks
+    kdePackages.ksystemlog # KDE system log application
     kdePackages.partitionmanager # Manage disk devices, partitions, etc.
+    kdePackages.sddm-kcm # Configuration module for SDDM
     wayland-utils # Wayland utilities
     wl-clipboard # CLI copy and paste utilities for Wayland
+    xclip # Tool to access the X clipboard from a console application
   ];
 
 }

@@ -8,6 +8,7 @@
 
   # Add launchers and "stuff".
   home.packages = with pkgs; [
+    filezilla
     kdePackages.kate
     libreoffice-fresh
     obsidian
