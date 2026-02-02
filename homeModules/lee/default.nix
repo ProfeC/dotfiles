@@ -16,7 +16,7 @@
     ./editors/zed.nix
     ./gaming/default.nix
     ./flake-update-notify.nix
-    ./wezterm.nix
+    # ./wezterm.nix
     ./zsh.nix
     ../common/gui-apps.nix
   ];
@@ -29,6 +29,7 @@
   # Core Packages
   ####################
   home.packages = with pkgs; [
+    alacritty
     cifs-utils
     dbus
     libnotify
