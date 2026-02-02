@@ -8,7 +8,7 @@
 }: {
   imports = [
     ./browsers
-    ./desktops/niri
+    # ./desktops/niri
     # ./desktops/noctalia
     ./editors/nano.nix
     # ./editors/neovim.nix

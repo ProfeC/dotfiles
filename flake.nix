@@ -45,18 +45,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # #  Dank Material Shell
-    # dgop = {
-    #   url = "github:AvengeMedia/dgop";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
-    # dank-material-shell = {
-    #   url = "github:AvengeMedia/DankMaterialShell";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    #   inputs.dgop.follows = "dgop";
-    # };
-
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -78,8 +66,6 @@
   };
 
   outputs = inputs@{
-    # dank-material-shell,
-    # dgop,
     flake-utils,
     home-manager,
     niri,

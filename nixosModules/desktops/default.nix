@@ -3,8 +3,8 @@
 {
   imports = [
     ./kde-plasma.nix
-    ./niri/system.nix
-    ./niri/sessions.nix
-    ./noctalia.nix
+    # ./niri/system.nix
+    # ./niri/sessions.nix
+    # ./noctalia.nix
   ];
 }

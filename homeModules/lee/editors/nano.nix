@@ -7,8 +7,6 @@
 }: {
   home.packages = with pkgs; [
     nano
-    ranger # optional file browser
-    lf # optional file browser
   ];
 
   home.file."nanorc".text = ''
