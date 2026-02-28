@@ -1,0 +1,129 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+
+# Disable noisy modules
+battery.disabled = true
+package.disabled = true
+# nodejs.disabled = true
+rust.disabled = true
+golang.disabled = true
+python.disabled = true
+
+# format = """
+# $directory$git_branch$git_status$fill$aws$nodejs$java$gradle$custom
+# $os$character
+# """
+format = "$username$hostname$directory$git_branch$git_status$line_break$character"
+
+# Colors
+# Ebony green:   #5D6658
+# Off-white fg:  #dbe6dd
+# Muted yellow:  #9c8a6a
+# Muted blue:    #5b6a6f
+# Muted red:     #b7685a
+
+[character]
+success_symbol = "[❯](bold #5D6658)"
+error_symbol = "[❯](bold #b7685a)"
+vicmd_symbol = "[❮](bold #5b6a6f)"
+format = "$symbol "
+
+[directory]
+format = '[ $path ]($style)[$read_only]($read_only_style)'
+read_only_style = 'bg:red 🔒'
+style = 'bold #5D6658'
+truncate_to_repo = true
+truncation_length = 3
+truncation_symbol = "…/"
+
+[fill]
+symbol = ' '
+
+[git_branch]
+format = " [$symbol$branch]($style)"
+style = "bold #a7b39f" # brightened green from your palette
+symbol = "🌿 "
+
+[git_status]
+ahead = '[ ⇡ ]($style)'
+behind = '[ ⇣ ]($style)'
+conflicted = '[ = ]($style)'
+deleted = '[ ✘ ]($style)'
+diverged = '[ ⇕ ]($style)'
+format = '[$all_status$ahead_behind]($style)'
+modified = '[ ! ]($style)'
+renamed = '[ » ]($style)'
+staged = '[ + ]($style)'
+style = '#d2c1a0' # soft yellow
+stashed = '[ \$ ](bg:yellow bold)'
+typechanged = ""
+untracked = '[ ? ](bg:yellow bold)'
+up_to_date = ''
+
+[gradle]
+format = '[ $symbol $version ](bg:cyan bold)'
+version_format = '${raw}'
+symbol = ''
+
+[hostname]
+ssh_symbol = "🌐 "
+format = " on [$hostname](bold #9c8a6a)"
+trim_at = ".local"
+ssh_only = false
+
+[aws]
+format = '[ $symbol $profile $region ]($style)'
+symbol = ' '
+
+[nodejs]
+format = '[ $symbol$version ](bg:cyan bold)'
+version_format = '${raw}'
+
+[username]
+style_user = "bold #5b6a6f" # muted blue-gray
+style_root = "bold #b7685a" # muted red
+format = "[$user]($style)"
+show_always = true
+
+[custom.npm]
+command = "npm -v"
+when = "test -f package.json"
+format = "[ $symbol $output ](bg:yellow bold)"
+symbol = ''
+
+[custom.yarn]
+command = "yarn -v"
+when = "test -f yarn.lock"
+format = "[ $symbol $output ](bg:cyan bold)"
+symbol = ''
+
+[custom.pnpm]
+command = "pnpm -v"
+when = "test -f pnpm-lock.yaml"
+format = "[ $symbol $output ](bg:cyan bold)"
+symbol = ''
+
+[java]
+format = '[ $symbol $version ]($style)'
+version_format = '${raw}'
+style = 'bg:red bold'
+symbol = '󰅶'
+
+[custom.jreleaser]
+command = "jreleaser --version 2>&1 | grep '^jreleaser ' | awk '{print $2}'"
+when = "test -f jreleaser.yml"
+format = '[ Jr: $output ](bg:red bold)'
+
+[os]
+format = '[$symbol ]($style)'
+disabled = false
+
+[os.symbols]
+Macos = '󰀵'
+
+# Time (optional subtle clock)
+[time]
+disabled = false
+format = "[$time]($style) "
+time_format = "%H:%M"
+style = "dim #5a6059"
