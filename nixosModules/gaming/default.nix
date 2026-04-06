@@ -15,7 +15,6 @@
     heroic # Game launcher
     lutris # Games launcher
     mangohud # In game stats HUD overlay
-    protonup # GloriousEggroll’s proton fork, ProtonGE.
     protonup-qt # GUI for installing custom Proton versions like GE_Proton
   ];
 
